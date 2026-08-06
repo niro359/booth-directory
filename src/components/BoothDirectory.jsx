@@ -496,7 +496,7 @@ export default function BoothDirectory() {
       .filter(e => state === "all" || e.state === state)
       .filter(e => jury === "any" || (jury === "juried" ? e.juried : !e.juried))
       .filter(e => !openOnly || e._dl >= 0)
-      .filter(e => e.fee <= maxFee)
+      .filter(e => maxFee >= 1500 || e.fee <= maxFee)
       .filter(e => !savedOnly || saved.includes(e.id))
       .filter(e => !from || d(e.end) >= d(from))
       .filter(e => !to || d(e.start) <= d(to));
@@ -747,7 +747,8 @@ export default function BoothDirectory() {
         )}
 
         <footer className="bth-foot">
-          Motion respects <span style={{ color: "var(--ink)" }}>prefers-reduced-motion</span>; all animation is transform and opacity only.
+          <div>Make the thing. Ship the thing. <span style={{ color: "var(--ink)" }}>Book the booth.</span></div>
+          <div>© {new Date().getFullYear()} Booth. Not affiliated with any event organizer — always confirm details before you apply.</div>
         </footer>
       </div>
     </div>
