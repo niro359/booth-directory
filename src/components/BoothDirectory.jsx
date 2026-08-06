@@ -288,7 +288,8 @@ const CSS = `
   100%{transform:translate(var(--bx),var(--by)) scale(0);opacity:0;}
 }
 
-.bth-body{padding:14px 15px 15px;display:flex;flex-direction:column;flex:1;}
+.bth-body{padding:14px 15px 15px;display:flex;flex-direction:column;flex:1;cursor:pointer;}
+.bth-body:focus-visible{outline:2.5px solid var(--aqua);outline-offset:-2px;}
 .bth-name{
   font-family:var(--f-display);font-weight:800;font-stretch:112%;
   font-size:18.5px;line-height:1.08;letter-spacing:-.022em;margin:0 0 5px;
@@ -298,8 +299,39 @@ const CSS = `
   color:var(--ink-45);text-transform:uppercase;margin-bottom:9px;
 }
 .bth-desc{
-  font-size:13.2px;line-height:1.45;color:var(--ink-70);margin:0 0 13px;
+  font-size:13.2px;line-height:1.45;color:var(--ink-70);margin:0 0 6px;
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+.bth-desc.open{-webkit-line-clamp:unset;overflow:visible;}
+.bth-readmore{
+  display:inline-flex;align-items:center;gap:5px;width:fit-content;
+  font-family:var(--f-data);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--aqua);margin-bottom:13px;
+}
+.bth-readmore svg{transition:transform .28s var(--ease-out);}
+.bth-readmore svg.open{transform:rotate(180deg);}
+.bth-more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .38s var(--ease-out);}
+.bth-more.open{grid-template-rows:1fr;}
+.bth-more>div{overflow:hidden;}
+.bth-more>div>div{padding-top:13px;border-top:1.5px dashed var(--ink-15);margin-top:2px;}
+.bth-verify{margin-bottom:10px;}
+.bth-vbadge{
+  font-family:var(--f-data);font-size:10px;letter-spacing:.06em;text-transform:uppercase;
+  border:1.5px solid var(--ink);padding:3px 7px;display:inline-block;
+}
+.bth-vbadge.v-yes{background:var(--grass);color:#fff;border-color:var(--grass);}
+.bth-vbadge.v-no{background:var(--stock);color:var(--ink-70);border-color:var(--ink-15);}
+.bth-apply{
+  display:inline-flex;align-items:center;gap:6px;
+  font-family:var(--f-data);font-size:12.5px;letter-spacing:.04em;
+  border:2px solid var(--ink);background:var(--pink);color:#fff;
+  padding:8px 14px;text-decoration:none;
+  transition:transform .2s var(--ease-pop), box-shadow .2s var(--ease-pop);
+}
+.bth-apply:hover{transform:translate(-2px,-2px);box-shadow:3px 4px 0 var(--ink);}
+.bth-apply:active{transform:scale(.96);}
+.bth-apply.off{
+  background:none;color:var(--ink-45);border-color:var(--ink-15);cursor:not-allowed;
 }
 .bth-data{
   border-top:1.5px solid var(--ink-15);padding-top:10px;margin-top:auto;
@@ -469,6 +501,8 @@ function Rolling({ value }) {
 /* ---------- icons ---------- */
 const IcSearch = () => (<svg width="19" height="19" viewBox="0 0 20 20" fill="none"><circle cx="8.5" cy="8.5" r="6" stroke="currentColor" strokeWidth="2" /><path d="M13 13l5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>);
 const IcPin = ({ on }) => (<svg width="15" height="15" viewBox="0 0 16 16" fill={on ? "currentColor" : "none"}><path d="M8 1.5l1.9 4.1 4.4.6-3.2 3.1.8 4.4L8 11.6 4.1 13.7l.8-4.4L1.7 6.2l4.4-.6L8 1.5z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /></svg>);
+const IcChevron = ({ className }) => (<svg className={className} width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" /></svg>);
+const IcArrowUpRight = () => (<svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" /></svg>);
 
 /* ================================================================== */
 export default function BoothDirectory() {
@@ -486,6 +520,7 @@ export default function BoothDirectory() {
   const [view, setView] = useState("grid");
   const [hot, setHot] = useState(null);
   const [popped, setPopped] = useState(null);
+  const [expanded, setExpanded] = useState(() => new Set());
 
   const states = useMemo(() => ["all", ...Array.from(new Set(EVENTS.map(e => e.state))).sort()], []);
 
@@ -532,6 +567,11 @@ export default function BoothDirectory() {
     setSaved(p => p.includes(id) ? p.filter(x => x !== id) : [...p, id]);
     setPopped(id); setTimeout(() => setPopped(null), 520);
   };
+  const toggleExpand = (id) => setExpanded(p => {
+    const n = new Set(p);
+    n.has(id) ? n.delete(id) : n.add(id);
+    return n;
+  });
   const resetAll = () => { setQ(""); setTypes([]); setState("all"); setJury("any"); setOpenOnly(true); setMaxFee(1500); setFrom(""); setTo(""); setSavedOnly(false); };
 
   return (
@@ -688,6 +728,7 @@ export default function BoothDirectory() {
             {results.map((e, i) => {
               const u = urgency(e._dl);
               const isSaved = saved.includes(e.id);
+              const isOpen = expanded.has(e.id);
               return (
                 <article
                   key={e.id}
@@ -717,10 +758,23 @@ export default function BoothDirectory() {
                     )}
                   </div>
 
-                  <div className="bth-body">
+                  <div
+                    className="bth-body"
+                    role="button"
+                    tabIndex={0}
+                    aria-expanded={isOpen}
+                    aria-label={`${isOpen ? "Hide" : "Show"} full details for ${e.name}`}
+                    onClick={() => toggleExpand(e.id)}
+                    onKeyDown={(ev) => {
+                      if (ev.target === ev.currentTarget && (ev.key === "Enter" || ev.key === " ")) {
+                        ev.preventDefault(); toggleExpand(e.id);
+                      }
+                    }}
+                  >
                     <h2 className="bth-name">{e.name}</h2>
                     <div className="bth-place">{e.city}, {e.state} · {e.org}</div>
-                    <p className="bth-desc">{e.desc}</p>
+                    <p className={`bth-desc${isOpen ? " open" : ""}`}>{e.desc}</p>
+                    <div className="bth-readmore"><IcChevron className={isOpen ? "open" : ""} />{isOpen ? "Read less" : "Read more"}</div>
 
                     <dl className="bth-data">
                       <div className="bth-datum"><dt>Event dates</dt><dd>{fmtRange(e.start, e.end)}</dd></div>
@@ -738,6 +792,29 @@ export default function BoothDirectory() {
                       {e.outdoor && <span className="bth-badge b-mute">Outdoor</span>}
                       {e.fee === 0 && <span className="bth-badge b-grass">Consignment</span>}
                       {e.tags.includes("monthly") && <span className="bth-badge b-mute">Recurs monthly</span>}
+                    </div>
+
+                    <div className={`bth-more${isOpen ? " open" : ""}`} inert={isOpen ? undefined : ""}>
+                      <div>
+                        <div className="bth-verify">
+                          {e.status === "verified"
+                            ? <span className="bth-vbadge v-yes">✓ Verified{e.lastVerified ? ` ${fmtShort(e.lastVerified)}` : ""}</span>
+                            : <span className="bth-vbadge v-no">⚠ Needs review — confirm details before applying</span>}
+                        </div>
+                        {e.sourceUrl ? (
+                          <a
+                            className="bth-apply"
+                            href={e.sourceUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(ev) => ev.stopPropagation()}
+                          >
+                            Apply on organizer site <IcArrowUpRight />
+                          </a>
+                        ) : (
+                          <span className="bth-apply off">Source not yet verified</span>
+                        )}
+                      </div>
                     </div>
                   </div>
                 </article>
