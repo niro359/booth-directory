@@ -310,10 +310,16 @@ const CSS = `
 }
 .bth-readmore svg{transition:transform .28s var(--ease-out);}
 .bth-readmore svg.open{transform:rotate(180deg);}
-.bth-more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .38s var(--ease-out);}
+.bth-more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .46s var(--ease-pop);}
 .bth-more.open{grid-template-rows:1fr;}
-.bth-more>div{overflow:hidden;}
+.bth-more>div{overflow:hidden;margin-left:-6px;padding-left:6px;}
 .bth-more>div>div{padding-top:13px;border-top:1.5px dashed var(--ink-15);margin-top:2px;}
+.bth-more.open>div>div{animation:moreIn .4s var(--ease-pop);}
+@keyframes moreIn{
+  0%{opacity:0;transform:translateY(-7px) scale(.97,1.05);}
+  55%{opacity:1;transform:translateY(2px) scale(1.015,.985);}
+  100%{opacity:1;transform:translateY(0) scale(1,1);}
+}
 .bth-verify{margin-bottom:10px;}
 .bth-vbadge{
   font-family:var(--f-data);font-size:10px;letter-spacing:.06em;text-transform:uppercase;
