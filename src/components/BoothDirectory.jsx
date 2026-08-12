@@ -61,9 +61,9 @@ const CSS = `
   position:sticky;top:0;background:var(--stock);z-index:40;
 }
 .bth-mark{
-  font-family:var(--f-display);font-weight:900;font-stretch:125%;
-  font-size:24px;letter-spacing:-.02em;line-height:1;text-transform:uppercase;
-  display:flex;align-items:center;gap:8px;
+  font-family:var(--f-display);font-weight:900;font-stretch:118%;
+  font-size:clamp(15px,2.4vw,21px);letter-spacing:-.015em;line-height:1;text-transform:uppercase;
+  display:flex;align-items:center;gap:8px;white-space:nowrap;
 }
 .bth-mark i{
   display:inline-block;width:11px;height:22px;background:var(--pink);
@@ -588,7 +588,7 @@ export default function BoothDirectory() {
       <div className="bth-wrap">
         {/* top bar */}
         <header className="bth-top">
-          <div className="bth-mark"><i />Booth</div>
+          <div className="bth-mark"><i />Maker Marketplaces</div>
           <div className="bth-top-spacer" />
           <button className={`bth-savedbtn${savedOnly ? " on" : ""}`} onClick={() => setSavedOnly(v => !v)}>
             <IcPin on={savedOnly} /> Saved <b>{saved.length}</b>
@@ -831,7 +831,7 @@ export default function BoothDirectory() {
 
         <footer className="bth-foot">
           <div>Make the thing. Ship the thing. <span style={{ color: "var(--ink)" }}>Book the booth.</span></div>
-          <div>© {new Date().getFullYear()} Booth. Not affiliated with any event organizer — always confirm details before you apply.</div>
+          <div>© {new Date().getFullYear()} Maker Marketplaces. Not affiliated with any event organizer — always confirm details before you apply.</div>
         </footer>
       </div>
     </div>
