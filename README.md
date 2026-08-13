@@ -53,6 +53,49 @@ Add a new listing by appending an object with the next unused `id` and
 `status: "needs-review"` until it's been checked. Retire a listing by
 deleting its object — no soft-delete/archive mechanism exists.
 
+### Recurring (monthly) listings self-update — no manual date bumping
+
+A listing that happens on a monthly cadence (tagged `"monthly"`, e.g. "first
+Saturday of the month") can carry an optional `recurrence` object. When
+present, the site computes that listing's *next* occurrence — and, where
+possible, its deadline — from the visitor's own clock on every page load,
+the same way the "N days left" badges already work. You never need to hand-edit
+`start`/`end`/`deadline` for these listings again; just set the rule once.
+
+```json
+"recurrence": {
+  "anchorWeekday": 6,          // 0=Sun .. 6=Sat — the day the rule is named after
+  "ordinal": 1,                // 1st / 2nd / 3rd occurrence of that weekday in the month
+  "offsetDays": 0,             // shift the event block relative to the anchor (see below)
+  "spanDays": 1,               // how many consecutive days the event runs
+  "activeMonths": [3, 4, 5],   // optional; omit to run every month
+  "deadline": { "type": "daysBeforeStart", "days": 7 }
+}
+```
+
+`deadline` is one of three shapes, whichever the organizer's own rule actually is:
+- `{ "type": "daysBeforeStart", "days": N }` — deadline is N days before the event starts.
+- `{ "type": "dayOfPriorMonth", "day": N }` — deadline is the Nth of the month *before* the event (e.g. Boerne Market Days: pay by the 1st of the prior month).
+- `{ "type": "rolling" }` — no fixed cutoff exists (organizer takes applications on a rolling/contact basis). The card shows a "Rolling — no fixed deadline" badge instead of a countdown, and the listing is excluded from the Deadline Rail.
+
+**`offsetDays` and "named day" vs. "start day":** for most markets the block
+starts on the day it's named after (`offsetDays: 0` — e.g. "2nd Saturday" ⇒
+anchor Saturday, block starts that Saturday). Some events are named after a day
+*outside* the block itself — e.g. Canton's "First Monday Trade Days" actually
+runs Thursday–Sunday *before* the first Monday — so `anchorWeekday: 1`
+(Monday), `ordinal: 1`, `offsetDays: -4`, `spanDays: 4` finds the 1st Monday,
+then steps back 4 days to Thursday.
+
+The engine always picks the soonest occurrence whose application window is
+still open (not just the soonest date on the calendar) — see `withRecurrence`
+and `nextOccurrence` in `src/components/BoothDirectory.jsx`. The static
+`start`/`end`/`deadline` fields stay in the JSON as a schema-valid fallback
+and a sanity-check for human reviewers, but are overridden at render time
+whenever `recurrence` is present. This only models a simple monthly cadence —
+it does not handle one-off bonus dates some venues add on top of their normal
+schedule (e.g. Boerne's extra December date); those still need a manual note
+in `desc` or a separate listing entry.
+
 ### Countdown badges rebuild themselves
 
 The "N days left" badges and the deadline rail are computed from the

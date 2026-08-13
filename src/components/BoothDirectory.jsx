@@ -406,6 +406,52 @@ function fmtRange(a, b) {
 function fmtShort(s) { const A = d(s); return `${MON[A.getMonth()]} ${A.getDate()}`; }
 function urgency(n) { return n < 0 ? "closed" : n <= 21 ? "soon" : n <= 60 ? "mid" : "far"; }
 
+/* ---------- monthly recurrence engine ----------
+   A listing with a `recurrence` block computes its own next occurrence
+   from the visitor's clock instead of carrying a hand-maintained date —
+   see README's "Recurring (monthly) listings" section for the schema. */
+function nthWeekdayOfMonth(year, monthIndex, weekday, ordinal) {
+  const first = new Date(year, monthIndex, 1);
+  const shift = (weekday - first.getDay() + 7) % 7;
+  return new Date(year, monthIndex, 1 + shift + (ordinal - 1) * 7);
+}
+function addDays(date, n) { const x = new Date(date); x.setDate(x.getDate() + n); return x; }
+function isoDate(date) {
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
+}
+function occurrenceFor(rec, year, monthIndex) {
+  const anchor = nthWeekdayOfMonth(year, monthIndex, rec.anchorWeekday, rec.ordinal);
+  const start = addDays(anchor, rec.offsetDays || 0);
+  const end = addDays(start, (rec.spanDays || 1) - 1);
+  return { start, end };
+}
+function deadlineFor(rule, start) {
+  if (!rule || rule.type === "rolling") return null;
+  if (rule.type === "daysBeforeStart") return addDays(start, -rule.days);
+  if (rule.type === "dayOfPriorMonth") return new Date(start.getFullYear(), start.getMonth() - 1, rule.day);
+  return null;
+}
+function nextOccurrence(rec, today) {
+  let cursor = new Date(today.getFullYear(), today.getMonth() - 1, 1);
+  for (let i = 0; i < 24; i++) {
+    const y = cursor.getFullYear(), m = cursor.getMonth();
+    if (!rec.activeMonths || rec.activeMonths.includes(m + 1)) {
+      const { start, end } = occurrenceFor(rec, y, m);
+      const deadline = deadlineFor(rec.deadline, start);
+      const isOpen = deadline ? deadline >= today : end >= today;
+      if (isOpen) return { start: isoDate(start), end: isoDate(end), deadline: deadline && isoDate(deadline), rolling: !deadline };
+    }
+    cursor = new Date(y, m + 1, 1);
+  }
+  return null;
+}
+function withRecurrence(ev) {
+  if (!ev.recurrence) return ev;
+  const next = nextOccurrence(ev.recurrence, TODAY);
+  if (!next) return ev;
+  return { ...ev, start: next.start, end: next.end, deadline: next.deadline || ev.deadline, rollingDeadline: next.rolling };
+}
+
 /* ---------- recall-tolerant search ---------- */
 const norm = (s) => s.toLowerCase().replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
 function isSubseq(q, t) { let i = 0; for (const c of t) { if (c === q[i]) i++; if (i === q.length) return true; } return q.length === 0; }
@@ -529,9 +575,10 @@ export default function BoothDirectory() {
   const [expanded, setExpanded] = useState(() => new Set());
 
   const states = useMemo(() => ["all", ...Array.from(new Set(EVENTS.map(e => e.state))).sort()], []);
+  const effectiveEvents = useMemo(() => EVENTS.map(withRecurrence), []);
 
   const results = useMemo(() => {
-    let out = EVENTS.map(e => ({ ...e, _s: matchScore(e, q), _dl: daysFrom(e.deadline) }))
+    let out = effectiveEvents.map(e => ({ ...e, _s: matchScore(e, q), _dl: e.rollingDeadline ? daysFrom(e.end) : daysFrom(e.deadline) }))
       .filter(e => e._s > 0)
       .filter(e => !types.length || types.includes(e.type))
       .filter(e => state === "all" || e.state === state)
@@ -550,13 +597,13 @@ export default function BoothDirectory() {
       match: (a, b) => b._s - a._s,
     };
     return out.sort(by[q.trim() && sort === "deadline" ? "match" : sort]);
-  }, [q, types, state, jury, openOnly, maxFee, savedOnly, saved, from, to, sort]);
+  }, [effectiveEvents, q, types, state, jury, openOnly, maxFee, savedOnly, saved, from, to, sort]);
 
   const renderKey = `${q}|${types.join()}|${state}|${jury}|${openOnly}|${maxFee}|${savedOnly}|${from}|${to}|${sort}`;
 
   /* rail geometry: 210-day window */
   const WINDOW = 210;
-  const railItems = results.filter(e => e._dl >= 0 && e._dl <= WINDOW);
+  const railItems = results.filter(e => !e.rollingDeadline && e._dl >= 0 && e._dl <= WINDOW);
   const months = useMemo(() => {
     const out = []; const cur = new Date(TODAY);
     cur.setDate(1);
@@ -784,16 +831,22 @@ export default function BoothDirectory() {
 
                     <dl className="bth-data">
                       <div className="bth-datum"><dt>Event dates</dt><dd>{fmtRange(e.start, e.end)}</dd></div>
-                      <div className="bth-datum"><dt>Apply by</dt><dd>{fmtShort(e.deadline)}</dd></div>
+                      <div className="bth-datum"><dt>Apply by</dt><dd>{e.rollingDeadline ? "Rolling" : fmtShort(e.deadline)}</dd></div>
                       <div className="bth-datum"><dt>Booth from</dt><dd>{e.fee === 0 ? "No fee" : `$${e.fee.toLocaleString()}`}</dd></div>
                       <div className="bth-datum"><dt>Attendance</dt><dd>~{e.attendance >= 1000 ? `${Math.round(e.attendance / 1000)}k` : e.attendance}</dd></div>
                     </dl>
 
                     <div className="bth-badges">
-                      {u === "closed" && <span className="bth-badge b-mute">Closed</span>}
-                      {u === "soon" && <span className="bth-badge b-pink">{e._dl}d left</span>}
-                      {u === "mid" && <span className="bth-badge b-yellow">{e._dl}d left</span>}
-                      {u === "far" && <span className="bth-badge b-aqua">{e._dl}d left</span>}
+                      {e.rollingDeadline ? (
+                        <span className="bth-badge b-grass">Rolling — no fixed deadline</span>
+                      ) : (
+                        <>
+                          {u === "closed" && <span className="bth-badge b-mute">Closed</span>}
+                          {u === "soon" && <span className="bth-badge b-pink">{e._dl}d left</span>}
+                          {u === "mid" && <span className="bth-badge b-yellow">{e._dl}d left</span>}
+                          {u === "far" && <span className="bth-badge b-aqua">{e._dl}d left</span>}
+                        </>
+                      )}
                       <span className="bth-badge">{e.juried ? "Panel review" : "Open registration"}</span>
                       {e.outdoor && <span className="bth-badge b-mute">Outdoor</span>}
                       {e.fee === 0 && <span className="bth-badge b-grass">Consignment</span>}

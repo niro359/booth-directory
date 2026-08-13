@@ -8,7 +8,7 @@
     "type": "Standing market",
     "start": "2026-09-05",
     "end": "2026-09-05",
-    "deadline": "2026-08-14",
+    "deadline": "2026-08-29",
     "fee": 75,
     "attendance": 9000,
     "juried": false,
@@ -17,7 +17,14 @@
     "desc": "First-Saturday open-air market running March through December. Booth spaces are assigned by seniority, with a rolling waitlist for new vendors. Approval is rolling via email (leasing@wimberleymarketday.com), not a fixed application deadline; booths are typically rented the week before each market day.",
     "sourceUrl": "https://wimberleymarketday.com/leasing/",
     "lastVerified": "2026-08-05",
-    "status": "verified"
+    "status": "verified",
+    "recurrence": {
+      "anchorWeekday": 6,
+      "ordinal": 1,
+      "spanDays": 1,
+      "activeMonths": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "deadline": { "type": "daysBeforeStart", "days": 7 }
+    }
   },
   {
     "id": 2,
@@ -37,7 +44,13 @@
     "desc": "Three-day Hill Country market held the third weekend of each month across covered barns and open field lots. Pricing varies by space: $75-$135 for outdoor lots, $150-$273 for indoor barn spaces (10x14 to 15x14). No published application deadline or jury process; contact 210-846-4094 to book.",
     "sourceUrl": "https://www.fbgtradedays.com/vendorinfo.aspx",
     "lastVerified": "2026-08-05",
-    "status": "verified"
+    "status": "verified",
+    "recurrence": {
+      "anchorWeekday": 5,
+      "ordinal": 3,
+      "spanDays": 3,
+      "deadline": { "type": "rolling" }
+    }
   },
   {
     "id": 3,
@@ -117,7 +130,14 @@
     "desc": "One of the largest recurring open-air markets in the country, spanning several hundred acres over four days each month. UNVERIFIED: the grounds are split across many independently-operated pavilions, each with its own booth pricing and contact — there is no single official fee. Call the City of Canton First Monday office at 903-567-6556 for a specific venue's rate.",
     "sourceUrl": "https://www.cantontxfirstmonday.com/first-monday-trade-days-vendor-information.htm",
     "lastVerified": null,
-    "status": "needs-review"
+    "status": "needs-review",
+    "recurrence": {
+      "anchorWeekday": 1,
+      "ordinal": 1,
+      "offsetDays": -4,
+      "spanDays": 4,
+      "deadline": { "type": "rolling" }
+    }
   },
   {
     "id": 8,
@@ -354,9 +374,15 @@
     "juried": false,
     "outdoor": true,
     "tags": ["monthly", "hill country", "handmade"],
-    "desc": "Recurring Hill Country market on Boerne's historic Main Plaza, held the second weekend of every month (plus a bonus December date). Vendors reapply each month they want to participate. Booth fees must be paid by the 1st of the month before the show and are non-refundable, but the actual dollar amount isn't published online - the $40 here is a rough estimate based on comparable small-town Hill Country markets, not a confirmed price. Contact davidquerbach@eventsoffmain.com or (210) 844-8193 to confirm current pricing and attendance before applying.",
+    "desc": "Recurring Hill Country market on Boerne's historic Main Plaza, held the second weekend of every month (plus a bonus December date not reflected in this listing's auto-computed schedule). Vendors reapply each month they want to participate. Booth fees must be paid by the 1st of the month before the show and are non-refundable, but the actual dollar amount isn't published online - the $40 here is a rough estimate based on comparable small-town Hill Country markets, not a confirmed price. Contact davidquerbach@eventsoffmain.com or (210) 844-8193 to confirm current pricing and attendance before applying.",
     "sourceUrl": "https://eventsoffmain.com/vendors/",
     "lastVerified": "2026-08-05",
-    "status": "needs-review"
+    "status": "needs-review",
+    "recurrence": {
+      "anchorWeekday": 6,
+      "ordinal": 2,
+      "spanDays": 2,
+      "deadline": { "type": "dayOfPriorMonth", "day": 1 }
+    }
   }
 ]
