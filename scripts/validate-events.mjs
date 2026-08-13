@@ -105,6 +105,13 @@ function main() {
     if (typeof ev.fee === "number" && ev.fee < 0) {
       errors.push(`${label}: "fee" cannot be negative (${ev.fee})`);
     }
+    if ("admissionFee" in ev && ev.admissionFee !== null) {
+      if (typeof ev.admissionFee !== "number") {
+        errors.push(`${label}: "admissionFee" should be a number or null, got ${typeOf(ev.admissionFee)}`);
+      } else if (ev.admissionFee < 0) {
+        errors.push(`${label}: "admissionFee" cannot be negative (${ev.admissionFee})`);
+      }
+    }
     if (typeof ev.attendance === "number" && ev.attendance < 0) {
       errors.push(`${label}: "attendance" cannot be negative (${ev.attendance})`);
     }

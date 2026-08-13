@@ -27,7 +27,8 @@ Each listing has these fields:
 | `name`, `org`, `city`, `state` | string | |
 | `type` | string | one of the values in `src/constants.js` (`TYPES`) |
 | `start`, `end`, `deadline` | string | `YYYY-MM-DD` |
-| `fee` | number | booth fee in dollars, `0` for consignment/no-fee |
+| `fee` | number | booth fee in dollars — what the *vendor* pays, `0` for consignment/no-fee |
+| `admissionFee` | number or `null` | what the *public/shoppers* pay to get in, `0` for free entry, `null` if unconfirmed. Shown on the card as "Public admission" — kept separate from `fee` so vendors don't mistake one for the other. |
 | `attendance` | number | rough annual attendance |
 | `juried` | boolean | true = panel/portfolio review required |
 | `outdoor` | boolean | |

@@ -833,6 +833,7 @@ export default function BoothDirectory() {
                       <div className="bth-datum"><dt>Event dates</dt><dd>{fmtRange(e.start, e.end)}</dd></div>
                       <div className="bth-datum"><dt>Apply by</dt><dd>{e.rollingDeadline ? "Rolling" : fmtShort(e.deadline)}</dd></div>
                       <div className="bth-datum"><dt>Booth from</dt><dd>{e.fee === 0 ? "No fee" : `$${e.fee.toLocaleString()}`}</dd></div>
+                      <div className="bth-datum"><dt>Public admission</dt><dd>{e.admissionFee == null ? "Unconfirmed" : e.admissionFee === 0 ? "Free" : `$${e.admissionFee.toLocaleString()}`}</dd></div>
                       <div className="bth-datum"><dt>Attendance</dt><dd>~{e.attendance >= 1000 ? `${Math.round(e.attendance / 1000)}k` : e.attendance}</dd></div>
                     </dl>
 
