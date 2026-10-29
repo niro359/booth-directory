@@ -16,7 +16,7 @@ const REQUIRED_FIELDS = {
   start: "string",
   end: "string",
   deadline: "string",
-  fee: "number",
+  fee: "number|null",
   attendance: "number",
   juried: "boolean",
   outdoor: "boolean",
@@ -72,7 +72,7 @@ function main() {
         errors.push(`${label}: missing required field "${field}"`);
         continue;
       }
-      if (typeOf(ev[field]) !== expected) {
+      if (!expected.split("|").includes(ev[field] === null ? "null" : typeOf(ev[field]))) {
         errors.push(`${label}: field "${field}" should be ${expected}, got ${typeOf(ev[field])}`);
       }
     }
@@ -111,6 +111,12 @@ function main() {
       } else if (ev.admissionFee < 0) {
         errors.push(`${label}: "admissionFee" cannot be negative (${ev.admissionFee})`);
       }
+    }
+    if ("rollingDeadline" in ev && typeof ev.rollingDeadline !== "boolean") {
+      errors.push(`${label}: "rollingDeadline" should be a boolean, got ${typeOf(ev.rollingDeadline)}`);
+    }
+    if ("notes" in ev && typeof ev.notes !== "string") {
+      errors.push(`${label}: "notes" should be a string, got ${typeOf(ev.notes)}`);
     }
     if (typeof ev.attendance === "number" && ev.attendance < 0) {
       errors.push(`${label}: "attendance" cannot be negative (${ev.attendance})`);

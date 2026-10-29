@@ -27,13 +27,15 @@ Each listing has these fields:
 | `name`, `org`, `city`, `state` | string | |
 | `type` | string | one of the values in `src/constants.js` (`TYPES`) |
 | `start`, `end`, `deadline` | string | `YYYY-MM-DD` |
-| `fee` | number | booth fee in dollars — what the *vendor* pays, `0` for consignment/no-fee |
+| `fee` | number or `null` | lowest booth fee in dollars — what the *vendor* pays, `0` for consignment/no-fee, `null` if the organizer hasn't published it (card shows "TBA"). Don't guess a number. |
 | `admissionFee` | number or `null` | what the *public/shoppers* pay to get in, `0` for free entry, `null` if unconfirmed. Shown on the card as "Public admission" — kept separate from `fee` so vendors don't mistake one for the other. |
 | `attendance` | number | rough annual attendance |
 | `juried` | boolean | true = panel/portfolio review required |
 | `outdoor` | boolean | |
 | `tags` | string[] | free-form, shown/searched as keywords |
-| `desc` | string | 1-2 sentence description |
+| `desc` | string | 1-2 sentence, vendor-facing description shown on the card (aim for under ~250 characters) |
+| `notes` | string, optional | internal research/verification notes — sources, conflicts, what's estimated. Never shown on the site. |
+| `rollingDeadline` | boolean, optional | `true` for a one-off event with no fixed cutoff (open until full). Card shows "Rolling"; set `deadline` to the start date as a placeholder. |
 | `sourceUrl` | string | link to the organizer's official page/application — used to re-verify details |
 | `lastVerified` | string or `null` | `YYYY-MM-DD` a human last confirmed this row's details |
 | `status` | string | `"verified"` or `"needs-review"` |
@@ -51,8 +53,10 @@ Each listing has these fields:
 4. Commit and push. Cloudflare Pages rebuilds and deploys automatically.
 
 Add a new listing by appending an object with the next unused `id` and
-`status: "needs-review"` until it's been checked. Retire a listing by
-deleting its object — no soft-delete/archive mechanism exists.
+`status: "needs-review"` until it's been checked. Listings disappear from the
+site automatically once their `end` date passes, so stale events never show —
+but to keep the count up, roll an annual event forward to its next edition
+(new dates, deadline, fee) once the organizer posts them, or delete it.
 
 ### Recurring (monthly) listings self-update — no manual date bumping
 
@@ -104,27 +108,11 @@ visitor's local clock at page-load time, not baked in at build time. You only
 need to redeploy when the actual listing data changes — there's no need for a
 scheduled rebuild.
 
-## Deploying (one-time setup)
+## Deploying
 
-This machine doesn't have the `gh` CLI installed, so finish these steps
-manually:
-
-1. Create a new GitHub repository (e.g. `booth-directory`) and push this
-   project to it:
-   ```
-   git remote add origin <your-repo-url>
-   git branch -M main
-   git push -u origin main
-   ```
-2. In the [Cloudflare dashboard](https://dash.cloudflare.com/) → **Workers &
-   Pages** → **Create application** → **Pages** → **Connect to Git**, select
-   the repo, and set:
-   - Build command: `npm run build`
-   - Build output directory: `dist`
-3. Every push to `main` will now auto-deploy.
-4. Optional: buy a domain through Cloudflare Registrar (sold at cost, no
-   markup) and attach it to the Pages project under its **Custom domains**
-   tab.
+The repo (`github.com/niro359/booth-directory`) is connected to Cloudflare
+Pages (build command `npm run build`, output `dist`) and served at
+https://makermarketplaces.com. Every push to `main` deploys automatically.
 
 ## Saved listings
 

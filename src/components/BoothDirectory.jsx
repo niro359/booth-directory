@@ -575,7 +575,8 @@ export default function BoothDirectory() {
   const [expanded, setExpanded] = useState(() => new Set());
 
   const states = useMemo(() => ["all", ...Array.from(new Set(EVENTS.map(e => e.state))).sort()], []);
-  const effectiveEvents = useMemo(() => EVENTS.map(withRecurrence), []);
+  // Events whose last day has passed drop off automatically — no manual pruning needed.
+  const effectiveEvents = useMemo(() => EVENTS.map(withRecurrence).filter(e => daysFrom(e.end) >= 0), []);
 
   const results = useMemo(() => {
     let out = effectiveEvents.map(e => ({ ...e, _s: matchScore(e, q), _dl: e.rollingDeadline ? daysFrom(e.end) : daysFrom(e.deadline) }))
@@ -584,7 +585,7 @@ export default function BoothDirectory() {
       .filter(e => state === "all" || e.state === state)
       .filter(e => jury === "any" || (jury === "juried" ? e.juried : !e.juried))
       .filter(e => !openOnly || e._dl >= 0)
-      .filter(e => maxFee >= 1500 || e.fee <= maxFee)
+      .filter(e => maxFee >= 1500 || e.fee == null || e.fee <= maxFee)
       .filter(e => !savedOnly || saved.includes(e.id))
       .filter(e => !from || d(e.end) >= d(from))
       .filter(e => !to || d(e.start) <= d(to));
@@ -592,7 +593,7 @@ export default function BoothDirectory() {
     const by = {
       deadline: (a, b) => a._dl - b._dl,
       event: (a, b) => d(a.start) - d(b.start),
-      fee: (a, b) => a.fee - b.fee,
+      fee: (a, b) => (a.fee ?? Infinity) - (b.fee ?? Infinity),
       attendance: (a, b) => b.attendance - a.attendance,
       match: (a, b) => b._s - a._s,
     };
@@ -644,7 +645,7 @@ export default function BoothDirectory() {
 
         {/* hero */}
         <section className="bth-hero">
-          <div className="bth-kicker">Vendor opportunities · {EVENTS.length} listings · Updated regularly</div>
+          <div className="bth-kicker">Vendor opportunities · {effectiveEvents.length} listings · Updated regularly</div>
           <h1 className="bth-h1">Find the booth<br />before the <em>deadline</em> finds you.</h1>
           <p className="bth-sub">
             Conventions, art fairs, craft fairs, and standing markets in one place — with the application
@@ -832,7 +833,7 @@ export default function BoothDirectory() {
                     <dl className="bth-data">
                       <div className="bth-datum"><dt>Event dates</dt><dd>{fmtRange(e.start, e.end)}</dd></div>
                       <div className="bth-datum"><dt>Apply by</dt><dd>{e.rollingDeadline ? "Rolling" : fmtShort(e.deadline)}</dd></div>
-                      <div className="bth-datum"><dt>Booth from</dt><dd>{e.fee === 0 ? "No fee" : `$${e.fee.toLocaleString()}`}</dd></div>
+                      <div className="bth-datum"><dt>Booth from</dt><dd>{e.fee == null ? "TBA" : e.fee === 0 ? "No fee" : `$${e.fee.toLocaleString()}`}</dd></div>
                       <div className="bth-datum"><dt>Public admission</dt><dd>{e.admissionFee == null ? "Unconfirmed" : e.admissionFee === 0 ? "Free" : `$${e.admissionFee.toLocaleString()}`}</dd></div>
                       <div className="bth-datum"><dt>Attendance</dt><dd>~{e.attendance >= 1000 ? `${Math.round(e.attendance / 1000)}k` : e.attendance}</dd></div>
                     </dl>
