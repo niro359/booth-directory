@@ -72,11 +72,11 @@
     "juried": true,
     "outdoor": true,
     "tags": ["fine art", "jury", "downtown", "sam houston park"],
-    "desc": "Houston's flagship juried fine art festival, spring edition, in Sam Houston Park and along Allen Parkway. Blind scoring by a 5–7 juror panel; $50 jury fee, notifications Dec 14.",
+    "desc": "Houston's flagship juried fine art festival, spring edition, in Sam Houston Park and along Allen Parkway. Blind scoring by a 5–7 juror panel; $50 jury fee due Nov 29. Some listings show Mar 27–28 instead, so confirm dates with the festival.",
     "sourceUrl": "https://www.bayoucityartfestival.com/applytoparticipate",
     "lastVerified": null,
     "status": "needs-review",
-    "notes": "Juried fine art festival drawing a national applicant pool across 19 media categories. Panel review with blind scoring. This is the Memorial Park edition (Fri-Sun); booth fees range $525-$1775 by category/size plus a separate $50 non-refundable jury fee. Accepted artists notified by Jul 6. Public admission is $18 early-bird/$20 regular per day (kids 6-12 $5, 5 and under free), or $30 for a weekend pass.\n\n2026-10-28 roll-forward: Memorial Park Oct 2026 edition ended; listing now tracks Downtown spring 2027 (Apr 3-4) per OpenCall listing (deadline Nov 29, 2026, $50 app fee, notify Dec 14). Spring festival moved downtown per official apply page (apps opened Sep 1, 2026). Booth fee $625-$1,875 per VendorsMap; not yet confirmed on official site. Admission for downtown edition not published."
+    "notes": "Juried fine art festival drawing a national applicant pool across 19 media categories. Panel review with blind scoring. This is the Memorial Park edition (Fri-Sun); booth fees range $525-$1775 by category/size plus a separate $50 non-refundable jury fee. Accepted artists notified by Jul 6. Public admission is $18 early-bird/$20 regular per day (kids 6-12 $5, 5 and under free), or $30 for a weekend pass.\n\n2026-10-28 roll-forward: Memorial Park Oct 2026 edition ended; listing now tracks Downtown spring 2027 (Apr 3-4) per OpenCall listing (deadline Nov 29, 2026, $50 app fee, notify Dec 14). Spring festival moved downtown per official apply page (apps opened Sep 1, 2026). Booth fee $625-$1,875 per VendorsMap; not yet confirmed on official site. Admission for downtown edition not published.\n\n2026-10-28: Date conflict: OpenCall/TheCraftMap say Apr 3-4, 2027; Art Fair SourceBook says start Mar 27, 2027. Official site says spring show is 'each March' but posts no 2027 date."
   },
   {
     "id": 4,
@@ -386,27 +386,21 @@
     "city": "Austin",
     "state": "TX",
     "type": "Maker market",
-    "start": "2026-11-14",
-    "end": "2026-11-14",
-    "deadline": "2026-10-31",
+    "start": "2026-11-07",
+    "end": "2026-11-07",
+    "deadline": "2026-11-07",
     "fee": null,
     "admissionFee": null,
     "attendance": 2000,
     "juried": false,
     "outdoor": true,
     "tags": ["maker market", "craft beer", "night market", "annual"],
-    "desc": "Evening market at The Brewtorium pairing 70+ Austin artists and makers with craft beer. Held the second Saturday of November in recent years; watch @artandbeeraustin for the 2026 call and booth pricing.",
+    "desc": "Day market at The Brewtorium pairing local Austin artists and makers with craft beer and food, Sat Nov 7. Booth pricing and applications aren't posted; follow @artandbeeraustin for the vendor call.",
     "sourceUrl": "https://www.eventeny.com/events/artbeeraustin-24820/",
     "lastVerified": "2026-08-13",
     "status": "needs-review",
-    "recurrence": {
-      "anchorWeekday": 6,
-      "ordinal": 2,
-      "spanDays": 1,
-      "activeMonths": [11],
-      "deadline": { "type": "rolling" }
-    },
-    "notes": "Annual evening market at The Brewtorium pairing 70+ local artists/makers with craft beer and food. Confirmed to have run in both 2024 (Nov 9) and 2025 (Nov 8) — both landed on the 2nd Saturday of November, which is the pattern this listing's date is computed from, but the 2026 edition hasn't been officially announced yet, so treat the date as inferred, not confirmed. Booth fee, public admission price, and application deadline are all unconfirmed — no organizer page publishes dollar figures; the $75 fee shown is a rough estimate based on comparable small Austin maker markets. Outdoor/brewery-grounds setting is inferred from the venue, not explicitly stated. Watch the organizer's Instagram (@artandbeeraustin) for the official 2026 announcement before applying."
+    "rollingDeadline": true,
+    "notes": "Annual evening market at The Brewtorium pairing 70+ local artists/makers with craft beer and food. Confirmed to have run in both 2024 (Nov 9) and 2025 (Nov 8) — both landed on the 2nd Saturday of November, which is the pattern this listing's date is computed from, but the 2026 edition hasn't been officially announced yet, so treat the date as inferred, not confirmed. Booth fee, public admission price, and application deadline are all unconfirmed — no organizer page publishes dollar figures; the $75 fee shown is a rough estimate based on comparable small Austin maker markets. Outdoor/brewery-grounds setting is inferred from the venue, not explicitly stated. Watch the organizer's Instagram (@artandbeeraustin) for the official 2026 announcement before applying.\n\n2026-10-28: TheCraftMap lists the 2026 edition on Sat Nov 7, 2026 at The Brewtorium - not the 2nd Saturday the old recurrence assumed. Converted to a one-off; organizer's Eventeny page still shows only the 2025 event."
   },
   {
     "id": 22,
@@ -659,7 +653,7 @@
     "juried": false,
     "outdoor": true,
     "tags": ["monthly", "first saturday", "downtown", "handmade", "recurring"],
-    "desc": "Monthly artisan fair on Prete Main Street Plaza the first Saturday of each month March–December, with about 120 exhibitors and live music. $85 artisan / $100 business booths, first come, first served.",
+    "desc": "Monthly artisan fair on Prete Main Street Plaza with about 120 exhibitors and live music; $85 artisan / $100 business booths. 2026 applications are closed; the 2027 schedule and applications post in January.",
     "sourceUrl": "https://www.mainstreetproductionsrr.com/round-rock-market-days-application",
     "lastVerified": "2026-08-13",
     "status": "needs-review",
@@ -670,7 +664,7 @@
       "activeMonths": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
       "deadline": { "type": "rolling" }
     },
-    "notes": "Recurring monthly artisan/vendor fair at Prete Main Street Plaza in Downtown Round Rock, first Saturday of the month March-December. Corrected: an earlier version of this listing claimed October shifts to the 2nd Saturday - that was checked against the organizer's own schedule and found to be false (the one documented exception is July, not October). ~120 exhibitors, free admission and parking, live music. CONFIRMED booth fee tiers: $85 Artisan Fee / $100 Business Fee. Spaces are first-come-first-served rather than formally juried. No fixed application deadline is published; the date shown is an estimated planning buffer. Attendance is unconfirmed - 6,000 is a rough estimate for a well-attended monthly downtown market of this size, not an official figure."
+    "notes": "Recurring monthly artisan/vendor fair at Prete Main Street Plaza in Downtown Round Rock, first Saturday of the month March-December. Corrected: an earlier version of this listing claimed October shifts to the 2nd Saturday - that was checked against the organizer's own schedule and found to be false (the one documented exception is July, not October). ~120 exhibitors, free admission and parking, live music. CONFIRMED booth fee tiers: $85 Artisan Fee / $100 Business Fee. Spaces are first-come-first-served rather than formally juried. No fixed application deadline is published; the date shown is an estimated planning buffer. Attendance is unconfirmed - 6,000 is a rough estimate for a well-attended monthly downtown market of this size, not an official figure.\n\n2026-10-28: mainstreetproductionsrr.com: '2026 Round Rock Market Days Application is now closed for remainder of the year... check back in January for the 2027 schedule.' Fees $85/$100 confirmed on application page. 2026 dates were not strictly first Saturdays (e.g., Jul 11)."
   },
   {
     "id": 41,
@@ -772,17 +766,17 @@
     "start": "2027-05-14",
     "end": "2027-05-16",
     "deadline": "2027-03-14",
-    "fee": null,
+    "fee": 650,
     "admissionFee": 20,
     "attendance": 5000,
     "juried": false,
     "outdoor": false,
     "tags": ["tattoo convention", "art contest", "artist alley", "east texas", "convention center"],
-    "desc": "Tattoo and art convention at Longview's Maude Cobb Convention Center with about 140 artists, judged tattoo contests and vendor booths. 2027 dates follow its usual mid-May slot; contact the organizers for booth pricing.",
+    "desc": "Tattoo and art convention at Longview's Maude Cobb Convention Center with about 140 artists and judged tattoo contests. Booths were $650 (10x10) in 2026; 2027 dates follow its usual mid-May slot.",
     "sourceUrl": "https://arklatextattooexpo.com/",
     "lastVerified": "2026-08-13",
     "status": "needs-review",
-    "notes": "Annual tattoo and art convention at the Maude Cobb Convention Center, now in its 7th+ year (documented running since at least 2022) with consistent positive local news coverage each cycle (KLTV) describing it as friendly and growing in both artists and attendees. CONFIRMED: ~140 artists at the 2025/2026 editions; admission $20 day pass / $40 weekend pass, free for kids 12 and under; features judged tattoo competitions (Best of Day $250, Best of Show $1,000) plus art exhibits and vendor booths. The 2026 edition ran May 15-17, 2026, already past as of this listing's verification - the May 14-16, 2027 date shown is estimated by extrapolating the event's consistent mid-May pattern, not yet officially announced. UNVERIFIED: exact artist/vendor booth fee is not published on the official site (registration links exist but no dollar figures) - the $350 shown is an estimate based on comparable regional tattoo/art conventions, not confirmed; overall attendance is similarly unconfirmed - 5,000 is a rough estimate for a 3-day regional expo of this scale, not an official figure. Note: a separate, newer one-off Texarkana edition of this same brand ran March 2026 with far less track record - this listing tracks the flagship, multi-year Longview edition only."
+    "notes": "Annual tattoo and art convention at the Maude Cobb Convention Center, now in its 7th+ year (documented running since at least 2022) with consistent positive local news coverage each cycle (KLTV) describing it as friendly and growing in both artists and attendees. CONFIRMED: ~140 artists at the 2025/2026 editions; admission $20 day pass / $40 weekend pass, free for kids 12 and under; features judged tattoo competitions (Best of Day $250, Best of Show $1,000) plus art exhibits and vendor booths. The 2026 edition ran May 15-17, 2026, already past as of this listing's verification - the May 14-16, 2027 date shown is estimated by extrapolating the event's consistent mid-May pattern, not yet officially announced. UNVERIFIED: exact artist/vendor booth fee is not published on the official site (registration links exist but no dollar figures) - the $350 shown is an estimate based on comparable regional tattoo/art conventions, not confirmed; overall attendance is similarly unconfirmed - 5,000 is a rough estimate for a 3-day regional expo of this scale, not an official figure. Note: a separate, newer one-off Texarkana edition of this same brand ran March 2026 with far less track record - this listing tracks the flagship, multi-year Longview edition only.\n\n2026-10-28: arklatextattooexpo.com/vendor-registration: 2026 booths 10x10 $650 / 10x20 $1,200 / 10x30 $1,600 (incl. pipe & drape, table, 2 passes). No 2027 dates or deadline posted."
   },
   {
     "id": 47,
@@ -861,7 +855,7 @@
     "sourceUrl": "https://animefrontier.com/applications/artist-alley/",
     "lastVerified": "2026-08-13",
     "status": "needs-review",
-    "notes": "Annual anime convention at the Fort Worth Convention Center, launched 2021 (after COVID delays) and growing steadily since - Wikipedia documents 13,000 attendees in 2021, 16,000 in 2022, and Artist Alley expanding 50% by 2023. CONFIRMED: Artist Alley inline table is $365 (1 table, 2 chairs, 2 badges); selection is a curated application, not open registration - accepted artists are notified after review. The 2026 Artist Alley application window has already closed (closed Jun 5, 2026, notifications by Jun 26) as of this listing's verification - treat this as a reference for the 2027 cycle, expected to open similarly mid-year. UNVERIFIED: public admission price could not be confirmed (official ticket page blocked automated access) - left as null pending confirmation; check animefrontier.com/tickets directly. Attendance is an estimate extrapolating the documented growth trend past the last confirmed 2022 figure, not an official current count."
+    "notes": "Annual anime convention at the Fort Worth Convention Center, launched 2021 (after COVID delays) and growing steadily since - Wikipedia documents 13,000 attendees in 2021, 16,000 in 2022, and Artist Alley expanding 50% by 2023. CONFIRMED: Artist Alley inline table is $365 (1 table, 2 chairs, 2 badges); selection is a curated application, not open registration - accepted artists are notified after review. The 2026 Artist Alley application window has already closed (closed Jun 5, 2026, notifications by Jun 26) as of this listing's verification - treat this as a reference for the 2027 cycle, expected to open similarly mid-year. UNVERIFIED: public admission price could not be confirmed (official ticket page blocked automated access) - left as null pending confirmation; check animefrontier.com/tickets directly. Attendance is an estimate extrapolating the documented growth trend past the last confirmed 2022 figure, not an official current count.\n\n2026-10-28: City of Fort Worth convention-center page and multiple listings confirm Dec 4-6, 2026 at Fort Worth Convention Center. Artist Alley price not re-confirmed (official site blocked automated access)."
   },
   {
     "id": 51,
@@ -991,11 +985,11 @@
     "juried": false,
     "outdoor": false,
     "tags": ["university event", "holiday festival", "free admission", "handmade only", "family friendly"],
-    "desc": "Evening handmade-only craft market inside Texas A&M–Corpus Christi's campus holiday festival. Free admission; date and booth details follow past years, so confirm with the university.",
+    "desc": "Handmade-only arts and crafts market in the University Center ballroom during Texas A&M–Corpus Christi's free Islander Lights festival, Fri Nov 20. Vendor submissions are open until Nov 13 or until spots fill.",
     "sourceUrl": "https://www.tamucc.edu/student-activities/islander-lights/crafts.php",
-    "lastVerified": "2026-08-13",
-    "status": "needs-review",
-    "notes": "Single-evening arts & crafts market held indoors in the University Center Lonestar Ballroom, part of TAMU-CC's larger campus-wide Islander Lights holiday celebration (petting zoo, Santa photos, bounce houses, tree lighting). CONFIRMED: free admission, handmade-only vendor rule (no commercial/resale goods), attendant required at each table. UNVERIFIED: sourcing on the anniversary count is inconsistent - one source described a prior edition as the \"20th annual\" without stating the year, while a separate source describes the Nov 2025 edition as the \"18th annual\" (which would make 2026 the 19th) - the exact milestone number is unclear, but this is a long-running, well-established annual event regardless. The Nov 20, 2026 date shown is an estimate following the festival's usual mid-to-late-November pattern, not independently confirmed for 2026; the Nov 13 deadline is similarly extrapolated from a prior cycle's \"apply by Nov 14\" pattern. Booth fee isn't published online - the $50 shown is an estimate based on comparable small campus craft markets, not a confirmed price. Attendance is unconfirmed - 5,000 is a rough estimate for an established, well-attended annual campus community festival."
+    "lastVerified": "2026-10-28",
+    "status": "verified",
+    "notes": "Single-evening arts & crafts market held indoors in the University Center Lonestar Ballroom, part of TAMU-CC's larger campus-wide Islander Lights holiday celebration (petting zoo, Santa photos, bounce houses, tree lighting). CONFIRMED: free admission, handmade-only vendor rule (no commercial/resale goods), attendant required at each table. UNVERIFIED: sourcing on the anniversary count is inconsistent - one source described a prior edition as the \"20th annual\" without stating the year, while a separate source describes the Nov 2025 edition as the \"18th annual\" (which would make 2026 the 19th) - the exact milestone number is unclear, but this is a long-running, well-established annual event regardless. The Nov 20, 2026 date shown is an estimate following the festival's usual mid-to-late-November pattern, not independently confirmed for 2026; the Nov 13 deadline is similarly extrapolated from a prior cycle's \"apply by Nov 14\" pattern. Booth fee isn't published online - the $50 shown is an estimate based on comparable small campus craft markets, not a confirmed price. Attendance is unconfirmed - 5,000 is a rough estimate for an established, well-attended annual campus community festival.\n\nVerified 2026-10-28 against tamucc.edu Islander Lights pages (Fri Nov 20, 2026, 5-8pm festival, crafts market 4-8pm in UC Lonestar Ballroom; submissions open until Fri Nov 13; free festival)."
   },
   {
     "id": 60,
@@ -1266,8 +1260,8 @@
   {
     "state": "TX",
     "admissionFee": 0,
-    "lastVerified": null,
-    "status": "needs-review",
+    "lastVerified": "2026-10-28",
+    "status": "verified",
     "id": 77,
     "name": "First Saturday Arts Market",
     "org": "First Saturday Arts Market",
@@ -1276,12 +1270,12 @@
     "start": "2026-11-07",
     "end": "2026-11-07",
     "deadline": "2026-11-07",
-    "fee": 100,
+    "fee": 110,
     "attendance": 2000,
     "juried": true,
     "outdoor": true,
     "tags": ["monthly", "first saturday", "heights", "handmade", "art"],
-    "desc": "Houston Heights art market running since 2004, the first Saturday of each month September–May, 11am–6pm. About $100 per 10x10 per month; applications go through Submittable when calls are open.",
+    "desc": "Houston Heights art market running since 2004, the first Saturday of each month September–May, 11am–6pm. Booths are $110 per market month; applications ($5) are paused and reopen as space frees up.",
     "sourceUrl": "https://www.firstsaturdayartsmarket.com/",
     "recurrence": {
       "anchorWeekday": 6,
@@ -1290,13 +1284,13 @@
       "activeMonths": [1, 2, 3, 4, 5, 9, 10, 11, 12],
       "deadline": { "type": "rolling" }
     },
-    "notes": "Added 2026-10-28. Official site: first Saturday Sep-May, 11-6, 540 W. 19th St, free admission, rain date 2nd Saturday. $100/market month 10x10 per VendorsMap. Submittable showed no open calls on 2026-10-28. Attendance is an estimate."
+    "notes": "Added 2026-10-28. Official site: first Saturday Sep-May, 11-6, 540 W. 19th St, free admission, rain date 2nd Saturday. $100/market month 10x10 per VendorsMap. Submittable showed no open calls on 2026-10-28. Attendance is an estimate.\n\nVerified 2026-10-28 against firstsaturdayartsmarket.com + /artist-info + /how-to-apply (first Saturday Sep-May, 11-6, free; $110/market month 10x10; $5 app; juried by current artists; applications paused)."
   },
   {
     "state": "TX",
     "admissionFee": 10,
-    "lastVerified": null,
-    "status": "needs-review",
+    "lastVerified": "2026-10-28",
+    "status": "verified",
     "id": 78,
     "name": "Las Artistas Art & Fine Crafts Show",
     "org": "El Paso Las Artistas",
@@ -1305,14 +1299,14 @@
     "start": "2026-11-14",
     "end": "2026-11-15",
     "deadline": "2026-05-31",
-    "fee": 345,
+    "fee": null,
     "attendance": 5000,
     "juried": true,
     "outdoor": false,
     "tags": ["fine craft", "jury", "el paso", "indoor", "since 1970"],
-    "desc": "El Paso's fine art and craft show, running since 1970, at the EPIC Railyard Event Center. 10x10 booths $345 ($100 emerging-artist spaces); the 2026 call closed May 31, so watch for the 2027 window in spring.",
+    "desc": "El Paso's fine art and craft show, running since 1970, at the Epic Railyard Event Center, Nov 14–15. The 2026 artist call closed May 31; watch for the 2027 window in spring.",
     "sourceUrl": "https://app.entrythingy.com/calls/external/las-artistas-art-fine-crafts-show-2026",
-    "notes": "Added 2026-10-28. 2026 call: deadline May 31, 2026, $35 fee. Nov 14-15, 2026 at EPIC Railyard and booth tiers ($345 10x10, $485 10x15, $100 emerging 8x10) from VendorsMap/TheCraftMap; $6 admission per TheCraftMap. Confirm dates with organizer. Attendance is an estimate.\n\n2026-10-28: Visit El Paso: Nov 14-15, 2026, 11-5, Epic Railyard, admission $10. Booth fee and deadline not on organizer site."
+    "notes": "Added 2026-10-28. 2026 call: deadline May 31, 2026, $35 fee. Nov 14-15, 2026 at EPIC Railyard and booth tiers ($345 10x10, $485 10x15, $100 emerging 8x10) from VendorsMap/TheCraftMap; $6 admission per TheCraftMap. Confirm dates with organizer. Attendance is an estimate.\n\n2026-10-28: Visit El Paso: Nov 14-15, 2026, 11-5, Epic Railyard, admission $10. Booth fee and deadline not on organizer site.\n\nVerified 2026-10-28 against Las Artistas SimpleTix ticket page (Nov 14 11-5, Nov 15 10-4, 2026; Epic Railyard) + Visit El Paso ($10 admission) + 2026 ZAPP call (closed May 31)."
   },
   {
     "state": "TX",
@@ -1412,9 +1406,9 @@
   },
   {
     "state": "TX",
-    "admissionFee": null,
-    "lastVerified": null,
-    "status": "needs-review",
+    "admissionFee": 0,
+    "lastVerified": "2026-10-28",
+    "status": "verified",
     "id": 83,
     "name": "Holiday Vibe Art Fair Houston",
     "org": "Vibe Artisan Markets",
@@ -1424,20 +1418,20 @@
     "end": "2026-11-29",
     "deadline": "2026-11-28",
     "rollingDeadline": true,
-    "fee": 490,
+    "fee": null,
     "attendance": 5000,
     "juried": false,
     "outdoor": false,
     "tags": ["holiday", "indoor", "silver street", "thanksgiving weekend"],
-    "desc": "Two-day indoor holiday art fair at Silver Street Studios over Thanksgiving weekend. Indoor booths are $490 (8x8) or $590 (10x10) for both days.",
+    "desc": "Free two-day indoor holiday market at Silver Street Studio in Sawyer Yards over Thanksgiving weekend, 11am–5pm. Exhibitor applications are open on Vibe's site; booth pricing is shared in the application.",
     "sourceUrl": "https://vendorsmap.com/events/27650",
-    "notes": "Added 2026-10-28. Dates Nov 28-29, 2026 per TheCraftMap and VendorsMap; venue and booth prices (8x8 $490, 10x10 $590) per VendorsMap only - confirm with organizer. Attendance is an estimate."
+    "notes": "Added 2026-10-28. Dates Nov 28-29, 2026 per TheCraftMap and VendorsMap; venue and booth prices (8x8 $490, 10x10 $590) per VendorsMap only - confirm with organizer. Attendance is an estimate.\n\nVerified 2026-10-28 against vibeartisanmarkets.com Holiday Vibe Market Houston (Nov 28-29, 2026, 11-5, Silver Street Studio; free; 'Apply here' open)."
   },
   {
     "state": "TX",
     "admissionFee": 0,
-    "lastVerified": null,
-    "status": "needs-review",
+    "lastVerified": "2026-10-28",
+    "status": "verified",
     "id": 84,
     "name": "Holiday Vibe Art Fair Austin",
     "org": "Vibe Artisan Markets",
@@ -1447,20 +1441,20 @@
     "end": "2026-12-06",
     "deadline": "2026-12-05",
     "rollingDeadline": true,
-    "fee": 325,
+    "fee": null,
     "attendance": 5000,
     "juried": false,
     "outdoor": false,
     "tags": ["holiday", "east austin", "free admission", "110+ artists"],
-    "desc": "Free holiday art fair with 110+ artists at Distribution Hall in East Austin. Booths from $325 (outdoor 10x10) up to $475 (indoor 8x8).",
+    "desc": "Free two-day holiday market with 110+ artists at Distribution Hall in East Austin, 11am–5pm. Exhibitor applications are open on Vibe's site; booth pricing is shared in the application.",
     "sourceUrl": "https://vendorsmap.com/events/38565",
-    "notes": "Added 2026-10-28. Dec 5-6, 2026 at Distribution Hall (1500 E 4th St) per VendorsMap and TheCraftMap ('free indoor holiday market with 110+ artists'). Booths: indoor 6x6 $375, indoor 8x8 $475, outdoor 10x10 $325 per VendorsMap - confirm with organizer. Attendance is an estimate."
+    "notes": "Added 2026-10-28. Dec 5-6, 2026 at Distribution Hall (1500 E 4th St) per VendorsMap and TheCraftMap ('free indoor holiday market with 110+ artists'). Booths: indoor 6x6 $375, indoor 8x8 $475, outdoor 10x10 $325 per VendorsMap - confirm with organizer. Attendance is an estimate.\n\nVerified 2026-10-28 against vibeartisanmarkets.com Holiday Vibe Market Austin (Dec 5-6, 2026, 11-5, Distribution Hall; free; 'Apply here' open)."
   },
   {
     "state": "TX",
     "admissionFee": null,
-    "lastVerified": null,
-    "status": "needs-review",
+    "lastVerified": "2026-10-28",
+    "status": "verified",
     "id": 85,
     "name": "Austin Powwow & American Indian Heritage Festival",
     "org": "Austin Powwow",
@@ -1470,14 +1464,14 @@
     "end": "2026-11-21",
     "deadline": "2026-11-21",
     "rollingDeadline": true,
-    "fee": 300,
+    "fee": null,
     "attendance": 15000,
     "juried": false,
     "outdoor": false,
     "tags": ["native arts", "cultural festival", "powwow", "expo center"],
-    "desc": "Austin's annual powwow and American Indian heritage festival at the Travis County Expo Center, with drum and dance competitions and a Native arts and crafts market. 10x10 booths $300, electricity included.",
+    "desc": "Austin's annual powwow and American Indian heritage festival on Nov 21, with dance competitions and a Native arts market. Market spaces are by invitation (applications open each June); organizers are currently seeking Native American food vendors.",
     "sourceUrl": "https://vendorsmap.com/events/28278",
-    "notes": "Added 2026-10-28. Nov 21, 2026 and $300/10x10 incl. electricity per VendorsMap; event confirmed by Texas Tribal Buffalo Project page (no date/fee). Confirm with organizer. Attendance is an estimate."
+    "notes": "Added 2026-10-28. Nov 21, 2026 and $300/10x10 incl. electricity per VendorsMap; event confirmed by Texas Tribal Buffalo Project page (no date/fee). Confirm with organizer. Attendance is an estimate.\n\nVerified 2026-10-28 against austinpowwow.net + /vendor-information (Nov 21, 2026; Native Market spaces by invitation, applications open in June; currently seeking Native American food vendors; kids under 12 and parking free)."
   },
   {
     "state": "TX",
