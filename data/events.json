@@ -94,12 +94,12 @@
     "juried": false,
     "outdoor": false,
     "tags": ["artist alley", "comics", "cosplay", "pop culture"],
-    "desc": "Houston's big multi-genre pop culture convention at the George R. Brown, with an Artist Alley that sells out in price tiers. 2027 dates are expected over Memorial Day weekend; exhibitor pricing isn't posted yet.",
+    "desc": "Houston's big multi-genre pop culture convention at the George R. Brown, with an Artist Alley that sells out in price tiers. 2027 applications are 'coming soon' (interest form open now); dates are expected over Memorial Day weekend.",
     "sourceUrl": "https://www.comicpalooza.com/sign-up/exhibitors/",
     "lastVerified": null,
     "status": "needs-review",
     "rollingDeadline": true,
-    "notes": "Multi-genre pop culture convention with a dedicated Artist Alley. Tables sell out in tiers; early registration opens to prior-year vendors. UNVERIFIED: 2027 exhibitor applications aren't open yet (interest form only as of Aug 2026) — no official 2027 dates, pricing, or deadline published. Current start/end/deadline/fee below are unconfirmed placeholders. Public admission ($68 single-day, ~$119 weekend pass) is reference pricing carried over from the completed May 2026 event via secondary media coverage — the official site no longer publishes 2026 prices and hasn't posted 2027 numbers yet.\n\n2026-10-28: replaced Jan 2027 placeholder with May 28-30, 2027 (VendorsMap 'expected'); treated as rolling (tables sell in tiers until gone). Fee/admission set to null until 2027 pricing is published."
+    "notes": "Multi-genre pop culture convention with a dedicated Artist Alley. Tables sell out in tiers; early registration opens to prior-year vendors. UNVERIFIED: 2027 exhibitor applications aren't open yet (interest form only as of Aug 2026) — no official 2027 dates, pricing, or deadline published. Current start/end/deadline/fee below are unconfirmed placeholders. Public admission ($68 single-day, ~$119 weekend pass) is reference pricing carried over from the completed May 2026 event via secondary media coverage — the official site no longer publishes 2026 prices and hasn't posted 2027 numbers yet.\n\n2026-10-28: replaced Jan 2027 placeholder with May 28-30, 2027 (VendorsMap 'expected'); treated as rolling (tables sell in tiers until gone). Fee/admission set to null until 2027 pricing is published.\n\n2026-10-28: Checked comicpalooza.com/sign-up/exhibitors: 'Applications for 2027 Coming Soon', interest form only, no 2027 dates/prices."
   },
   {
     "id": 5,
@@ -134,15 +134,15 @@
     "end": "2026-09-06",
     "deadline": "2026-08-05",
     "fee": null,
-    "admissionFee": 0,
+    "admissionFee": null,
     "attendance": 100000,
     "juried": false,
     "outdoor": true,
     "tags": ["monthly", "huge", "flea"],
     "desc": "One of the country's largest flea markets, spread over hundreds of acres for the four days before the first Monday of each month. Pavilions set their own rates, so call the City of Canton office (903-567-6556) for space pricing.",
     "sourceUrl": "https://www.cantontxfirstmonday.com/first-monday-trade-days-vendor-information.htm",
-    "lastVerified": null,
-    "status": "needs-review",
+    "lastVerified": "2026-10-28",
+    "status": "verified",
     "recurrence": {
       "anchorWeekday": 1,
       "ordinal": 1,
@@ -150,7 +150,7 @@
       "spanDays": 4,
       "deadline": { "type": "rolling" }
     },
-    "notes": "One of the largest recurring open-air markets in the country, spanning several hundred acres over four days each month. UNVERIFIED: the grounds are split across many independently-operated pavilions, each with its own booth pricing and contact — there is no single official fee. Call the City of Canton First Monday office at 903-567-6556 for a specific venue's rate."
+    "notes": "One of the largest recurring open-air markets in the country, spanning several hundred acres over four days each month. UNVERIFIED: the grounds are split across many independently-operated pavilions, each with its own booth pricing and contact — there is no single official fee. Call the City of Canton First Monday office at 903-567-6556 for a specific venue's rate.\n\nVerified 2026-10-28 against firstmondaycanton.com/vendor-general-information (Thu-Sun before First Monday; pavilion pricing set per venue)."
   },
   {
     "id": 8,
@@ -170,9 +170,9 @@
     "tags": ["fine art", "jury", "dfw"],
     "desc": "Richardson's twice-yearly juried fine art festival under the trees of Cottonwood Park, with about 190 artist spots in spring. $500 single booth plus $35 jury fee; free admission and parking.",
     "sourceUrl": "https://cottonwoodartfestival.com/artist-resources/",
-    "lastVerified": null,
-    "status": "needs-review",
-    "notes": "Twice-yearly juried fine art festival in a shaded park setting. Jury reviews three work images plus one booth shot. $500 covers a single booth; a double booth is $1,000 (limited) and electricity is a $100 add-on. A separate $35 non-refundable jury/application fee is paid per entry via ZAPPlication.\n\n2026-10-28 roll-forward: Oct 2026 edition ended; Spring 2027 is May 1-2, apply by Dec 8, 2026, $500 single / $1,000 double, +$100 electricity, $35 jury fee, ~190 open spots (official artist-resources page)."
+    "lastVerified": "2026-10-28",
+    "status": "verified",
+    "notes": "Twice-yearly juried fine art festival in a shaded park setting. Jury reviews three work images plus one booth shot. $500 covers a single booth; a double booth is $1,000 (limited) and electricity is a $100 add-on. A separate $35 non-refundable jury/application fee is paid per entry via ZAPPlication.\n\n2026-10-28 roll-forward: Oct 2026 edition ended; Spring 2027 is May 1-2, apply by Dec 8, 2026, $500 single / $1,000 double, +$100 electricity, $35 jury fee, ~190 open spots (official artist-resources page).\n\nVerified 2026-10-28 against cottonwoodartfestival.com/artist-resources (May 1-2, 2027; deadline Dec 8; $500; free admission)."
   },
   {
     "id": 9,
@@ -185,16 +185,16 @@
     "end": "2026-12-24",
     "deadline": "2026-07-31",
     "fee": 0,
-    "admissionFee": 0,
+    "admissionFee": null,
     "attendance": 60000,
     "juried": true,
     "outdoor": false,
     "tags": ["consignment", "holiday", "no booth fee"],
-    "desc": "Consignment-style holiday bazaar in East Austin: no booth fee or staffing; the shop takes a percentage of sales instead. The 2026 run is Nov 13–Dec 24, and the next submission window typically opens in May ($45 application fee).",
+    "desc": "Consignment holiday bazaar in East Austin: no booth fee or staffing; artists pay a 35–45% commission on sales. The 2026 run is Nov 13–Dec 24, and submissions ($45) open each May.",
     "sourceUrl": "https://bluegenieartbazaar.com/call-for-submissions/",
-    "lastVerified": "2026-08-13",
-    "status": "needs-review",
-    "notes": "Consignment-model holiday bazaar. No booth fee or staffing requirement; the venue takes a percentage of sales instead, plus a $45 non-refundable application fee. The Yelp \"Temporarily Closed\" status is normal seasonal downtime, not a shutdown — the storefront is a holiday-only operation that reopens each November for the season, running Nov 13-Dec 24, 2026 (corrected from an earlier Nov 27 start). Public admission is believed free (multiple secondary sources agree; the official FAQ page returned a 404 during verification, so treat as likely rather than confirmed). The 2026 submission window ran May 1-Jul 31 and has already closed as of this listing's last check — this is now a \"watch for next May's window\" reference for vendors, not a currently-open call; the shop itself is still on for its Nov-Dec 2026 run."
+    "lastVerified": "2026-10-28",
+    "status": "verified",
+    "notes": "Consignment-model holiday bazaar. No booth fee or staffing requirement; the venue takes a percentage of sales instead, plus a $45 non-refundable application fee. The Yelp \"Temporarily Closed\" status is normal seasonal downtime, not a shutdown — the storefront is a holiday-only operation that reopens each November for the season, running Nov 13-Dec 24, 2026 (corrected from an earlier Nov 27 start). Public admission is believed free (multiple secondary sources agree; the official FAQ page returned a 404 during verification, so treat as likely rather than confirmed). The 2026 submission window ran May 1-Jul 31 and has already closed as of this listing's last check — this is now a \"watch for next May's window\" reference for vendors, not a currently-open call; the shop itself is still on for its Nov-Dec 2026 run.\n\nVerified 2026-10-28 against bluegenieartbazaar.com/call-for-submissions (Nov 13-Dec 24; window May 1-Jul 31, closed; $45 app fee; 35-45% commission)."
   },
   {
     "id": 10,
@@ -269,7 +269,7 @@
     "city": "Round Top",
     "state": "TX",
     "type": "Standing market",
-    "start": "2026-10-15",
+    "start": "2026-10-10",
     "end": "2026-10-31",
     "deadline": "2026-08-20",
     "fee": null,
@@ -282,7 +282,7 @@
     "sourceUrl": "https://roundtopfinder.com/round-top-show-dates",
     "lastVerified": "2026-08-05",
     "status": "needs-review",
-    "notes": "Roughly two-and-a-half-week destination market spread across 48+ independent show fields (not nine days as previously listed). Early fields like Bar W Field, Henkel Square, and The Marketplace Warrenton open Oct 15; most of the 48+ venues run the official Oct 17-31 window. Space is leased directly from individual field operators (e.g. Zapp Hall, Excess Fields, Marburger Farm, Big Red Barn) - pricing and application process vary by field and remain unconfirmed here; the $900 fee is an unverified placeholder. Public admission is similarly fragmented across the 48+ fields — most are free to browse, but the flagship \"Original Round Top Antiques Fair\" field charges its own $10 general/$25 VIP admission, so no single admission price applies to the market as a whole."
+    "notes": "Roughly two-and-a-half-week destination market spread across 48+ independent show fields (not nine days as previously listed). Early fields like Bar W Field, Henkel Square, and The Marketplace Warrenton open Oct 15; most of the 48+ venues run the official Oct 17-31 window. Space is leased directly from individual field operators (e.g. Zapp Hall, Excess Fields, Marburger Farm, Big Red Barn) - pricing and application process vary by field and remain unconfirmed here; the $900 fee is an unverified placeholder. Public admission is similarly fragmented across the 48+ fields — most are free to browse, but the flagship \"Original Round Top Antiques Fair\" field charges its own $10 general/$25 VIP admission, so no single admission price applies to the market as a whole.\n\n2026-10-28: roundtopfinder.com: Fall 2026 runs Oct 17-31 for most venues; Bar W opens Oct 10. Spring 2027 dates not announced."
   },
   {
     "id": 14,
@@ -324,10 +324,10 @@
     "tags": ["artist alley", "pop culture", "celebrity"],
     "desc": "Dallas's largest pop culture convention moves to June in 2027 at the Kay Bailey Hutchison Convention Center. Artist Alley tables are $505 standard or $1,110 premium end-cap; applications are reviewed and tables sell until gone.",
     "sourceUrl": "https://fanexpohq.com/fanexpodallas/artist-alley/",
-    "lastVerified": null,
-    "status": "needs-review",
+    "lastVerified": "2026-10-28",
+    "status": "verified",
     "rollingDeadline": true,
-    "notes": "Large pop culture convention with tiered artist alley pricing by table location and corner access. Corrected from a placeholder May 2027 date - the confirmed, upcoming edition is Sep 11-13, 2026 at the Kay Bailey Hutchison Convention Center (2027 dates aren't announced yet). Standard 6x5 table is $480; premium 5x12 end-cap is $1,060. No fixed application deadline is published - tables sell until they run out, so this date is an estimated planning buffer, not an official cutoff. Public single-day admission is $58 Saturday/$48 Sunday/$33 Friday per the official ticketing partner's live checkout page (base price before service fee) — confirmed as current pricing, though the site notes \"advanced pricing\" ends Aug 27, 2026 and may step up to a higher tier before the show.\n\n2026-10-28 roll-forward: Sep 2026 edition ended. Official artist-alley page: 2027 is Jun 11-13, 'Apply for 2027' open, Standard 6x5 $505, Premium 5x12 $1,110. No deadline published (rolling). 2027 admission not yet published."
+    "notes": "Large pop culture convention with tiered artist alley pricing by table location and corner access. Corrected from a placeholder May 2027 date - the confirmed, upcoming edition is Sep 11-13, 2026 at the Kay Bailey Hutchison Convention Center (2027 dates aren't announced yet). Standard 6x5 table is $480; premium 5x12 end-cap is $1,060. No fixed application deadline is published - tables sell until they run out, so this date is an estimated planning buffer, not an official cutoff. Public single-day admission is $58 Saturday/$48 Sunday/$33 Friday per the official ticketing partner's live checkout page (base price before service fee) — confirmed as current pricing, though the site notes \"advanced pricing\" ends Aug 27, 2026 and may step up to a higher tier before the show.\n\n2026-10-28 roll-forward: Sep 2026 edition ended. Official artist-alley page: 2027 is Jun 11-13, 'Apply for 2027' open, Standard 6x5 $505, Premium 5x12 $1,110. No deadline published (rolling). 2027 admission not yet published.\n\nVerified 2026-10-28 against fanexpohq.com/fanexpodallas/artist-alley (Jun 11-13, 2027; $505/$1,110; Apply for 2027 open)."
   },
   {
     "id": 17,
@@ -340,7 +340,7 @@
     "end": "2026-11-15",
     "deadline": "2026-08-15",
     "fee": 1800,
-    "admissionFee": 20,
+    "admissionFee": 25,
     "attendance": 100000,
     "juried": true,
     "outdoor": false,
@@ -349,7 +349,7 @@
     "sourceUrl": "https://www.houstonballet.org/about/nutcracker-market/merchants/nutmkt-merch-info/for-merchants/",
     "lastVerified": "2026-08-05",
     "status": "needs-review",
-    "notes": "Massive juried holiday shopping market fundraising for Houston Ballet, drawing over 100,000 shoppers across a preview party plus four show days at NRG Center. Unlike a flat booth-fee model, Houston Ballet also takes an 11% commission on merchant sales on top of space cost, and charges a separate non-refundable $25 application fee. Exact booth pricing tiers weren't accessible (pricing page blocked automated access), so the $2,500 fee here is a rough placeholder based on comparable high-traffic juried holiday markets, not a confirmed price - confirm real pricing and the application deadline directly before applying. Public admission is $20/day general, or $60 for a 4-day early-bird pass; kids 2 and under free.\n\n2026-10-28: fee updated from $2,500 placeholder to $1,800 low end of $1,800-$4,800 range listed on VendorsMap (plus 11% commission)."
+    "notes": "Massive juried holiday shopping market fundraising for Houston Ballet, drawing over 100,000 shoppers across a preview party plus four show days at NRG Center. Unlike a flat booth-fee model, Houston Ballet also takes an 11% commission on merchant sales on top of space cost, and charges a separate non-refundable $25 application fee. Exact booth pricing tiers weren't accessible (pricing page blocked automated access), so the $2,500 fee here is a rough placeholder based on comparable high-traffic juried holiday markets, not a confirmed price - confirm real pricing and the application deadline directly before applying. Public admission is $20/day general, or $60 for a 4-day early-bird pass; kids 2 and under free.\n\n2026-10-28: fee updated from $2,500 placeholder to $1,800 low end of $1,800-$4,800 range listed on VendorsMap (plus 11% commission).\n\n2026-10-28: Click2Houston (Sep 2026): general admission $25 + fees. Official merchant pages blocked automated access; booth prices still unconfirmed."
   },
   {
     "id": 19,
@@ -361,23 +361,23 @@
     "start": "2026-10-10",
     "end": "2026-10-11",
     "deadline": "2026-09-01",
-    "fee": null,
-    "admissionFee": 0,
+    "fee": 75,
+    "admissionFee": null,
     "attendance": 5000,
     "juried": false,
     "outdoor": true,
     "tags": ["monthly", "hill country", "handmade"],
-    "desc": "Hill Country market on Boerne's historic Main Plaza the second weekend of every month, plus extra holiday markets in November and December. Vendors reapply monthly and pay by the 1st of the prior month; contact the organizer for booth pricing.",
+    "desc": "Hill Country market on Boerne's historic Main Plaza the second weekend of every month, plus extra holiday markets. Booths are $75; vendors reapply monthly and pay before the 1st of the prior month.",
     "sourceUrl": "https://eventsoffmain.com/vendors/",
-    "lastVerified": "2026-08-13",
-    "status": "needs-review",
+    "lastVerified": "2026-10-28",
+    "status": "verified",
     "recurrence": {
       "anchorWeekday": 6,
       "ordinal": 2,
       "spanDays": 2,
       "deadline": { "type": "dayOfPriorMonth", "day": 1 }
     },
-    "notes": "Recurring Hill Country market on Boerne's historic Main Plaza, held the second weekend of every month, plus three bonus special-event dates not reflected in this listing's auto-computed schedule: a November Holiday Gift Market and two separate December markets (a Christmas Market and a Cowboy Christmas Market) — the organizer's own site cites these three extra dates in its attendance figures. Vendors reapply each month they want to participate. Booth fees must be paid by the 1st of the month before the show and are non-refundable, but the actual dollar amount isn't published online - the $40 here is a rough estimate based on comparable small-town Hill Country markets, not a confirmed price. Contact davidquerbach@eventsoffmain.com or (210) 844-8193 to confirm current pricing and attendance before applying. Public admission is inferred free — the official page lists public market hours with no fee mentioned, but there's no explicit \"free\" statement either."
+    "notes": "Recurring Hill Country market on Boerne's historic Main Plaza, held the second weekend of every month, plus three bonus special-event dates not reflected in this listing's auto-computed schedule: a November Holiday Gift Market and two separate December markets (a Christmas Market and a Cowboy Christmas Market) — the organizer's own site cites these three extra dates in its attendance figures. Vendors reapply each month they want to participate. Booth fees must be paid by the 1st of the month before the show and are non-refundable, but the actual dollar amount isn't published online - the $40 here is a rough estimate based on comparable small-town Hill Country markets, not a confirmed price. Contact davidquerbach@eventsoffmain.com or (210) 844-8193 to confirm current pricing and attendance before applying. Public admission is inferred free — the official page lists public market hours with no fee mentioned, but there's no explicit \"free\" statement either.\n\nVerified 2026-10-28 against eventsoffmain.com + /vendors (second weekend monthly; $75 entry fee/booth; pay before the 1st of the prior month)."
   },
   {
     "id": 21,
@@ -448,8 +448,8 @@
     "tags": ["monthly", "historic district", "handmade", "texas-made", "recurring"],
     "desc": "Juried monthly artisan market of about 100 vendors in the Gruene Historic District, the third full weekend of each month February–November plus early December. Free admission; contact the Gruene Merchants Association for booth pricing.",
     "sourceUrl": "https://www.gruenetexas.com/market-days/",
-    "lastVerified": "2026-08-13",
-    "status": "needs-review",
+    "lastVerified": "2026-10-28",
+    "status": "verified",
     "recurrence": {
       "anchorWeekday": 6,
       "ordinal": 3,
@@ -457,7 +457,7 @@
       "activeMonths": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
       "deadline": { "type": "rolling" }
     },
-    "notes": "Long-running monthly artisan market (~100 vendors) in the Gruene Historic District selling handmade crafts and Texas-made packaged foods, with free live entertainment. Runs the 3rd full weekend of the month, February through November, plus a bonus 1st-weekend-of-December date not reflected in this listing's auto-computed schedule (same modeling limitation as Boerne's extra December date — see README). It is juried, so it's not a walk-on market, but no application deadline is published anywhere the organizer's site would confirm (site blocked automated access) — shown as rolling until confirmed; contact the Gruene Merchants Association directly. Booth fee ($60) is an estimate based on comparable small monthly Hill Country markets, not an organizer-published figure. Admission and parking are confirmed free. Attendance (~4,000/weekend) is a secondary-source estimate, not an official organizer figure."
+    "notes": "Long-running monthly artisan market (~100 vendors) in the Gruene Historic District selling handmade crafts and Texas-made packaged foods, with free live entertainment. Runs the 3rd full weekend of the month, February through November, plus a bonus 1st-weekend-of-December date not reflected in this listing's auto-computed schedule (same modeling limitation as Boerne's extra December date — see README). It is juried, so it's not a walk-on market, but no application deadline is published anywhere the organizer's site would confirm (site blocked automated access) — shown as rolling until confirmed; contact the Gruene Merchants Association directly. Booth fee ($60) is an estimate based on comparable small monthly Hill Country markets, not an organizer-published figure. Admission and parking are confirmed free. Attendance (~4,000/weekend) is a secondary-source estimate, not an official organizer figure.\n\nVerified 2026-10-28 against gruenetexas.com/market-days (3rd full weekend Feb-Nov + Dec 5-6; free admission and parking; fee not published)."
   },
   {
     "id": 27,
@@ -470,16 +470,16 @@
     "end": "2027-04-25",
     "deadline": "2026-11-11",
     "fee": 550,
-    "admissionFee": 0,
+    "admissionFee": null,
     "attendance": 40000,
     "juried": true,
     "outdoor": true,
     "tags": ["fine art", "jury", "dfw suburb", "emerging artist program"],
     "desc": "Volunteer-run juried fine art festival at Southlake Town Square benefiting Tarrant County charities, with 150+ artists. $550 single booth, plus a $300 Emerging Artist tier for developing DFW artists; free admission.",
     "sourceUrl": "http://www.artinthesquare.com/artistinfo",
-    "lastVerified": "2026-08-13",
-    "status": "needs-review",
-    "notes": "Long-running (26+ years) juried fine art festival at Southlake Town Square, run entirely by volunteers of the Southlake Women's Club to benefit Tarrant County charities, drawing 150+ artists and repeatedly ranked #1 by Art Fair SourceBook. Single booth (10'x10') is $550, double is $1,050, and there's a distinctive $300 Emerging Artist tier for developing DFW-area artists — plus a separate $40 non-refundable application fee. Public admission is confirmed free. Attendance is reported as \"tens of thousands\" across organizer and third-party sources, but no precise official total is published — the 40,000 shown is an order-of-magnitude estimate, not a hard count."
+    "lastVerified": "2026-10-28",
+    "status": "verified",
+    "notes": "Long-running (26+ years) juried fine art festival at Southlake Town Square, run entirely by volunteers of the Southlake Women's Club to benefit Tarrant County charities, drawing 150+ artists and repeatedly ranked #1 by Art Fair SourceBook. Single booth (10'x10') is $550, double is $1,050, and there's a distinctive $300 Emerging Artist tier for developing DFW-area artists — plus a separate $40 non-refundable application fee. Public admission is confirmed free. Attendance is reported as \"tens of thousands\" across organizer and third-party sources, but no precise official total is published — the 40,000 shown is an order-of-magnitude estimate, not a hard count.\n\nVerified 2026-10-28 against artinthesquare.com/artistinfo (Apr 23-25, 2027; deadline Nov 11, 2026; $550/$1,050/$300 emerging; $40 app fee)."
   },
   {
     "id": 28,
@@ -489,7 +489,7 @@
     "state": "TX",
     "type": "Art fair",
     "start": "2027-05-14",
-    "end": "2027-05-16",
+    "end": "2027-05-17",
     "deadline": "2026-12-15",
     "fee": null,
     "admissionFee": 0,
@@ -501,7 +501,7 @@
     "sourceUrl": "https://www.acmidland.org/celebration-of-the-arts",
     "lastVerified": "2026-08-13",
     "status": "needs-review",
-    "notes": "Self-described cornerstone fine art & fine craft event of the Permian Basin, now in its 42nd+ year, held fully indoors (rain-or-shine, air-conditioned) at the Bush Convention Center with 40+ regional/out-of-state artists across painting, fiber, photography, jewelry, wood, and glass, plus cash jury awards. The just-completed 43rd edition's booth fee was never published beyond a $25 non-refundable ZAPPlication application fee — the $450 shown is a rough estimate based on comparably-sized indoor Texas art fairs, not an organizer-confirmed price. 2027 show dates aren't announced yet (next cycle typically opens in December); the May 14-16 window shown is an estimated placeholder following the fair's usual mid-May slot. Saturday/Sunday admission is confirmed free (a separate ticketed Friday preview party is $80-85, not general admission). Attendance is unconfirmed — no official total is published; 5,000 is a conservative estimate for a regional indoor fair of this size."
+    "notes": "Self-described cornerstone fine art & fine craft event of the Permian Basin, now in its 42nd+ year, held fully indoors (rain-or-shine, air-conditioned) at the Bush Convention Center with 40+ regional/out-of-state artists across painting, fiber, photography, jewelry, wood, and glass, plus cash jury awards. The just-completed 43rd edition's booth fee was never published beyond a $25 non-refundable ZAPPlication application fee — the $450 shown is a rough estimate based on comparably-sized indoor Texas art fairs, not an organizer-confirmed price. 2027 show dates aren't announced yet (next cycle typically opens in December); the May 14-16 window shown is an estimated placeholder following the fair's usual mid-May slot. Saturday/Sunday admission is confirmed free (a separate ticketed Friday preview party is $80-85, not general admission). Attendance is unconfirmed — no official total is published; 5,000 is a conservative estimate for a regional indoor fair of this size.\n\n2026-10-28: acmidland.org: 'Save the next date! May 14-17, 2027'; free festival admission; deadline and booth fee not posted."
   },
   {
     "id": 31,
@@ -519,12 +519,12 @@
     "juried": true,
     "outdoor": false,
     "tags": ["gulf coast", "handmade only", "indoor", "ticketed admission"],
-    "desc": "Juried, handmade-only indoor craft show moving to the Moody Gardens Convention Center for 2027, sharing a ticket with the Corvette/Chevy Expo. 10x10 booths are $125 ($155 corner); applications are open now.",
+    "desc": "Juried, handmade-only indoor craft show at the Moody Gardens Convention Center, sharing a ticket with the Corvette/Chevy Expo. 10x10 booths $125 ($155 corner); only some categories are still accepting applications.",
     "sourceUrl": "https://galvestoncraftshow.com/galveston-craft-show-vendor-information/",
-    "lastVerified": "2026-08-13",
-    "status": "needs-review",
+    "lastVerified": "2026-10-28",
+    "status": "verified",
     "rollingDeadline": true,
-    "notes": "Juried, handmade-only indoor craft show relocating for 2027 to the Moody Gardens Hotel and Convention Center (\"The Founding Year at Moody Gardens\"), still run alongside the Corvette/Chevy Expo on one shared ticket. Pricing changed with the venue move: a standard 10x10 booth is now $125 (corner booths, limited availability, are $155) — no longer bundled with admission passes as in prior years at the old Convention Center venue. Vendor applications open Aug 1, 2026 and are juried (curated for product quality/category balance); no fixed application deadline is published, so the date shown here is an estimated planning buffer, not an official cutoff. Public admission is $18 one-day advance / $20 at door, $30-35 for a weekend pass; free for kids 12 and under. Attendance is an estimate carried from the prior venue — unconfirmed for the new location.\n\n2026-10-28: estimated Jan 15 deadline replaced with rolling (organizer publishes no fixed cutoff)."
+    "notes": "Juried, handmade-only indoor craft show relocating for 2027 to the Moody Gardens Hotel and Convention Center (\"The Founding Year at Moody Gardens\"), still run alongside the Corvette/Chevy Expo on one shared ticket. Pricing changed with the venue move: a standard 10x10 booth is now $125 (corner booths, limited availability, are $155) — no longer bundled with admission passes as in prior years at the old Convention Center venue. Vendor applications open Aug 1, 2026 and are juried (curated for product quality/category balance); no fixed application deadline is published, so the date shown here is an estimated planning buffer, not an official cutoff. Public admission is $18 one-day advance / $20 at door, $30-35 for a weekend pass; free for kids 12 and under. Attendance is an estimate carried from the prior venue — unconfirmed for the new location.\n\n2026-10-28: estimated Jan 15 deadline replaced with rolling (organizer publishes no fixed cutoff).\n\nVerified 2026-10-28 against galvestoncraftshow.com + vendor-information (Feb 27-28, 2027, Moody Gardens; $125/$155; no fixed deadline, select categories open; admission $18/$20/$30/$35)."
   },
   {
     "id": 32,
@@ -535,18 +535,18 @@
     "type": "Art fair",
     "start": "2026-11-20",
     "end": "2026-11-21",
-    "deadline": "2026-10-21",
+    "deadline": "2026-10-31",
     "fee": null,
-    "admissionFee": 0,
+    "admissionFee": null,
     "attendance": 5000,
     "juried": false,
     "outdoor": true,
     "tags": ["far west texas", "big bend region", "outdoor", "free admission", "not juried"],
-    "desc": "West Texas's longest-running art festival fills downtown Alpine's sidewalks and studios Nov 20–21, with two music stages and food trucks. Non-juried and free to attend; request the PDF application for booth pricing.",
+    "desc": "West Texas's longest-running art festival fills downtown Alpine Nov 20–21, 10am–10pm. Vendor spaces are sold out, but businesses and studios can apply to host an art location ($350) through Oct 31.",
     "sourceUrl": "https://www.artwalkalpine.com/",
-    "lastVerified": "2026-08-13",
-    "status": "needs-review",
-    "notes": "Billed as the longest-running art festival in West Texas, now in its 33rd year — murals, sculpture, photography, and painting fill downtown Alpine's sidewalks and studios over the weekend, alongside two music stages and food trucks. Free to attend and explicitly non-juried, with ~26 exhibitors historically. Booth fee is genuinely not published anywhere online (only a downloadable PDF application is offered) — the $65 shown is a rough estimate based on comparable small non-juried outdoor art walks, not an organizer-confirmed price; request the application directly to learn the real cost. Nov 20-21 dates are confirmed directly on the official site (a secondary source's Nov 20-22 listing does not match and appears to be wrong). Fills the far West Texas / Big Bend region gap."
+    "lastVerified": "2026-10-28",
+    "status": "verified",
+    "notes": "Billed as the longest-running art festival in West Texas, now in its 33rd year — murals, sculpture, photography, and painting fill downtown Alpine's sidewalks and studios over the weekend, alongside two music stages and food trucks. Free to attend and explicitly non-juried, with ~26 exhibitors historically. Booth fee is genuinely not published anywhere online (only a downloadable PDF application is offered) — the $65 shown is a rough estimate based on comparable small non-juried outdoor art walks, not an organizer-confirmed price; request the application directly to learn the real cost. Nov 20-21 dates are confirmed directly on the official site (a secondary source's Nov 20-22 listing does not match and appears to be wrong). Fills the far West Texas / Big Bend region gap.\n\nVerified 2026-10-28 against artwalkalpine.com (Nov 20-21, 2026; vendor spaces sold out; location applications close Oct 31; $350 location fee)."
   },
   {
     "id": 34,
@@ -581,15 +581,15 @@
     "end": "2026-08-15",
     "deadline": "2026-08-08",
     "fee": 0,
-    "admissionFee": 0,
+    "admissionFee": null,
     "attendance": 1500,
     "juried": false,
     "outdoor": true,
     "tags": ["standing market", "handmade only", "no vendor fee", "mission historic district", "recurring"],
     "desc": "Farmers and artisans market at Mission Marquee Plaza near the Mission Reach, the 1st and 3rd Saturdays March–November. No vendor fee; goods must be handmade, and the plaza curates the vendor mix.",
     "sourceUrl": "https://www.missionmarquee.com/EVENTS/Farmers-Artisans-Market/Become-a-Vendor",
-    "lastVerified": "2026-08-13",
-    "status": "needs-review",
+    "lastVerified": "2026-10-28",
+    "status": "verified",
     "recurrence": {
       "anchorWeekday": 6,
       "ordinal": 3,
@@ -597,7 +597,7 @@
       "activeMonths": [3, 4, 5, 6, 7, 8, 9, 10, 11],
       "deadline": { "type": "daysBeforeStart", "days": 7 }
     },
-    "notes": "Recurring artisan/farmers market at Mission Marquee Plaza near San Antonio's Mission Reach (Mar-Nov). CONFIRMED: no vendor fee is charged (\"No vendor fees will apply\" per the official page) - genuinely rare for this directory. Application is via an online Smartsheet form with no fixed deadline; acceptance isn't guaranteed and the plaza reserves discretion over vendor mix, so treated as non-juried/discretionary rather than a formal panel jury. Artisan goods must be handmade - no mass-produced items. Runs BOTH the 1st and 3rd Saturday of each month; this listing's auto-computed schedule follows the 3rd Saturday only (same modeling limitation as Boerne/Gruene's bonus dates - see README), so a 1st-Saturday date each month isn't reflected here. Public admission and attendance are unconfirmed - inferred free (no fee mentioned for visitors) and estimated at a modest 1,500/market day for a single mission-plaza market, not an official figure."
+    "notes": "Recurring artisan/farmers market at Mission Marquee Plaza near San Antonio's Mission Reach (Mar-Nov). CONFIRMED: no vendor fee is charged (\"No vendor fees will apply\" per the official page) - genuinely rare for this directory. Application is via an online Smartsheet form with no fixed deadline; acceptance isn't guaranteed and the plaza reserves discretion over vendor mix, so treated as non-juried/discretionary rather than a formal panel jury. Artisan goods must be handmade - no mass-produced items. Runs BOTH the 1st and 3rd Saturday of each month; this listing's auto-computed schedule follows the 3rd Saturday only (same modeling limitation as Boerne/Gruene's bonus dates - see README), so a 1st-Saturday date each month isn't reflected here. Public admission and attendance are unconfirmed - inferred free (no fee mentioned for visitors) and estimated at a modest 1,500/market day for a single mission-plaza market, not an official figure.\n\nVerified 2026-10-28 against missionmarquee.com Become-a-Vendor (1st & 3rd Saturdays Mar-Nov, 9-1; no vendor fees; first come)."
   },
   {
     "id": 37,
@@ -725,7 +725,7 @@
     "type": "Standing market",
     "start": "2027-01-22",
     "end": "2027-01-24",
-    "deadline": "2026-12-15",
+    "deadline": "2027-01-22",
     "fee": null,
     "admissionFee": 2,
     "attendance": 8000,
@@ -734,9 +734,10 @@
     "tags": ["standing market", "convention center", "tourist destination", "gulf coast", "seasonal", "twice yearly"],
     "desc": "Billed as the largest indoor market in South Texas, at the South Padre Island Convention Center each January, with a second show Feb 19–21. Vendors are selected from emailed product photos; email for booth pricing.",
     "sourceUrl": "https://www.spimarketdays.com/",
-    "lastVerified": "2026-08-13",
-    "status": "needs-review",
-    "notes": "Long-running (25th annual as of the most recent cycle) indoor vendor show at the South Padre Island Convention Center, held twice per winter season: a 3-day January show and a separate 3-day February show (Fri/Sat 9am-5pm, Sun 10am-4pm) - this listing tracks the January date; the February show (confirmed Feb 19-21, 2027) isn't separately reflected here. Described by an independent local news source as \"the largest indoor market in South Texas,\" drawing both local and out-of-state vendors. CONFIRMED: most vendor spaces are indoors, with outdoor spaces under covered structure. Entry is curated - prospective vendors email contact info plus photos of their merchandise for review, not an open first-come booth rental. UNVERIFIED: exact booth fee is not published anywhere online (organizers only take email inquiries) - the $150 shown is an estimate based on comparable multi-day indoor Texas vendor shows, not a confirmed price; email spimarketdays@gmail.com or call (956) 345-5022 to confirm. Public admission is confirmed at $2 (an older article cites $1, suggesting the price has since risen). Attendance is unconfirmed - 8,000 is a rough estimate for a show billed as the region's largest indoor market across a 3-day run."
+    "lastVerified": "2026-10-28",
+    "status": "verified",
+    "rollingDeadline": true,
+    "notes": "Long-running (25th annual as of the most recent cycle) indoor vendor show at the South Padre Island Convention Center, held twice per winter season: a 3-day January show and a separate 3-day February show (Fri/Sat 9am-5pm, Sun 10am-4pm) - this listing tracks the January date; the February show (confirmed Feb 19-21, 2027) isn't separately reflected here. Described by an independent local news source as \"the largest indoor market in South Texas,\" drawing both local and out-of-state vendors. CONFIRMED: most vendor spaces are indoors, with outdoor spaces under covered structure. Entry is curated - prospective vendors email contact info plus photos of their merchandise for review, not an open first-come booth rental. UNVERIFIED: exact booth fee is not published anywhere online (organizers only take email inquiries) - the $150 shown is an estimate based on comparable multi-day indoor Texas vendor shows, not a confirmed price; email spimarketdays@gmail.com or call (956) 345-5022 to confirm. Public admission is confirmed at $2 (an older article cites $1, suggesting the price has since risen). Attendance is unconfirmed - 8,000 is a rough estimate for a show billed as the region's largest indoor market across a 3-day run.\n\nVerified 2026-10-28 against spimarketdays.com (Jan 22-24 & Feb 19-21, 2027; apply by emailing photos; $2 admission; fee not published)."
   },
   {
     "id": 45,
@@ -794,15 +795,15 @@
     "end": "2026-10-11",
     "deadline": "2026-10-03",
     "fee": 45,
-    "admissionFee": 0,
+    "admissionFee": null,
     "attendance": 3000,
     "juried": false,
     "outdoor": true,
     "tags": ["monthly", "trade days", "flea market", "longview", "recurring"],
     "desc": "General trade-days market at the Longview Convention Complex the second full weekend of each month (except September). $50 inside 10x10 or $45 outside 10x20 per weekend; no jury.",
     "sourceUrl": "https://greggcountyfair.com/vendor-information-2",
-    "lastVerified": "2026-08-13",
-    "status": "needs-review",
+    "lastVerified": "2026-10-28",
+    "status": "verified",
     "recurrence": {
       "anchorWeekday": 6,
       "ordinal": 2,
@@ -810,7 +811,7 @@
       "activeMonths": [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12],
       "deadline": { "type": "rolling" }
     },
-    "notes": "Recurring general trade-days market (buy/sell/trade/swap) at the Longview Convention Complex Exhibit Center, held the second full weekend of every month EXCEPT September, when the venue instead hosts the annual Gregg County Fair. CONFIRMED tiered booth fees: $50/weekend for an inside 10x10 space, $45/weekend for an outside 10x20 space, plus $3/day for electricity. Not juried - vendors of all kinds are accepted first-come. No fixed application deadline is published (call 903-753-4478 for availability); the date shown is an estimated planning buffer. Admission and parking are confirmed free. Attendance is unconfirmed - 3,000 is a rough estimate for a monthly regional trade-days market of this size, not an official figure."
+    "notes": "Recurring general trade-days market (buy/sell/trade/swap) at the Longview Convention Complex Exhibit Center, held the second full weekend of every month EXCEPT September, when the venue instead hosts the annual Gregg County Fair. CONFIRMED tiered booth fees: $50/weekend for an inside 10x10 space, $45/weekend for an outside 10x20 space, plus $3/day for electricity. Not juried - vendors of all kinds are accepted first-come. No fixed application deadline is published (call 903-753-4478 for availability); the date shown is an estimated planning buffer. Admission and parking are confirmed free. Attendance is unconfirmed - 3,000 is a rough estimate for a monthly regional trade-days market of this size, not an official figure.\n\nVerified 2026-10-28 against greggcountyfair.com/vendor-information-2 (2nd full weekend monthly; $50 inside / $45 outside; call for availability)."
   },
   {
     "id": 48,
@@ -894,17 +895,17 @@
     "start": "2026-11-06",
     "end": "2026-11-08",
     "deadline": "2026-05-31",
-    "fee": null,
+    "fee": 300,
     "admissionFee": 0,
     "attendance": 6000,
     "juried": true,
     "outdoor": true,
     "tags": ["fine art", "jury", "free admission", "town square", "fort bend"],
-    "desc": "Juried fine art festival at Sugar Land Town Square with 100+ artists across 16 media, free to attend for the first time. Runs Nov 6–8; the 2027 artist call is expected next spring.",
+    "desc": "Juried fine art festival at Sugar Land Town Square with 100+ artists, free to attend. Runs Nov 6–8; 10x10 booths were $300–$450 ($25 application), and the 2027 call is expected next spring.",
     "sourceUrl": "https://www.sugarlandartsfest.com/artists/",
-    "lastVerified": "2026-08-13",
-    "status": "needs-review",
-    "notes": "Juried fine-art festival relocating for 2026 to Sugar Land Town Square, a walkable open-air setting - a new flagship venue for the event. CONFIRMED (via CW39 news coverage): 100+ juried artists across 16 fine-art mediums, 6,000+ expected attendees, and admission free for the first time in the festival's history ('art should be accessible to everyone'). The 2026 application deadline (May 31, 2026) has already passed as of this listing's verification - treat as a reference for the 2027 cycle. UNVERIFIED: exact booth fee isn't published beyond the organizer's claim of 'one of the most competitive booth fees in Texas' - the $350 shown is an estimate based on comparable Texas fine-art fairs (Cottonwood, Denton), not a confirmed price. Fills a total gap - no prior listing in Sugar Land/Fort Bend County."
+    "lastVerified": "2026-10-28",
+    "status": "verified",
+    "notes": "Juried fine-art festival relocating for 2026 to Sugar Land Town Square, a walkable open-air setting - a new flagship venue for the event. CONFIRMED (via CW39 news coverage): 100+ juried artists across 16 fine-art mediums, 6,000+ expected attendees, and admission free for the first time in the festival's history ('art should be accessible to everyone'). The 2026 application deadline (May 31, 2026) has already passed as of this listing's verification - treat as a reference for the 2027 cycle. UNVERIFIED: exact booth fee isn't published beyond the organizer's claim of 'one of the most competitive booth fees in Texas' - the $350 shown is an estimate based on comparable Texas fine-art fairs (Cottonwood, Denton), not a confirmed price. Fills a total gap - no prior listing in Sugar Land/Fort Bend County.\n\nVerified 2026-10-28 against sugarlandartsfest.com/artists (Nov 6-8, 2026; deadline May 31; booths $300-$450, emerging $300; $25 app fee; free admission)."
   },
   {
     "id": 55,
@@ -937,18 +938,19 @@
     "type": "Convention",
     "start": "2027-05-07",
     "end": "2027-05-09",
-    "deadline": "2027-03-08",
+    "deadline": "2027-05-07",
     "fee": 100,
-    "admissionFee": 25,
+    "admissionFee": null,
     "attendance": 650,
     "juried": true,
     "outdoor": false,
     "tags": ["gaming convention", "tabletop", "ttrpg", "artist alley", "nonprofit", "growing convention"],
     "desc": "Family-friendly tabletop and RPG gaming convention at the Wichita Falls MPEC. $100 10x10 booths include a table, two passes and power; applications are reviewed for variety.",
     "sourceUrl": "https://www.fallscon.net/vendors",
-    "lastVerified": "2026-08-13",
-    "status": "needs-review",
-    "notes": "Family-friendly tabletop/TTRPG/board-gaming convention at the Wichita Falls MPEC, started 2016 and now a 501(c)3 nonprofit (since late 2022) supporting academic financial aid. CONFIRMED: $100 per 10x10 vendor booth (includes 8' table, 2 passes, power), juried application (approval not guaranteed, prioritized by variety/programming/space). Attendance has grown from 400+ (2023) to 600+ (2024); one source separately cites 452 tickets for the most recent cycle, a discrepancy likely reflecting different counting methods (unique tickets vs. total attendance) - 650 shown here is a conservative growth-trend estimate, not an official count. The 2027 edition has shifted to May (prior years ran April) - dates are confirmed via the official vendor page, though not yet independently cross-confirmed elsewhere. Admission ($15 Fri/Sun, $25 Sat, $40 weekend) is carried over from the most recently completed cycle as reference pricing, not yet confirmed for 2027."
+    "lastVerified": "2026-10-28",
+    "status": "verified",
+    "rollingDeadline": true,
+    "notes": "Family-friendly tabletop/TTRPG/board-gaming convention at the Wichita Falls MPEC, started 2016 and now a 501(c)3 nonprofit (since late 2022) supporting academic financial aid. CONFIRMED: $100 per 10x10 vendor booth (includes 8' table, 2 passes, power), juried application (approval not guaranteed, prioritized by variety/programming/space). Attendance has grown from 400+ (2023) to 600+ (2024); one source separately cites 452 tickets for the most recent cycle, a discrepancy likely reflecting different counting methods (unique tickets vs. total attendance) - 650 shown here is a conservative growth-trend estimate, not an official count. The 2027 edition has shifted to May (prior years ran April) - dates are confirmed via the official vendor page, though not yet independently cross-confirmed elsewhere. Admission ($15 Fri/Sun, $25 Sat, $40 weekend) is carried over from the most recently completed cycle as reference pricing, not yet confirmed for 2027.\n\nVerified 2026-10-28 against fallscon.net/vendors (May 7-9, 2027, MPEC; $100 + processing; no deadline stated)."
   },
   {
     "id": 57,
@@ -959,18 +961,19 @@
     "type": "Craft fair",
     "start": "2026-11-21",
     "end": "2026-11-22",
-    "deadline": "2026-10-21",
+    "deadline": "2026-11-21",
     "fee": 125,
-    "admissionFee": 0,
+    "admissionFee": null,
     "attendance": 3000,
     "juried": false,
     "outdoor": true,
     "tags": ["pop-up", "touring market", "handmade", "outlet mall", "seasonal"],
     "desc": "Outdoor holiday pop-up at Tanger Outlets San Marcos from the touring Hometown Vendor Market brand. Two-day booths $300 (one day $125), non-refundable; first come, first served.",
     "sourceUrl": "https://hometownvendormarket.com/sanmarcosfall/",
-    "lastVerified": "2026-08-13",
-    "status": "needs-review",
-    "notes": "Outdoor seasonal pop-up market at Tanger Outlets San Marcos, run by the multi-city touring brand Hometown Vendor Market (which also runs Valentine's and Spring editions in San Marcos). CONFIRMED: two-day booth $300, one-day booth $125 (all fees non-refundable), non-juried first-come-first-served entry with loose category caps for diversity. NOTE ON SENTIMENT: research turned up genuinely mixed vendor experiences with this brand - an A+ BBB rating and several strongly positive multi-year testimonials, alongside at least one report of disorganization/no-shows on the vendor list and a \"scam alert\" post from the brand's own page reiterating its no-refund policy. Not majority-negative, but worth vendors' own diligence before booking. Admission is inferred free (standard for an outlet-mall pop-up, not explicitly confirmed). Attendance is unconfirmed - 3,000 is a rough estimate, not an official figure."
+    "lastVerified": "2026-10-28",
+    "status": "verified",
+    "rollingDeadline": true,
+    "notes": "Outdoor seasonal pop-up market at Tanger Outlets San Marcos, run by the multi-city touring brand Hometown Vendor Market (which also runs Valentine's and Spring editions in San Marcos). CONFIRMED: two-day booth $300, one-day booth $125 (all fees non-refundable), non-juried first-come-first-served entry with loose category caps for diversity. NOTE ON SENTIMENT: research turned up genuinely mixed vendor experiences with this brand - an A+ BBB rating and several strongly positive multi-year testimonials, alongside at least one report of disorganization/no-shows on the vendor list and a \"scam alert\" post from the brand's own page reiterating its no-refund policy. Not majority-negative, but worth vendors' own diligence before booking. Admission is inferred free (standard for an outlet-mall pop-up, not explicitly confirmed). Attendance is unconfirmed - 3,000 is a rough estimate, not an official figure.\n\nVerified 2026-10-28 against hometownvendormarket.com/sanmarcosfall (Nov 21-22, 2026; one-day $125 up to $300; first come, first served)."
   },
   {
     "id": 58,
@@ -1012,9 +1015,9 @@
     "tags": ["holiday market", "craft fair", "long-running", "indoor", "free admission"],
     "desc": "Long-running indoor holiday craft show at the Brazos Center with 100–200 vendors. $235 for a 10x10, applications due Dec 1; free admission.",
     "sourceUrl": "https://dfwcrafts.com/event/christmas-arts-crafts-show/",
-    "lastVerified": "2026-08-13",
-    "status": "needs-review",
-    "notes": "Long-running (44th annual in 2026) indoor holiday craft show at the Brazos Center, drawing 100-200 vendors selling handcrafted and specialty items. CONFIRMED: 10x10 indoor booth is $235 (20x10 is $470), with electricity ($25) and table rental ($10) as add-ons; vendor applications due Dec 1, 2026; admission is free. Not indicated as juried - appears to be first-come/application-based rather than panel-reviewed. Fills the entirely-uncovered College Station/Bryan metro gap. Attendance is unconfirmed - 4,000 is a rough estimate for a well-established two-day indoor show of this vendor count, not an official figure."
+    "lastVerified": "2026-10-28",
+    "status": "verified",
+    "notes": "Long-running (44th annual in 2026) indoor holiday craft show at the Brazos Center, drawing 100-200 vendors selling handcrafted and specialty items. CONFIRMED: 10x10 indoor booth is $235 (20x10 is $470), with electricity ($25) and table rental ($10) as add-ons; vendor applications due Dec 1, 2026; admission is free. Not indicated as juried - appears to be first-come/application-based rather than panel-reviewed. Fills the entirely-uncovered College Station/Bryan metro gap. Attendance is unconfirmed - 4,000 is a rough estimate for a well-established two-day indoor show of this vendor count, not an official figure.\n\nVerified 2026-10-28 against dfwcrafts.com Christmas Arts & Crafts Show (Dec 5-6, 2026; $235/$355/$470; applications due Dec 1; free admission)."
   },
   {
     "id": 64,
@@ -1045,20 +1048,20 @@
     "city": "Kingsville",
     "state": "TX",
     "type": "Craft fair",
-    "start": "2026-11-21",
-    "end": "2026-11-22",
-    "deadline": "2026-10-15",
+    "start": "2026-11-20",
+    "end": "2026-11-21",
+    "deadline": "2026-11-13",
     "fee": null,
     "admissionFee": 0,
     "attendance": 5000,
     "juried": false,
     "outdoor": true,
     "tags": ["ranching heritage", "king ranch", "downtown", "free admission", "festival"],
-    "desc": "Kingsville's ranching-heritage festival downtown, with local vendors, live music, cooking demos and a car show. Free to attend; apply through the city's vendor portal.",
+    "desc": "Kingsville's ranching-heritage festival with 90+ vendor booths downtown, a tree lighting, BBQ and a free concert. Free to attend; vendor applications and booth fees are due Nov 13.",
     "sourceUrl": "https://kingsvilletexas.com/ranch-hand-weekend/",
-    "lastVerified": "2026-08-13",
-    "status": "needs-review",
-    "notes": "Annual heritage festival celebrating Kingsville's ranching culture (King Ranch country), filling historic downtown with local vendors, handcrafted goods, food, live music, cooking demos, and a car show; a separate ticketed Saturday breakfast ($10) and concert run alongside the free main festival. CONFIRMED: main festival admission is free; venue is a mix of outdoor downtown streets and the indoor JK Northway Coliseum (rain-or-shine backup). The vendor portal, previously closed to new signups as of an earlier research pass, now shows an active \"Open Vendor Portal\" link - status has changed since. UNVERIFIED: exact vendor booth fee, application deadline, and total attendance still aren't published on the city's page - the $75 fee, Oct 15 deadline, and 5,000 attendance shown are estimates based on comparable small-town Texas heritage festivals, not confirmed figures; contact the Kingsville Visitors Center (361-592-8516) to apply. Fills the South Texas gap beyond Corpus Christi/Brownsville/McAllen."
+    "lastVerified": "2026-10-28",
+    "status": "verified",
+    "notes": "Annual heritage festival celebrating Kingsville's ranching culture (King Ranch country), filling historic downtown with local vendors, handcrafted goods, food, live music, cooking demos, and a car show; a separate ticketed Saturday breakfast ($10) and concert run alongside the free main festival. CONFIRMED: main festival admission is free; venue is a mix of outdoor downtown streets and the indoor JK Northway Coliseum (rain-or-shine backup). The vendor portal, previously closed to new signups as of an earlier research pass, now shows an active \"Open Vendor Portal\" link - status has changed since. UNVERIFIED: exact vendor booth fee, application deadline, and total attendance still aren't published on the city's page - the $75 fee, Oct 15 deadline, and 5,000 attendance shown are estimates based on comparable small-town Texas heritage festivals, not confirmed figures; contact the Kingsville Visitors Center (361-592-8516) to apply. Fills the South Texas gap beyond Corpus Christi/Brownsville/McAllen.\n\nVerified 2026-10-28 against kingsvilletexas.com/ranch-hand-weekend (Nov 20-21, 2026; applications close and fees due Nov 13; festival free)."
   },
   {
     "id": 67,
@@ -1128,9 +1131,9 @@
   },
   {
     "state": "TX",
-    "admissionFee": null,
-    "lastVerified": null,
-    "status": "needs-review",
+    "admissionFee": 5,
+    "lastVerified": "2026-10-28",
+    "status": "verified",
     "id": 71,
     "name": "Lubbock Arts Festival",
     "org": "Lubbock Arts Alliance",
@@ -1139,14 +1142,14 @@
     "start": "2027-04-10",
     "end": "2027-04-11",
     "deadline": "2026-11-15",
-    "fee": 375,
+    "fee": null,
     "attendance": 20000,
     "juried": true,
     "outdoor": false,
     "tags": ["fine art", "jury", "west texas", "indoor", "emerging artist"],
-    "desc": "West Texas's premier juried art festival, held indoors at the Lubbock Memorial Civic Center and limited to about 100 artists. 10x10 booths from about $375, plus a $35 jury fee.",
+    "desc": "West Texas's premier juried art festival, held indoors at the Lubbock Memorial Civic Center and limited to about 100 artists. Apply on ZAPPlication by Nov 15 ($35 application fee).",
     "sourceUrl": "https://lubbockarts.org/",
-    "notes": "Added 2026-10-28. 49th annual, Apr 10-11, 2027. Deadline Nov 15, 2026 and $375-$800 booth range from aggregator listings (TheCraftMap/EntryThingy); confirm on lubbockarts.org. Separate NEA-funded Emerging Artist Program (free booth) closed Aug 31, 2026. Attendance is an estimate."
+    "notes": "Added 2026-10-28. 49th annual, Apr 10-11, 2027. Deadline Nov 15, 2026 and $375-$800 booth range from aggregator listings (TheCraftMap/EntryThingy); confirm on lubbockarts.org. Separate NEA-funded Emerging Artist Program (free booth) closed Aug 31, 2026. Attendance is an estimate.\n\nVerified 2026-10-28 against lubbockartsfestival.org (Apr 10-11, 2027, Civic Center; admission $5 advance/$7 door) + zapplication.org ID 14653 ($35 app fee, closes ~Nov 15)."
   },
   {
     "state": "TX",
@@ -1173,8 +1176,8 @@
   {
     "state": "TX",
     "admissionFee": 58,
-    "lastVerified": null,
-    "status": "needs-review",
+    "lastVerified": "2026-10-28",
+    "status": "verified",
     "id": 73,
     "name": "Anime Dallas",
     "org": "Anime Dallas",
@@ -1190,13 +1193,13 @@
     "tags": ["anime", "artist alley", "night market", "gaylord texan"],
     "desc": "Anime convention at the Gaylord Texan in Frisco. Artist Alley ($275) is sold out with a waitlist, but Night Market tables are $75 a night through Dec 15; a Texas sales tax ID is required.",
     "sourceUrl": "https://www.eventeny.com/events/anime-dallas-2027-31428/",
-    "notes": "Added 2026-10-28 from organizer's Eventeny page: Jan 8-10, 2027, 7601 Gaylord Pkwy. Night Market $75/night (Fri+Sat), deadline Dec 15, 2026. Artist Alley waitlist $275, deadline Jan 6, 2027, juried for originality/AI. Exhibitor booth $400 inline / $500 corner, deadline Jan 6. 3-day pass $57.85 incl. fees. Attendance is an estimate."
+    "notes": "Added 2026-10-28 from organizer's Eventeny page: Jan 8-10, 2027, 7601 Gaylord Pkwy. Night Market $75/night (Fri+Sat), deadline Dec 15, 2026. Artist Alley waitlist $275, deadline Jan 6, 2027, juried for originality/AI. Exhibitor booth $400 inline / $500 corner, deadline Jan 6. 3-day pass $57.85 incl. fees. Attendance is an estimate.\n\nVerified 2026-10-28 against eventeny.com/events/anime-dallas-2027-31428 (organizer page; Jan 8-10, 2027; Night Market $75, deadline Dec 15; 3-day pass $57.85)."
   },
   {
     "state": "TX",
     "admissionFee": null,
-    "lastVerified": null,
-    "status": "needs-review",
+    "lastVerified": "2026-10-28",
+    "status": "verified",
     "id": 74,
     "name": "South Texas Comic Con",
     "org": "South Texas Comic Con",
@@ -1211,15 +1214,15 @@
     "juried": false,
     "outdoor": false,
     "tags": ["artist alley", "comics", "rio grande valley", "convention center"],
-    "desc": "The Rio Grande Valley's biggest pop culture convention, at the McAllen Convention Center. Artist Alley 10x10s are $275 inline or $350 corner, tables included; apply only through the official form.",
+    "desc": "The Rio Grande Valley's biggest pop culture convention, at the McAllen Convention Center. Artist Alley ($275 inline, $350 corner) is sold out; the official form is taking waitlist applications.",
     "sourceUrl": "https://form.jotform.com/261474411954156",
-    "notes": "Added 2026-10-28. Official 2027 exhibitor application (JotForm): Artist Alley inline $275 / corner $350, electricity $65 advance / $165 on site, retailer $650/$800. Dates Apr 23-25, 2027 from multiple third-party listings (not yet on organizer site). Organizer warns of booth scams. Attendance is an estimate."
+    "notes": "Added 2026-10-28. Official 2027 exhibitor application (JotForm): Artist Alley inline $275 / corner $350, electricity $65 advance / $165 on site, retailer $650/$800. Dates Apr 23-25, 2027 from multiple third-party listings (not yet on organizer site). Organizer warns of booth scams. Attendance is an estimate.\n\nVerified 2026-10-28 against official 2027 exhibitor JotForm (Apr 22-25, exhibit hall Fri-Sun, McAllen Convention Center; $275/$350; Artist Alley sold out, waitlist only)."
   },
   {
     "state": "TX",
     "admissionFee": null,
-    "lastVerified": null,
-    "status": "needs-review",
+    "lastVerified": "2026-10-28",
+    "status": "verified",
     "id": 75,
     "name": "Big Texas Terror",
     "org": "Big Texas Terror",
@@ -1233,15 +1236,15 @@
     "juried": false,
     "outdoor": false,
     "tags": ["horror", "artist alley", "oddities", "genre art"],
-    "desc": "Horror-themed convention in San Antonio, a natural fit for dark art, oddities and genre prints. Artist booths run $300–$350, and the application asks that your work be your own.",
+    "desc": "Horror-themed convention at San Antonio's Henry B. Gonzalez Convention Center, a natural fit for dark art and genre prints. Artist booths are $300 (table and two chairs); work must be your own.",
     "sourceUrl": "https://www.eventeny.com/events/big-texas-terror-2027-28814/",
-    "notes": "Added 2026-10-28 from organizer's Eventeny artist application: Mar 12-14, 2027, deadline Mar 11, 2027, $300-$350. Attendance is an estimate."
+    "notes": "Added 2026-10-28 from organizer's Eventeny artist application: Mar 12-14, 2027, deadline Mar 11, 2027, $300-$350. Attendance is an estimate.\n\nVerified 2026-10-28 against eventeny.com Big Texas Terror 2027 + artist application (Mar 12-14, 2027, Henry B. Gonzalez Convention Center; artist booth $300, deadline Mar 11)."
   },
   {
     "state": "TX",
     "admissionFee": null,
-    "lastVerified": null,
-    "status": "needs-review",
+    "lastVerified": "2026-10-28",
+    "status": "verified",
     "id": 76,
     "name": "Dickens on the Strand",
     "org": "Galveston Historical Foundation",
@@ -1258,7 +1261,7 @@
     "tags": ["holiday", "victorian", "costumed", "historic district", "gulf coast"],
     "desc": "Galveston's Victorian Christmas street festival on The Strand, drawing 35,000+ costumed visitors. Craft/retail 10x10 booths are $500 (carts $250); the Dickens name and logo need a separate $350 trademark license.",
     "sourceUrl": "https://www.galvestonhistory.org/events/dickens-on-the-strand/vendors",
-    "notes": "Added 2026-10-28 from official vendor page: 53rd year, Dec 4-6, 2026 (load-in Fri noon). Cart $250 / craft-retail 10x10 $500 (deposits included); 10% off multiple spaces; signage $50, electric $100. No general deadline stated; apply-and-pay link live. Rain or shine."
+    "notes": "Added 2026-10-28 from official vendor page: 53rd year, Dec 4-6, 2026 (load-in Fri noon). Cart $250 / craft-retail 10x10 $500 (deposits included); 10% off multiple spaces; signage $50, electric $100. No general deadline stated; apply-and-pay link live. Rain or shine.\n\nVerified 2026-10-28 against galvestonhistory.org Dickens vendors page (Dec 4-6, 2026; cart $250 / craft 10x10 $500; apply-and-pay link live)."
   },
   {
     "state": "TX",
@@ -1291,7 +1294,7 @@
   },
   {
     "state": "TX",
-    "admissionFee": 6,
+    "admissionFee": 10,
     "lastVerified": null,
     "status": "needs-review",
     "id": 78,
@@ -1309,7 +1312,7 @@
     "tags": ["fine craft", "jury", "el paso", "indoor", "since 1970"],
     "desc": "El Paso's fine art and craft show, running since 1970, at the EPIC Railyard Event Center. 10x10 booths $345 ($100 emerging-artist spaces); the 2026 call closed May 31, so watch for the 2027 window in spring.",
     "sourceUrl": "https://app.entrythingy.com/calls/external/las-artistas-art-fine-crafts-show-2026",
-    "notes": "Added 2026-10-28. 2026 call: deadline May 31, 2026, $35 fee. Nov 14-15, 2026 at EPIC Railyard and booth tiers ($345 10x10, $485 10x15, $100 emerging 8x10) from VendorsMap/TheCraftMap; $6 admission per TheCraftMap. Confirm dates with organizer. Attendance is an estimate."
+    "notes": "Added 2026-10-28. 2026 call: deadline May 31, 2026, $35 fee. Nov 14-15, 2026 at EPIC Railyard and booth tiers ($345 10x10, $485 10x15, $100 emerging 8x10) from VendorsMap/TheCraftMap; $6 admission per TheCraftMap. Confirm dates with organizer. Attendance is an estimate.\n\n2026-10-28: Visit El Paso: Nov 14-15, 2026, 11-5, Epic Railyard, admission $10. Booth fee and deadline not on organizer site."
   },
   {
     "state": "TX",
@@ -1336,8 +1339,8 @@
   {
     "state": "TX",
     "admissionFee": 0,
-    "lastVerified": null,
-    "status": "needs-review",
+    "lastVerified": "2026-10-28",
+    "status": "verified",
     "id": 80,
     "name": "Art in the Grove at Waterside",
     "org": "CERA Pottery Studio",
@@ -1359,13 +1362,13 @@
       "spanDays": 1,
       "deadline": { "type": "rolling" }
     },
-    "notes": "Added 2026-10-28. Active.com registrations exist for Sep 5, Oct 3, Nov 7, Dec 5, 2026 (all first Saturdays). 10x10, $35 non-refundable (one listing shows $25), 10-3, rain or shine. Organizer: CERA / CERA Pottery Studio with Waterside. Attendance is an estimate."
+    "notes": "Added 2026-10-28. Active.com registrations exist for Sep 5, Oct 3, Nov 7, Dec 5, 2026 (all first Saturdays). 10x10, $35 non-refundable (one listing shows $25), 10-3, rain or shine. Organizer: CERA / CERA Pottery Studio with Waterside. Attendance is an estimate.\n\nVerified 2026-10-28 against CERA's Active.com registration (first Saturdays Sep-Dec 2026; 10x10 $35; handmade only)."
   },
   {
     "state": "TX",
     "admissionFee": null,
-    "lastVerified": null,
-    "status": "needs-review",
+    "lastVerified": "2026-10-28",
+    "status": "verified",
     "id": 81,
     "name": "IKKiCON",
     "org": "IKKiCON",
@@ -1382,13 +1385,13 @@
     "tags": ["anime", "artist alley", "no ai art", "kalahari"],
     "desc": "Central Texas's long-running anime convention, now at the Kalahari Resort in Round Rock. Juried Artist Alley booths start at $200 for a 6x8; AI art is banned.",
     "sourceUrl": "https://www.ikkicon.com/artist-alley-application",
-    "notes": "Added 2026-10-28 from official site: Jan 8-10, 2027, Kalahari Resort. Artist Alley: standard 6x8 $200, corner $225, premium 8x8 $250, premium corner $300. Jury reviewed; no deadline listed. Attendance is an estimate."
+    "notes": "Added 2026-10-28 from official site: Jan 8-10, 2027, Kalahari Resort. Artist Alley: standard 6x8 $200, corner $225, premium 8x8 $250, premium corner $300. Jury reviewed; no deadline listed. Attendance is an estimate.\n\nVerified 2026-10-28 against ikkicon.com/artist-alley-application (Jan 8-10, 2027, Kalahari; $200-$300; juried; no deadline listed)."
   },
   {
     "state": "TX",
     "admissionFee": null,
-    "lastVerified": null,
-    "status": "needs-review",
+    "lastVerified": "2026-10-28",
+    "status": "verified",
     "id": 82,
     "name": "El Paso Comic Con",
     "org": "Fatman Events",
@@ -1405,7 +1408,7 @@
     "tags": ["comics", "artist alley", "no ai art", "far west texas"],
     "desc": "Pop culture convention at the El Paso Convention Center, with free Friday admission. Juried 10x10 artist booths are $350 (vendor booths $600); original work only, with priority for comic and print artists.",
     "sourceUrl": "https://elpasocomiccon.com/vendor-application/",
-    "notes": "Added 2026-10-28 from official site: Mar 5-7, 2027. Vendor $600 10x10, Artist $350 10x10, Wall $400 8x10; all juried; Texas sales tax permit required; no AI. No deadline stated. Attendance is an estimate."
+    "notes": "Added 2026-10-28 from official site: Mar 5-7, 2027. Vendor $600 10x10, Artist $350 10x10, Wall $400 8x10; all juried; Texas sales tax permit required; no AI. No deadline stated. Attendance is an estimate.\n\nVerified 2026-10-28 against elpasocomiccon.com + /vendor-application (Mar 5-7, 2027; artist booth $350, vendor $600; juried; no deadline listed)."
   },
   {
     "state": "TX",
@@ -1479,8 +1482,8 @@
   {
     "state": "TX",
     "admissionFee": 0,
-    "lastVerified": null,
-    "status": "needs-review",
+    "lastVerified": "2026-10-28",
+    "status": "verified",
     "id": 86,
     "name": "Holiday Art Market at the Tobin Center",
     "org": "Tobin Center for the Performing Arts",
@@ -1497,7 +1500,7 @@
     "tags": ["holiday", "local artisans", "river walk", "small business saturday"],
     "desc": "One-day holiday market with 80+ local artisans spread across the Tobin Center's venues on the River Walk. Free to shop; vendor applications are open now through the Tobin's form.",
     "sourceUrl": "https://www.tobincenter.org/holiday-art-market",
-    "notes": "Added 2026-10-28 from official page: Sat Nov 28, 2026, 10-4, 80+ local artisan vendors, free admission, applications 'now open' (SurveyMonkey). Booth fee and deadline not published. Attendance is an estimate."
+    "notes": "Added 2026-10-28 from official page: Sat Nov 28, 2026, 10-4, 80+ local artisan vendors, free admission, applications 'now open' (SurveyMonkey). Booth fee and deadline not published. Attendance is an estimate.\n\nVerified 2026-10-28 against tobincenter.org/holiday-art-market (Nov 28, 2026; 80+ vendors; free admission; applications open)."
   },
   {
     "state": "TX",
@@ -1524,8 +1527,8 @@
   {
     "state": "TX",
     "admissionFee": null,
-    "lastVerified": null,
-    "status": "needs-review",
+    "lastVerified": "2026-10-28",
+    "status": "verified",
     "id": 88,
     "name": "Sherwood Forest Faire",
     "org": "Sherwood Forest Faire",
@@ -1541,7 +1544,7 @@
     "tags": ["renaissance faire", "seasonal", "period appropriate", "multi-weekend"],
     "desc": "Medieval faire in McDade, east of Austin, running eight spring weekends from Mar 6 to Apr 25, 2027. Artisan booths must be period-styled canvas; the application deadline is Oct 31, and fees depend on booth rental.",
     "sourceUrl": "https://www.sherwoodforestfaire.com/participation",
-    "notes": "Added 2026-10-28. Official site: weekends Mar 6-Apr 25, 2027 plus spring-break Friday Mar 19; spring application deadline Oct 31 (rolling, earlier is better). Fee schedule PDF is from 2022/2023, so fee left null. Attendance is an estimate."
+    "notes": "Added 2026-10-28. Official site: weekends Mar 6-Apr 25, 2027 plus spring-break Friday Mar 19; spring application deadline Oct 31 (rolling, earlier is better). Fee schedule PDF is from 2022/2023, so fee left null. Attendance is an estimate.\n\nVerified 2026-10-28 against sherwoodforestfaire.com (weekends Mar 6-Apr 25, 2027 + Fri Mar 19) and /participation (spring deadline Oct 31; fees not current)."
   },
   {
     "state": "TX",
@@ -1569,8 +1572,8 @@
   {
     "state": "TX",
     "admissionFee": null,
-    "lastVerified": null,
-    "status": "needs-review",
+    "lastVerified": "2026-10-28",
+    "status": "verified",
     "id": 90,
     "name": "Permian Basin Comic Con",
     "org": "Permian Basin Comic Con",
@@ -1586,13 +1589,13 @@
     "tags": ["comics", "anime", "creator booth", "permian basin"],
     "desc": "The Permian Basin's comics, anime and gaming convention at Midland's Horseshoe Arena, now in its tenth year. Creator booth applications close Feb 10; pricing is shown in the application.",
     "sourceUrl": "https://www.eventeny.com/events/permian-basin-comic-con-x-2027-28987",
-    "notes": "Added 2026-10-28 from organizer's Eventeny page: PBCC X, Mar 12-14, 2027, 2514 Arena Trl, Midland. Creator Booth deadline Feb 10, 2027; Exhibitor Booth Mar 11, 2027. Prices not shown on the event page. Attendance is an estimate."
+    "notes": "Added 2026-10-28 from organizer's Eventeny page: PBCC X, Mar 12-14, 2027, 2514 Arena Trl, Midland. Creator Booth deadline Feb 10, 2027; Exhibitor Booth Mar 11, 2027. Prices not shown on the event page. Attendance is an estimate.\n\nVerified 2026-10-28 against eventeny.com PBCC X 2027 (organizer page; Mar 12-14, 2027, Midland; creator booth deadline Feb 10)."
   },
   {
     "state": "TX",
     "admissionFee": null,
-    "lastVerified": null,
-    "status": "needs-review",
+    "lastVerified": "2026-10-28",
+    "status": "verified",
     "id": 91,
     "name": "A Christmas Affair",
     "org": "Junior League of Austin",
@@ -1608,7 +1611,7 @@
     "tags": ["holiday", "junior league", "fundraiser", "palmer events center"],
     "desc": "The Junior League of Austin's long-running holiday market at Palmer Events Center, Nov 18–22. Merchants are selected from spring applications with product samples; the next window typically closes in mid-March.",
     "sourceUrl": "https://www.jlaustin.org/a-christmas-affair/become-a-merchant/",
-    "notes": "Added 2026-10-28. Official merchant page: 2026 online deadline Mar 16, 2026, samples due Mar 27; shopping market Nov 18-22, 2026 at Palmer Events Center. Booth fee not published. Attendance is an estimate."
+    "notes": "Added 2026-10-28. Official merchant page: 2026 online deadline Mar 16, 2026, samples due Mar 27; shopping market Nov 18-22, 2026 at Palmer Events Center. Booth fee not published. Attendance is an estimate.\n\nVerified 2026-10-28 against jlaustin.org A Christmas Affair + become-a-merchant (market Nov 18-22, 2026 at Palmer; 2026 merchant deadline Mar 16)."
   },
   {
     "state": "TX",
