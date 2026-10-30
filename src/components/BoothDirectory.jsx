@@ -375,6 +375,27 @@ const CSS = `
 }
 .bth-reset:active{transform:scale(.94);}
 
+/* ---------- community call-to-action ---------- */
+.bth-crew{
+  margin-top:56px;border:2.5px solid var(--ink);background:var(--stock-2);
+  box-shadow:7px 7px 0 var(--aqua), 14px 14px 0 var(--pink);
+  padding:22px 24px;display:flex;align-items:center;gap:20px 28px;flex-wrap:wrap;
+}
+.bth-crew-text{flex:1 1 320px;}
+.bth-crew h2{
+  font-family:var(--f-display);font-weight:900;font-stretch:125%;
+  font-size:clamp(26px,4vw,38px);line-height:.95;letter-spacing:-.03em;
+  text-transform:uppercase;margin:0 0 8px;
+}
+.bth-crew h2 em{font-style:normal;color:var(--pink);}
+.bth-crew p{margin:0;font-size:14.5px;line-height:1.5;color:var(--ink-70);max-width:56ch;}
+.bth-crew-links{display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
+.bth-crew-page{
+  font-family:var(--f-data);font-size:12px;letter-spacing:.04em;color:var(--ink-70);
+  border-bottom:1.5px dotted var(--ink-45);text-decoration:none;
+}
+.bth-crew-page:hover{color:var(--pink);border-color:var(--pink);}
+
 /* ---------- footnote ---------- */
 .bth-foot{
   margin-top:44px;border-top:2px solid var(--ink);padding-top:14px;
@@ -396,6 +417,9 @@ TODAY.setHours(0, 0, 0, 0);
 const d = (s) => { const x = new Date(s + "T00:00:00"); return x; };
 const daysFrom = (s) => Math.round((d(s) - TODAY) / 86400000);
 const MON = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+const GROUP_URL = "https://www.facebook.com/groups/boothcrew/";
+const PAGE_URL = "https://www.facebook.com/makermarketplaces";
 
 function fmtRange(a, b) {
   const A = d(a), B = d(b);
@@ -883,6 +907,26 @@ export default function BoothDirectory() {
             })}
           </div>
         )}
+
+        {/* community call-to-action */}
+        <section className="bth-crew" aria-labelledby="bth-crew-title">
+          <div className="bth-crew-text">
+            <div className="bth-kicker" style={{ marginBottom: 8 }}>Community · Free to join</div>
+            <h2 id="bth-crew-title">Join the Booth <em>Crew</em></h2>
+            <p>
+              Texas makers swapping deadlines, booth fees, setups, and honest market reviews.
+              A new Deadline Rail lands every Monday.
+            </p>
+          </div>
+          <div className="bth-crew-links">
+            <a className="bth-apply" href={GROUP_URL} target="_blank" rel="noopener noreferrer">
+              Join on Facebook <IcArrowUpRight />
+            </a>
+            <a className="bth-crew-page" href={PAGE_URL} target="_blank" rel="noopener noreferrer">
+              Follow the Page
+            </a>
+          </div>
+        </section>
 
         <footer className="bth-foot">
           <div>Make the thing. Ship the thing. <span style={{ color: "var(--ink)" }}>Book the booth.</span></div>
