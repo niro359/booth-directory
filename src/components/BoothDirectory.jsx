@@ -420,6 +420,7 @@ const MON = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","
 
 const GROUP_URL = "https://www.facebook.com/groups/boothcrew/";
 const PAGE_URL = "https://www.facebook.com/makermarketplaces";
+const IG_URL = "https://www.instagram.com/makermarketplaces/";
 
 function fmtRange(a, b) {
   const A = d(a), B = d(b);
@@ -924,6 +925,9 @@ export default function BoothDirectory() {
             </a>
             <a className="bth-crew-page" href={PAGE_URL} target="_blank" rel="noopener noreferrer">
               Follow the Page
+            </a>
+            <a className="bth-crew-page" href={IG_URL} target="_blank" rel="noopener noreferrer">
+              Instagram
             </a>
           </div>
         </section>
