@@ -389,8 +389,10 @@ const CSS = `
 }
 .bth-crew h2 em{font-style:normal;color:var(--pink);}
 .bth-crew p{margin:0;font-size:14.5px;line-height:1.5;color:var(--ink-70);max-width:56ch;}
-.bth-crew-links{display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
+.bth-crew-links{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;}
+.bth-crew-more{display:flex;flex-direction:column;align-items:flex-start;gap:7px;}
 .bth-crew-page{
+  display:inline-flex;align-items:center;gap:5px;
   font-family:var(--f-data);font-size:12px;letter-spacing:.04em;color:var(--ink-70);
   border-bottom:1.5px dotted var(--ink-45);text-decoration:none;
 }
@@ -923,12 +925,14 @@ export default function BoothDirectory() {
             <a className="bth-apply" href={GROUP_URL} target="_blank" rel="noopener noreferrer">
               Join on Facebook <IcArrowUpRight />
             </a>
-            <a className="bth-crew-page" href={PAGE_URL} target="_blank" rel="noopener noreferrer">
-              Follow the Page
-            </a>
-            <a className="bth-crew-page" href={IG_URL} target="_blank" rel="noopener noreferrer">
-              Instagram
-            </a>
+            <div className="bth-crew-more">
+              <a className="bth-crew-page" href={PAGE_URL} target="_blank" rel="noopener noreferrer">
+                Monday rails on Facebook <IcArrowUpRight />
+              </a>
+              <a className="bth-crew-page" href={IG_URL} target="_blank" rel="noopener noreferrer">
+                Booth tips on Instagram <IcArrowUpRight />
+              </a>
+            </div>
           </div>
         </section>
 
