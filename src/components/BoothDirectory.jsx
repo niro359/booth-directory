@@ -82,6 +82,16 @@ const CSS = `
 .bth-savedbtn:active{transform:scale(.94);}
 .bth-savedbtn.on{background:var(--yellow);}
 .bth-savedbtn b{font-family:var(--f-data);}
+@media (max-width:440px){
+  .bth-top{gap:10px;}
+  .bth-mark{font-size:14px;}
+  .bth-savedbtn{padding:6px 9px;gap:6px;}
+  .bth-savedbtn-label{display:none;}
+}
+@media (max-width:359px){
+  .bth-top{gap:6px;}
+  .bth-mark{font-size:11.5px;gap:6px;}
+}
 
 /* ---------- hero / search slab ---------- */
 .bth-hero{padding:34px 0 22px;}
@@ -104,7 +114,7 @@ const CSS = `
 }
 .bth-searchrow{display:flex;gap:10px;align-items:stretch;}
 .bth-searchbox{
-  flex:1;display:flex;align-items:center;gap:10px;
+  flex:1;min-width:0;display:flex;align-items:center;gap:10px;
   border:2px solid var(--ink);background:var(--stock);padding:0 12px;min-height:52px;
 }
 .bth-searchbox svg{flex:none;}
@@ -665,8 +675,13 @@ export default function BoothDirectory() {
         <header className="bth-top">
           <div className="bth-mark"><i />Maker Marketplaces</div>
           <div className="bth-top-spacer" />
-          <button className={`bth-savedbtn${savedOnly ? " on" : ""}`} onClick={() => setSavedOnly(v => !v)}>
-            <IcPin on={savedOnly} /> Saved <b>{saved.length}</b>
+          <button
+            className={`bth-savedbtn${savedOnly ? " on" : ""}`}
+            onClick={() => setSavedOnly(v => !v)}
+            aria-pressed={savedOnly}
+            aria-label={`Saved (${saved.length})`}
+          >
+            <IcPin on={savedOnly} /> <span className="bth-savedbtn-label">Saved</span> <b>{saved.length}</b>
           </button>
         </header>
 
