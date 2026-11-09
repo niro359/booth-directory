@@ -456,11 +456,20 @@ function addDays(date, n) { const x = new Date(date); x.setDate(x.getDate() + n)
 function isoDate(date) {
   return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
 }
-function occurrenceFor(rec, year, monthIndex) {
-  const anchor = nthWeekdayOfMonth(year, monthIndex, rec.anchorWeekday, rec.ordinal);
-  const start = addDays(anchor, rec.offsetDays || 0);
-  const end = addDays(start, (rec.spanDays || 1) - 1);
-  return { start, end };
+// All occurrences whose anchor day falls in the given month, in date order.
+// `frequency: "weekly"` uses every matching weekday; otherwise `ordinal` picks
+// the Nth weekday, and may be an array (e.g. [1, 3] for 1st and 3rd Saturdays).
+function occurrencesFor(rec, year, monthIndex) {
+  const ordinals = rec.frequency === "weekly" ? [1, 2, 3, 4, 5]
+    : Array.isArray(rec.ordinal) ? rec.ordinal : [rec.ordinal];
+  return ordinals
+    .map(n => nthWeekdayOfMonth(year, monthIndex, rec.anchorWeekday, n))
+    .filter(anchor => anchor.getMonth() === monthIndex)
+    .sort((a, b) => a - b)
+    .map(anchor => {
+      const start = addDays(anchor, rec.offsetDays || 0);
+      return { start, end: addDays(start, (rec.spanDays || 1) - 1) };
+    });
 }
 function deadlineFor(rule, start) {
   if (!rule || rule.type === "rolling") return null;
@@ -473,10 +482,11 @@ function nextOccurrence(rec, today) {
   for (let i = 0; i < 24; i++) {
     const y = cursor.getFullYear(), m = cursor.getMonth();
     if (!rec.activeMonths || rec.activeMonths.includes(m + 1)) {
-      const { start, end } = occurrenceFor(rec, y, m);
-      const deadline = deadlineFor(rec.deadline, start);
-      const isOpen = deadline ? deadline >= today : end >= today;
-      if (isOpen) return { start: isoDate(start), end: isoDate(end), deadline: deadline && isoDate(deadline), rolling: !deadline };
+      for (const { start, end } of occurrencesFor(rec, y, m)) {
+        const deadline = deadlineFor(rec.deadline, start);
+        const isOpen = deadline ? deadline >= today : end >= today;
+        if (isOpen) return { start: isoDate(start), end: isoDate(end), deadline: deadline && isoDate(deadline), rolling: !deadline };
+      }
     }
     cursor = new Date(y, m + 1, 1);
   }
@@ -895,6 +905,7 @@ export default function BoothDirectory() {
                       {e.outdoor && <span className="bth-badge b-mute">Outdoor</span>}
                       {e.fee === 0 && <span className="bth-badge b-grass">Consignment</span>}
                       {e.tags.includes("monthly") && <span className="bth-badge b-mute">Recurs monthly</span>}
+                      {e.tags.includes("weekly") && <span className="bth-badge b-mute">Recurs weekly</span>}
                     </div>
 
                     <div className={`bth-more${isOpen ? " open" : ""}`} inert={isOpen ? undefined : ""}>

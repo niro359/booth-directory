@@ -58,10 +58,10 @@ site automatically once their `end` date passes, so stale events never show —
 but to keep the count up, roll an annual event forward to its next edition
 (new dates, deadline, fee) once the organizer posts them, or delete it.
 
-### Recurring (monthly) listings self-update — no manual date bumping
+### Recurring (monthly and weekly) listings self-update — no manual date bumping
 
 A listing that happens on a monthly cadence (tagged `"monthly"`, e.g. "first
-Saturday of the month") can carry an optional `recurrence` object. When
+Saturday of the month") or a weekly one (tagged `"weekly"`) can carry an optional `recurrence` object. When
 present, the site computes that listing's *next* occurrence — and, where
 possible, its deadline — from the visitor's own clock on every page load,
 the same way the "N days left" badges already work. You never need to hand-edit
@@ -70,7 +70,9 @@ the same way the "N days left" badges already work. You never need to hand-edit
 ```json
 "recurrence": {
   "anchorWeekday": 6,          // 0=Sun .. 6=Sat — the day the rule is named after
-  "ordinal": 1,                // 1st / 2nd / 3rd occurrence of that weekday in the month
+  "ordinal": 1,                // 1st / 2nd / 3rd occurrence of that weekday in the month,
+                               //   or an array like [1, 3] for "1st and 3rd Saturdays"
+  "frequency": "weekly",       // optional; every matching weekday (ordinal is then ignored)
   "offsetDays": 0,             // shift the event block relative to the anchor (see below)
   "spanDays": 1,               // how many consecutive days the event runs
   "activeMonths": [3, 4, 5],   // optional; omit to run every month
@@ -96,8 +98,8 @@ still open (not just the soonest date on the calendar) — see `withRecurrence`
 and `nextOccurrence` in `src/components/BoothDirectory.jsx`. The static
 `start`/`end`/`deadline` fields stay in the JSON as a schema-valid fallback
 and a sanity-check for human reviewers, but are overridden at render time
-whenever `recurrence` is present. This only models a simple monthly cadence —
-it does not handle one-off bonus dates some venues add on top of their normal
+whenever `recurrence` is present. This models fixed weekly and monthly
+cadences — it does not handle one-off bonus dates some venues add on top of their normal
 schedule (e.g. Boerne's extra December date); those still need a manual note
 in `desc` or a separate listing entry.
 

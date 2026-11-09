@@ -115,6 +115,19 @@ function main() {
     if ("rollingDeadline" in ev && typeof ev.rollingDeadline !== "boolean") {
       errors.push(`${label}: "rollingDeadline" should be a boolean, got ${typeOf(ev.rollingDeadline)}`);
     }
+    if (ev.recurrence) {
+      const r = ev.recurrence;
+      const ords = Array.isArray(r.ordinal) ? r.ordinal : [r.ordinal];
+      if (!Number.isInteger(r.anchorWeekday) || r.anchorWeekday < 0 || r.anchorWeekday > 6) {
+        errors.push(`${label}: recurrence.anchorWeekday must be 0-6`);
+      }
+      if (r.frequency !== undefined && r.frequency !== "weekly") {
+        errors.push(`${label}: recurrence.frequency must be "weekly" if set`);
+      }
+      if (r.frequency !== "weekly" && !ords.every(n => Number.isInteger(n) && n >= 1 && n <= 5)) {
+        errors.push(`${label}: recurrence.ordinal must be 1-5 or an array of 1-5`);
+      }
+    }
     if ("notes" in ev && typeof ev.notes !== "string") {
       errors.push(`${label}: "notes" should be a string, got ${typeOf(ev.notes)}`);
     }
