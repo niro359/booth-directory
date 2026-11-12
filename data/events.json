@@ -24,9 +24,9 @@
       "ordinal": 1,
       "spanDays": 1,
       "activeMonths": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      "deadline": { "type": "daysBeforeStart", "days": 7 }
+      "deadline": { "type": "rolling" }
     },
-    "notes": "First-Saturday open-air market running March through December. Booth spaces are assigned by seniority, with a rolling waitlist for new vendors. Approval is rolling via email (leasing@wimberleymarketday.com), not a fixed application deadline; booths are typically rented the week before each market day. Pricing is tiered: $125 is the standard monthly rate, with a discounted $75 summer-season rate (roughly Jun-Aug) and a separate $100 Friday-evening rate — this listing's Sept 5 date falls outside the summer window, so $125 is the applicable figure."
+    "notes": "First-Saturday open-air market running March through December. Booth spaces are assigned by seniority, with a rolling waitlist for new vendors. Approval is rolling via email (leasing@wimberleymarketday.com), not a fixed application deadline; booths are typically rented the week before each market day. Pricing is tiered: $125 is the standard monthly rate, with a discounted $75 summer-season rate (roughly Jun-Aug) and a separate $100 Friday-evening rate — this listing's Sept 5 date falls outside the summer window, so $125 is the applicable figure.\n\n2026-11-11: recurrence deadline changed from daysBeforeStart 7 (an estimate) to rolling, matching the rolling email approval described above."
   },
   {
     "id": 2,
@@ -567,9 +567,9 @@
       "ordinal": [1, 3],
       "spanDays": 1,
       "activeMonths": [3, 4, 5, 6, 7, 8, 9, 10, 11],
-      "deadline": { "type": "daysBeforeStart", "days": 7 }
+      "deadline": { "type": "rolling" }
     },
-    "notes": "Recurring artisan/farmers market at Mission Marquee Plaza near San Antonio's Mission Reach (Mar-Nov). CONFIRMED: no vendor fee is charged (\"No vendor fees will apply\" per the official page) - genuinely rare for this directory. Application is via an online Smartsheet form with no fixed deadline; acceptance isn't guaranteed and the plaza reserves discretion over vendor mix, so treated as non-juried/discretionary rather than a formal panel jury. Artisan goods must be handmade - no mass-produced items. Runs BOTH the 1st and 3rd Saturday of each month; this listing's auto-computed schedule follows the 3rd Saturday only (same modeling limitation as Boerne/Gruene's bonus dates - see README), so a 1st-Saturday date each month isn't reflected here. Public admission and attendance are unconfirmed - inferred free (no fee mentioned for visitors) and estimated at a modest 1,500/market day for a single mission-plaza market, not an official figure.\n\nVerified 2026-10-28 against missionmarquee.com Become-a-Vendor (1st & 3rd Saturdays Mar-Nov, 9-1; no vendor fees; first come).\n\n2026-11-09: recurrence now models both 1st and 3rd Saturdays (ordinal [1,3])."
+    "notes": "Recurring artisan/farmers market at Mission Marquee Plaza near San Antonio's Mission Reach (Mar-Nov). CONFIRMED: no vendor fee is charged (\"No vendor fees will apply\" per the official page) - genuinely rare for this directory. Application is via an online Smartsheet form with no fixed deadline; acceptance isn't guaranteed and the plaza reserves discretion over vendor mix, so treated as non-juried/discretionary rather than a formal panel jury. Artisan goods must be handmade - no mass-produced items. Runs BOTH the 1st and 3rd Saturday of each month; this listing's auto-computed schedule follows the 3rd Saturday only (same modeling limitation as Boerne/Gruene's bonus dates - see README), so a 1st-Saturday date each month isn't reflected here. Public admission and attendance are unconfirmed - inferred free (no fee mentioned for visitors) and estimated at a modest 1,500/market day for a single mission-plaza market, not an official figure.\n\nVerified 2026-10-28 against missionmarquee.com Become-a-Vendor (1st & 3rd Saturdays Mar-Nov, 9-1; no vendor fees; first come).\n\n2026-11-09: recurrence now models both 1st and 3rd Saturdays (ordinal [1,3]).\n\n2026-11-11: deadline rule changed from daysBeforeStart 7 (our estimate) to rolling; the official page says first come, first served with no deadline."
   },
   {
     "id": 37,
