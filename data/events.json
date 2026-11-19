@@ -2013,5 +2013,98 @@
       "deadline": { "type": "rolling" }
     },
     "notes": "Added 2026-11-09; verified against the Orange Show's Eventeny listing (Smither Park Sundays, second Sunday of each month 2-5pm, Oct 11, 2026-Dec 31, 2027; vendor application deadline Dec 31, 2027; locally handmade, affordable; 2441 Munger St) and orangeshow.org/smither-park (admission always free; its older text says first Sunday 1-5pm - the newer Eventeny schedule is used). Vendor fee not published. Attendance is an estimate."
+  },
+  {
+    "id": 110,
+    "name": "Big Ole Queer Market: Holiday Villains",
+    "org": "Big Ole Queer Market",
+    "city": "Austin",
+    "state": "TX",
+    "type": "Maker market",
+    "start": "2026-11-28",
+    "end": "2026-11-29",
+    "deadline": "2026-11-25",
+    "fee": 275,
+    "admissionFee": 10,
+    "attendance": 4000,
+    "juried": false,
+    "outdoor": false,
+    "tags": [
+      "lgbtq",
+      "holiday",
+      "handmade",
+      "indoor",
+      "palmer events center"
+    ],
+    "desc": "Big Ole Queer Market's two-day indoor holiday market at Palmer Events Center (Hall 1), Nov 28–29. Vendor applications close Nov 25; a 10x10 booth for both days starts at $275 ($375 with electricity), plus a $10 application fee. Booths are picked and paid for after approval.",
+    "sourceUrl": "https://www.eventeny.com/events/big-ole-queer-market-holiday-villians-2026-33281/",
+    "lastVerified": "2026-11-18",
+    "status": "verified",
+    "notes": "Added 2026-11-18 from the organizer's Eventeny event page: Nov 28-29, 2026, Palmer Events Center Hall 1, 900 Barton Springs Rd; vendor apps (no electricity / electricity provided) open with deadline Nov 25; early-bird 10x10 front $275, corner $325, with electricity $375 (both days); $10 non-refundable application fee; prices rise closer to the event; 6% fee on purchases; tables and chairs not provided. Tickets $10 ($10-15 listed), 17 and under free. Hours: listing says 12-5, vendor app says Sat 12-6 / Sun 12-5. Applications are reviewed and booths chosen after approval (treated as non-juried, like other curated markets). Organizer site bigolequeermarket.com did not resolve on 2026-11-18. Attendance is an estimate."
+  },
+  {
+    "id": 111,
+    "name": "East ATX Market Christmas Markets",
+    "org": "East ATX Market",
+    "city": "Austin",
+    "state": "TX",
+    "type": "Maker market",
+    "start": "2026-12-05",
+    "end": "2026-12-20",
+    "deadline": "2026-12-05",
+    "rollingDeadline": true,
+    "fee": 75,
+    "admissionFee": null,
+    "attendance": 1500,
+    "juried": false,
+    "outdoor": true,
+    "tags": [
+      "holiday",
+      "pop-up",
+      "handmade",
+      "multi-date",
+      "small business"
+    ],
+    "desc": "Four December Christmas markets from East ATX Market: Dec 5 and Dec 20 at Central Machine Works (11–4), and Dec 12 and 13 indoors at Punch Bowl Social at the Domain (12–4). Spaces are $75 without a canopy or $125 with one at Central Machine Works, and $100 at Punch Bowl. Each date has its own application; spots are limited and every application is reviewed for the vendor mix.",
+    "sourceUrl": "https://www.eastatxmarket.com/vendorapplication",
+    "lastVerified": "2026-11-18",
+    "status": "verified",
+    "notes": "Added 2026-11-18 from eastatxmarket.com (home page + /vendorapplication): Christmas Markets Dec 5 (Central Machine Works, 11-4), Dec 12 and Dec 13 (Punch Bowl Social at the Domain, 12-4, indoor), Dec 20 (Central Machine Works, 11-4); all marked limited spots. Fees: Central Machine Works $125 with canopy / $75 no canopy (regular); Punch Bowl $100 (early bird). Early bird ends Fri Nov 20, 11:59 PM, while spaces last. No application deadline published (open until full), so rollingDeadline. Applications reviewed individually for product mix; payment doesn't guarantee acceptance (refund if not accepted). Central Machine Works setting not stated; canopy option suggests outdoor space, Punch Bowl is indoor, so 'outdoor' is approximate. Admission for December not stated (the Nov 22 Harvest Market was free). Attendance is an estimate. The Nov 22 Harvest Market is sold out and not listed."
+  },
+  {
+    "id": 112,
+    "name": "SoCo Makers Market",
+    "org": "SoCo Makers Market",
+    "city": "Austin",
+    "state": "TX",
+    "type": "Standing market",
+    "start": "2026-11-20",
+    "end": "2026-11-22",
+    "deadline": "2026-11-20",
+    "fee": null,
+    "admissionFee": null,
+    "attendance": 2000,
+    "juried": false,
+    "outdoor": true,
+    "tags": [
+      "weekly",
+      "south congress",
+      "handmade",
+      "vintage",
+      "weekends"
+    ],
+    "desc": "All-handmade makers market and vintage annex on South Congress (1501 S Congress Ave), open every Friday and Saturday 10–5 and Sunday 12:30–5. Weekly vendors apply through the market's site; right now only the crafts and leather goods categories are open, and booth rent isn't published.",
+    "sourceUrl": "https://www.socomakersmarket.com/apply",
+    "lastVerified": "2026-11-18",
+    "status": "verified",
+    "recurrence": {
+      "anchorWeekday": 5,
+      "frequency": "weekly",
+      "spanDays": 3,
+      "deadline": {
+        "type": "rolling"
+      }
+    },
+    "notes": "Added 2026-11-18 from socomakersmarket.com (home + /apply): 'All Handmade in Austin Makers Market and Vintage Annex', 1501 S Congress Ave, Austin 78704; open Fri 10-5, Sat 10-5, Sun 12:30-5. Weekly-vendor applications via Google Form; on 2026-11-18 only Crafts and Leather Goods were open (jewelry, purses and vintage categories closed). Booth rent, commission, review process and admission not published; a paypal.me/socoselectmarket/20 link appears without explanation, so fee left null. Setting not stated on the site; listed as outdoor (open-air lot on S Congress) - confirm. Attendance is an estimate. Also on Instagram @socomakersmarketatx."
   }
 ]
