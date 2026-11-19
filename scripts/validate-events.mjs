@@ -115,6 +115,9 @@ function main() {
     if ("rollingDeadline" in ev && typeof ev.rollingDeadline !== "boolean") {
       errors.push(`${label}: "rollingDeadline" should be a boolean, got ${typeOf(ev.rollingDeadline)}`);
     }
+    if ("deadlineEstimated" in ev && typeof ev.deadlineEstimated !== "boolean") {
+      errors.push(`${label}: "deadlineEstimated" should be a boolean, got ${typeOf(ev.deadlineEstimated)}`);
+    }
     if (ev.recurrence) {
       const r = ev.recurrence;
       const ords = Array.isArray(r.ordinal) ? r.ordinal : [r.ordinal];

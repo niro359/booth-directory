@@ -2,6 +2,10 @@ import React, { useState, useMemo, useEffect, useRef } from "react";
 import EVENTS from "../../data/events.json";
 import { TYPES } from "../constants.js";
 import { useLocalStorage } from "../hooks/useLocalStorage.js";
+import {
+  MON, parseDate, startOfToday, daysBetween, fmtShort, fmtRange, urgency,
+  withRecurrence as withRecurrenceAt, slugMap, eventPath,
+} from "../lib/schedule.js";
 
 /* ------------------------------------------------------------------
    BOOTH — vendor opportunity directory for working artists
@@ -407,6 +411,18 @@ const CSS = `
   border-bottom:1.5px dotted var(--ink-45);text-decoration:none;
 }
 .bth-crew-page:hover{color:var(--pink);border-color:var(--pink);}
+.bth-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+.bth-permalink{
+  display:inline-flex;align-items:center;gap:5px;
+  font-family:var(--f-data);font-size:12px;letter-spacing:.04em;color:var(--ink-70);
+  border-bottom:1.5px dotted var(--ink-45);text-decoration:none;
+}
+.bth-permalink:hover{color:var(--aqua);border-color:var(--aqua);}
+.bth-raillink{
+  font-family:var(--f-data);font-size:11px;letter-spacing:.04em;color:var(--ink);
+  margin-left:auto;text-decoration:none;border-bottom:1.5px solid var(--pink);
+}
+.bth-raillink:hover{color:var(--pink);}
 
 /* ---------- footnote ---------- */
 .bth-foot{
@@ -423,81 +439,16 @@ const CSS = `
 `;
 
 /* ------------------------------------------------------------------ */
-const TODAY = new Date();
-TODAY.setHours(0, 0, 0, 0);
+const TODAY = startOfToday();
 
-const d = (s) => { const x = new Date(s + "T00:00:00"); return x; };
-const daysFrom = (s) => Math.round((d(s) - TODAY) / 86400000);
-const MON = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const d = parseDate;
+const daysFrom = (s) => daysBetween(s, TODAY);
+const withRecurrence = (ev) => withRecurrenceAt(ev, TODAY);
+const SLUGS = slugMap(EVENTS);
 
 const GROUP_URL = "https://www.facebook.com/groups/boothcrew/";
 const PAGE_URL = "https://www.facebook.com/makermarketplaces";
 const IG_URL = "https://www.instagram.com/makermarketplaces/";
-
-function fmtRange(a, b) {
-  const A = d(a), B = d(b);
-  if (a === b) return `${MON[A.getMonth()]} ${A.getDate()}`;
-  if (A.getMonth() === B.getMonth()) return `${MON[A.getMonth()]} ${A.getDate()}–${B.getDate()}`;
-  return `${MON[A.getMonth()]} ${A.getDate()} – ${MON[B.getMonth()]} ${B.getDate()}`;
-}
-function fmtShort(s) { const A = d(s); return `${MON[A.getMonth()]} ${A.getDate()}`; }
-function urgency(n) { return n < 0 ? "closed" : n <= 21 ? "soon" : n <= 60 ? "mid" : "far"; }
-
-/* ---------- monthly recurrence engine ----------
-   A listing with a `recurrence` block computes its own next occurrence
-   from the visitor's clock instead of carrying a hand-maintained date —
-   see README's "Recurring (monthly) listings" section for the schema. */
-function nthWeekdayOfMonth(year, monthIndex, weekday, ordinal) {
-  const first = new Date(year, monthIndex, 1);
-  const shift = (weekday - first.getDay() + 7) % 7;
-  return new Date(year, monthIndex, 1 + shift + (ordinal - 1) * 7);
-}
-function addDays(date, n) { const x = new Date(date); x.setDate(x.getDate() + n); return x; }
-function isoDate(date) {
-  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
-}
-// All occurrences whose anchor day falls in the given month, in date order.
-// `frequency: "weekly"` uses every matching weekday; otherwise `ordinal` picks
-// the Nth weekday, and may be an array (e.g. [1, 3] for 1st and 3rd Saturdays).
-function occurrencesFor(rec, year, monthIndex) {
-  const ordinals = rec.frequency === "weekly" ? [1, 2, 3, 4, 5]
-    : Array.isArray(rec.ordinal) ? rec.ordinal : [rec.ordinal];
-  return ordinals
-    .map(n => nthWeekdayOfMonth(year, monthIndex, rec.anchorWeekday, n))
-    .filter(anchor => anchor.getMonth() === monthIndex)
-    .sort((a, b) => a - b)
-    .map(anchor => {
-      const start = addDays(anchor, rec.offsetDays || 0);
-      return { start, end: addDays(start, (rec.spanDays || 1) - 1) };
-    });
-}
-function deadlineFor(rule, start) {
-  if (!rule || rule.type === "rolling") return null;
-  if (rule.type === "daysBeforeStart") return addDays(start, -rule.days);
-  if (rule.type === "dayOfPriorMonth") return new Date(start.getFullYear(), start.getMonth() - 1, rule.day);
-  return null;
-}
-function nextOccurrence(rec, today) {
-  let cursor = new Date(today.getFullYear(), today.getMonth() - 1, 1);
-  for (let i = 0; i < 24; i++) {
-    const y = cursor.getFullYear(), m = cursor.getMonth();
-    if (!rec.activeMonths || rec.activeMonths.includes(m + 1)) {
-      for (const { start, end } of occurrencesFor(rec, y, m)) {
-        const deadline = deadlineFor(rec.deadline, start);
-        const isOpen = deadline ? deadline >= today : end >= today;
-        if (isOpen) return { start: isoDate(start), end: isoDate(end), deadline: deadline && isoDate(deadline), rolling: !deadline };
-      }
-    }
-    cursor = new Date(y, m + 1, 1);
-  }
-  return null;
-}
-function withRecurrence(ev) {
-  if (!ev.recurrence) return ev;
-  const next = nextOccurrence(ev.recurrence, TODAY);
-  if (!next) return ev;
-  return { ...ev, start: next.start, end: next.end, deadline: next.deadline || ev.deadline, rollingDeadline: next.rolling };
-}
 
 /* ---------- recall-tolerant search ---------- */
 const norm = (s) => s.toLowerCase().replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
@@ -775,6 +726,7 @@ export default function BoothDirectory() {
           <div className="bth-railhead">
             <span className="bth-railtitle">Deadline rail</span>
             <span className="bth-railnote">Next 210 days · one mark per application deadline · hover to link a mark to its card</span>
+            <a className="bth-raillink" href="/texas-juried-show-deadlines/">Juried show &amp; artist alley deadlines →</a>
           </div>
           <div className="bth-railbody">
             <div className="bth-railline" />
@@ -884,7 +836,7 @@ export default function BoothDirectory() {
 
                     <dl className="bth-data">
                       <div className="bth-datum"><dt>Event dates</dt><dd>{fmtRange(e.start, e.end)}</dd></div>
-                      <div className="bth-datum"><dt>Apply by</dt><dd>{e.rollingDeadline ? "Rolling" : fmtShort(e.deadline)}</dd></div>
+                      <div className="bth-datum"><dt>Apply by</dt><dd title={e.deadlineEstimated ? "Estimated from last year's date. The organizer hasn't posted this year's yet." : undefined}>{e.rollingDeadline ? "Rolling" : e.deadlineEstimated ? `~${fmtShort(e.deadline)} est.` : fmtShort(e.deadline)}</dd></div>
                       <div className="bth-datum"><dt>Booth from</dt><dd>{e.fee == null ? "TBA" : e.fee === 0 ? "No fee" : `$${e.fee.toLocaleString()}`}</dd></div>
                       <div className="bth-datum"><dt>Public admission</dt><dd>{e.admissionFee == null ? "Unconfirmed" : e.admissionFee === 0 ? "Free" : `$${e.admissionFee.toLocaleString()}`}</dd></div>
                       <div className="bth-datum"><dt>Attendance</dt><dd>~{e.attendance >= 1000 ? `${Math.round(e.attendance / 1000)}k` : e.attendance}</dd></div>
@@ -915,6 +867,7 @@ export default function BoothDirectory() {
                             ? <span className="bth-vbadge v-yes">✓ Verified{e.lastVerified ? ` ${fmtShort(e.lastVerified)}` : ""}</span>
                             : <span className="bth-vbadge v-no">⚠ Needs review — confirm details before applying</span>}
                         </div>
+                        <div className="bth-actions">
                         {e.sourceUrl ? (
                           <a
                             className="bth-apply"
@@ -928,6 +881,10 @@ export default function BoothDirectory() {
                         ) : (
                           <span className="bth-apply off">Source not yet verified</span>
                         )}
+                        <a className="bth-permalink" href={eventPath(SLUGS.get(e.id))} onClick={(ev) => ev.stopPropagation()}>
+                          Full listing &amp; share link
+                        </a>
+                        </div>
                       </div>
                     </div>
                   </div>

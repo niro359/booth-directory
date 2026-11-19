@@ -7,8 +7,9 @@
     "dev": "vite",
     "validate": "node scripts/validate-events.mjs",
     "prebuild": "node scripts/validate-events.mjs",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build && node scripts/build-pages.mjs",
+    "preview": "vite preview",
+    "og": "node scripts/render-og.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",

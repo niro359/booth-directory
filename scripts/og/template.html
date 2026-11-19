@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=DM+Mono:wght@400;500&family=Public+Sans:wght@400;600;700&display=block" rel="stylesheet">
+<style>
+:root{--stock:#E7E7E1;--stock-2:#F3F3EF;--ink:#16182B;--ink-45:rgba(22,24,43,.5);--pink:#FF4B7D;--aqua:#00A0AE;--yellow:#FFC42E;--grass:#3E8E5A}
+*{box-sizing:border-box}
+html,body{margin:0;width:1200px;height:630px;overflow:hidden}
+body{background:var(--stock);color:var(--ink);font-family:'Public Sans',sans-serif;position:relative}
+.grain{position:absolute;inset:0;opacity:.5;background-image:radial-gradient(rgba(22,24,43,.10) .8px,transparent .8px);background-size:4px 4px}
+.blob{position:absolute;border-radius:50%;mix-blend-mode:multiply;opacity:.9}
+.b1{width:340px;height:340px;background:var(--yellow);right:-90px;top:-120px}
+.b2{width:220px;height:220px;background:var(--aqua);right:120px;top:-150px;opacity:.75}
+.wrap{position:absolute;inset:0;padding:48px 56px 44px;display:flex;flex-direction:column}
+.mark{display:flex;align-items:center;gap:12px;font-family:'Archivo';font-weight:900;font-stretch:118%;text-transform:uppercase;font-size:24px;letter-spacing:-.01em}
+.mark i{display:inline-block;width:14px;height:30px;background:var(--pink);box-shadow:6px 0 0 var(--aqua)}
+.kicker{margin-top:34px;font-family:'DM Mono';font-size:22px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-45)}
+h1{font-family:'Archivo';font-weight:900;font-stretch:125%;text-transform:uppercase;letter-spacing:-.035em;line-height:.92;margin:12px 0 0;font-size:84px;max-width:1060px}
+h1 em{font-style:normal;color:var(--pink)}
+.sub{font-size:28px;line-height:1.35;margin-top:18px;max-width:900px;color:rgba(22,24,43,.75)}
+.facts{margin-top:auto;display:flex;border:4px solid var(--ink);background:var(--stock-2);box-shadow:9px 9px 0 var(--aqua),18px 18px 0 var(--pink);width:max-content;max-width:1070px}
+.fact{padding:16px 26px 18px;border-right:2px solid rgba(22,24,43,.18)}
+.fact:last-child{border-right:none}
+.fact dt{font-family:'DM Mono';font-size:18px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-45);margin-bottom:6px}
+.fact dd{margin:0;font-family:'Archivo';font-weight:800;font-stretch:112%;font-size:40px;line-height:1;white-space:nowrap}
+.fact dd small{font-family:'DM Mono';font-weight:500;font-size:18px;letter-spacing:.04em;margin-left:6px;color:var(--ink-45)}
+.foot{position:absolute;right:56px;bottom:22px;font-family:'DM Mono';font-size:17px;letter-spacing:.06em;color:var(--ink-45)}
+.foot b{color:var(--grass);font-weight:500}
+</style>
+</head>
+<body>
+<div class="grain"></div><div class="blob b1"></div><div class="blob b2"></div>
+<div class="wrap">
+  <div class="mark"><i></i>Maker Marketplaces</div>
+  <div class="kicker" id="kicker"></div>
+  <h1 id="title"></h1>
+  <div class="sub" id="sub"></div>
+  <dl class="facts" id="facts"></dl>
+</div>
+<div class="foot" id="foot"></div>
+<script>
+// Data arrives base64url-encoded JSON in the hash: {kicker,title,titleHtml,sub,facts:[[label,value,small]],foot}
+const b64 = location.hash.slice(1).replace(/-/g, "+").replace(/_/g, "/");
+const data = JSON.parse(decodeURIComponent(escape(atob(b64))));
+const $ = (id) => document.getElementById(id);
+$("kicker").textContent = data.kicker || "";
+if (data.titleHtml) $("title").innerHTML = data.titleHtml; else $("title").textContent = data.title || "";
+$("sub").textContent = data.sub || "";
+if (!data.sub) $("sub").remove();
+$("foot").innerHTML = data.foot || "makermarketplaces.com";
+for (const [label, value, small] of data.facts || []) {
+  const div = document.createElement("div"); div.className = "fact";
+  const dt = document.createElement("dt"); dt.textContent = label;
+  const dd = document.createElement("dd"); dd.textContent = value;
+  if (small) { const s = document.createElement("small"); s.textContent = small; dd.appendChild(s); }
+  div.append(dt, dd); $("facts").appendChild(div);
+}
+if (!(data.facts || []).length) $("facts").remove();
+// shrink the headline until it fits in three lines
+const h = $("title"); let size = data.size || 84;
+document.fonts.ready.then(() => {
+  const max = data.sub ? 2 : 3;
+  while (size > 44 && h.getBoundingClientRect().height > size * 0.92 * max + 4) { size -= 4; h.style.fontSize = size + "px"; }
+  document.body.dataset.ready = "1";
+});
+</script>
+</body>
+</html>

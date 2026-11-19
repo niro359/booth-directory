@@ -35,6 +35,7 @@ Each listing has these fields:
 | `tags` | string[] | free-form, shown/searched as keywords |
 | `desc` | string | 1-2 sentence, vendor-facing description shown on the card (aim for under ~250 characters) |
 | `notes` | string, optional | internal research/verification notes — sources, conflicts, what's estimated. Never shown on the site. |
+| `deadlineEstimated` | boolean, optional | `true` when the deadline is our estimate (usually last year's date) because the organizer hasn't posted this year's. Shown as "~Dec 15 est." on cards and pages. Remove it once the real date is confirmed. |
 | `rollingDeadline` | boolean, optional | `true` for a one-off event with no fixed cutoff (open until full). Card shows "Rolling"; set `deadline` to the start date as a placeholder. |
 | `sourceUrl` | string | link to the organizer's official page/application — used to re-verify details |
 | `lastVerified` | string or `null` | `YYYY-MM-DD` a human last confirmed this row's details |
@@ -110,10 +111,22 @@ visitor's local clock at page-load time, not baked in at build time. You only
 need to redeploy when the actual listing data changes — there's no need for a
 scheduled rebuild.
 
+## Listing pages, link previews and the sitemap
+
+`npm run build` runs `vite build`, then `scripts/build-pages.mjs`, which writes plain static HTML next to the app so search engines and link previews see real content:
+
+- `/events/<slug>/`: one page per listing (facts, description, organizer link, Event schema.org data). The slug comes from the name, so an annual event keeps its URL when it's rolled forward. Each card in the directory links to it ("Full listing & share link").
+- `/texas-juried-show-deadlines/`: upcoming deadlines for juried shows, art fairs and conventions (selection in `scripts/lib/roundup.mjs`).
+- `sitemap.xml` and a `Sitemap:` line in `robots.txt`.
+
+Dates and "N days left" on these pages are recomputed in the visitor's browser from `src/lib/schedule.js` (the same date logic the app uses), so they don't go stale between deploys.
+
+**Preview images** (`og:image`, 1200×630) live in `public/og/` and are committed. After changing listing data, run `npm run og`: it renders only the images whose content changed, using local headless Edge (Windows), and records what each shows in `public/og/manifest.json`. Use `npm run og -- --all` after changing the template (`scripts/og/template.html`). A listing without an image falls back to `og/default.png`.
+
 ## Deploying
 
 The repo (`github.com/niro359/booth-directory`) is connected to Cloudflare
-Pages (build command `npm run build`, output `dist`) and served at
+(Workers static assets, worker `booth-directory`) (build command `npm run build`, output `dist`) and served at
 https://makermarketplaces.com. Every push to `main` deploys automatically.
 
 ## Saved listings
