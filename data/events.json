@@ -217,7 +217,7 @@
     "sourceUrl": "https://animematsuri.com/artist-alley/",
     "lastVerified": "2026-08-05",
     "status": "verified",
-    "notes": "Anime and Japanese culture convention with a large artist alley and separate dealer hall. Table assignment by registration order. Corrected from a stale March placeholder — Anime Matsuri actually runs in July; the 2026 edition (Jul 23-26) is confirmed and uncancelled, and 2027 is set for Jul 22-25 (per Eventbrite, though organizers note dates may shift). Applications open Sept 8 with price tiers increasing Dec 1/Mar 1/Apr 1/Jun 1 - exact table price not published outside the application form, so the $380 figure and Dec 1 \"deadline\" (first price-increase date) are best-effort estimates. Public admission tiers are $65 Fri/$70 Sat/$45 Sun from the official badge page, but tied to the just-completed 2026 dates and carried as reference pricing since 2027 isn't priced yet."
+    "notes": "Anime and Japanese culture convention with a large artist alley and separate dealer hall. Table assignment by registration order. Corrected from a stale March placeholder — Anime Matsuri actually runs in July; the 2026 edition (Jul 23-26) is confirmed and uncancelled, and 2027 is set for Jul 22-25 (per Eventbrite, though organizers note dates may shift). Applications open Sept 8 with price tiers increasing Dec 1/Mar 1/Apr 1/Jun 1 - exact table price not published outside the application form, so the $380 figure and Dec 1 \"deadline\" (first price-increase date) are best-effort estimates. Public admission tiers are $65 Fri/$70 Sat/$45 Sun from the official badge page, but tied to the just-completed 2026 dates and carried as reference pricing since 2027 isn't priced yet.\n\n2026-11-20: checked animematsuri.com/artist-alley: page still shows the 2026 schedule (apps live Sept 8; price increases Dec 1/Mar 1/Apr 1/Jun 1; AM2026 Jul 23-26). Nothing posted for 2027 yet; lastVerified not bumped. Dec 1 is a price tier, not a close (see NEEDS-LINH)."
   },
   {
     "id": 11,
@@ -228,7 +228,7 @@
     "type": "Art fair",
     "start": "2027-04-15",
     "end": "2027-04-18",
-    "deadline": "2026-10-09",
+    "deadline": "2026-10-12",
     "fee": 995,
     "admissionFee": 0,
     "attendance": 350000,
@@ -237,9 +237,9 @@
     "tags": ["fine art", "jury", "high traffic"],
     "desc": "Four-day juried street festival with some of the heaviest foot traffic in Texas: about 220 artists chosen from nearly 1,000 applicants. 10x10 booths are $995 ($1,145 corner) on pavement, so bring weights.",
     "sourceUrl": "https://mainstreetartsfest.org/key-dates/",
-    "lastVerified": "2026-08-13",
+    "lastVerified": "2026-11-20",
     "status": "verified",
-    "notes": "Four-day juried street festival with very high foot traffic. Booths are on pavement; weights required in place of stakes. Standard 10x10 booth is $995 (corner $1,145), plus a separate $40 non-refundable application fee. 220 artists are jury-selected from nearly 1,000 applicants (2026 cycle figure)."
+    "notes": "Four-day juried street festival with very high foot traffic. Booths are on pavement; weights required in place of stakes. Standard 10x10 booth is $995 (corner $1,145), plus a separate $40 non-refundable application fee. 220 artists are jury-selected from nearly 1,000 applicants (2026 cycle figure).\n\n2026-11-20: mainstreetartsfest.org/key-dates: 2027 show Apr 15-18, 2027; artist application deadline Oct 12, 2026 (was 2026-10-09 here); jury Nov 4-5; notification Nov 12; booth fees due Dec 4; $40 app fee; booths $995 / corner $1,145; 220 artists, ~1,000 applications in 2026. 2027 call is closed."
   },
   {
     "id": 13,
@@ -315,20 +315,21 @@
     "city": "Houston",
     "state": "TX",
     "type": "Maker market",
-    "start": "2026-11-12",
-    "end": "2026-11-15",
-    "deadline": "2026-08-15",
+    "start": "2027-11-10",
+    "end": "2027-11-14",
+    "deadline": "2027-10-27",
+    "deadlineEstimated": true,
     "fee": 1800,
     "admissionFee": null,
     "attendance": 100000,
     "juried": true,
     "outdoor": false,
     "tags": ["holiday", "jury", "commission", "fundraiser"],
-    "desc": "Houston Ballet's massive juried holiday market at NRG Center, drawing 100,000+ shoppers over four days. Booths run roughly $1,800–$4,800 by size, plus an 11% commission on sales.",
+    "desc": "Houston Ballet's massive juried holiday market at NRG Center, drawing 100,000+ shoppers; the 2027 market runs Nov 10–14. Booths run $1,800–$4,800 by size, plus an 11% commission on sales. The 2027 merchant application isn't open yet.",
     "sourceUrl": "https://www.houstonballet.org/about/nutcracker-market/merchants/nutmkt-merch-info/for-merchants/",
-    "lastVerified": "2026-08-05",
-    "status": "needs-review",
-    "notes": "Massive juried holiday shopping market fundraising for Houston Ballet, drawing over 100,000 shoppers across a preview party plus four show days at NRG Center. Unlike a flat booth-fee model, Houston Ballet also takes an 11% commission on merchant sales on top of space cost, and charges a separate non-refundable $25 application fee. Exact booth pricing tiers weren't accessible (pricing page blocked automated access), so the $2,500 fee here is a rough placeholder based on comparable high-traffic juried holiday markets, not a confirmed price - confirm real pricing and the application deadline directly before applying. Public admission is $20/day general, or $60 for a 4-day early-bird pass; kids 2 and under free.\n\n2026-10-28: fee updated from $2,500 placeholder to $1,800 low end of $1,800-$4,800 range listed on VendorsMap (plus 11% commission).\n\n2026-10-28: Click2Houston (Sep 2026): general admission $25 + fees. Official merchant pages blocked automated access; booth prices still unconfirmed.\n\n2026-11-09: Official booth pricing page: 15x10 $1,800 up to 40x10 $4,800, 11% commission on all sales; official market page: Nov 12-15, 2026, 280+ merchants. Tickets page returned no prices; merchant deadline not published."
+    "lastVerified": "2026-11-20",
+    "status": "verified",
+    "notes": "Massive juried holiday shopping market fundraising for Houston Ballet, drawing over 100,000 shoppers across a preview party plus four show days at NRG Center. Unlike a flat booth-fee model, Houston Ballet also takes an 11% commission on merchant sales on top of space cost, and charges a separate non-refundable $25 application fee. Exact booth pricing tiers weren't accessible (pricing page blocked automated access), so the $2,500 fee here is a rough placeholder based on comparable high-traffic juried holiday markets, not a confirmed price - confirm real pricing and the application deadline directly before applying. Public admission is $20/day general, or $60 for a 4-day early-bird pass; kids 2 and under free.\n\n2026-10-28: fee updated from $2,500 placeholder to $1,800 low end of $1,800-$4,800 range listed on VendorsMap (plus 11% commission).\n\n2026-10-28: Click2Houston (Sep 2026): general admission $25 + fees. Official merchant pages blocked automated access; booth prices still unconfirmed.\n\n2026-11-09: Official booth pricing page: 15x10 $1,800 up to 40x10 $4,800, 11% commission on all sales; official market page: Nov 12-15, 2026, 280+ merchants. Tickets page returned no prices; merchant deadline not published.\n\n2026-11-20: rolled forward to 2027 per houstonballet.org Nutcracker Market FAQ ('future Nutcracker Markets': Nov 12-15, 2026; Nov 10-14, 2027; Nov 8-12, 2028). Merchant application page: 'Applications currently closed for Nutcracker Market Fall 2026'; booth pricing unchanged (15x10 $1,800 to 40x10 $4,800, 11% commission). 2027 merchant deadline not published: deadline Oct 27, 2027 is an estimate from the 2025 merchant application PDF ('accepted until two weeks prior to Nutcracker Market'), so deadlineEstimated. Old placeholder deadline 2026-08-15 had no source."
   },
   {
     "id": 19,
@@ -463,7 +464,7 @@
     "type": "Art fair",
     "start": "2027-05-14",
     "end": "2027-05-17",
-    "deadline": "2026-12-15",
+    "deadline": "2027-02-08",
     "deadlineEstimated": true,
     "fee": null,
     "admissionFee": 0,
@@ -471,11 +472,11 @@
     "juried": true,
     "outdoor": false,
     "tags": ["fine art", "fine craft", "permian basin", "jury awards", "indoor"],
-    "desc": "The Permian Basin's long-running indoor fine art and fine craft show at the Bush Convention Center, with cash jury awards. 2027 dates and booth fee aren't announced yet; dates shown follow its usual mid-May slot.",
+    "desc": "The Permian Basin's long-running indoor fine art and fine craft show at the Bush Convention Center, with cash jury awards. 2027 runs May 14–17; the booth fee isn't published and the deadline shown follows last year's Feb 8 close.",
     "sourceUrl": "https://www.acmidland.org/celebration-of-the-arts",
-    "lastVerified": "2026-08-13",
-    "status": "needs-review",
-    "notes": "Self-described cornerstone fine art & fine craft event of the Permian Basin, now in its 42nd+ year, held fully indoors (rain-or-shine, air-conditioned) at the Bush Convention Center with 40+ regional/out-of-state artists across painting, fiber, photography, jewelry, wood, and glass, plus cash jury awards. The just-completed 43rd edition's booth fee was never published beyond a $25 non-refundable ZAPPlication application fee — the $450 shown is a rough estimate based on comparably-sized indoor Texas art fairs, not an organizer-confirmed price. 2027 show dates aren't announced yet (next cycle typically opens in December); the May 14-16 window shown is an estimated placeholder following the fair's usual mid-May slot. Saturday/Sunday admission is confirmed free (a separate ticketed Friday preview party is $80-85, not general admission). Attendance is unconfirmed — no official total is published; 5,000 is a conservative estimate for a regional indoor fair of this size.\n\n2026-10-28: acmidland.org: 'Save the next date! May 14-17, 2027'; free festival admission; deadline and booth fee not posted."
+    "lastVerified": "2026-11-20",
+    "status": "verified",
+    "notes": "Self-described cornerstone fine art & fine craft event of the Permian Basin, now in its 42nd+ year, held fully indoors (rain-or-shine, air-conditioned) at the Bush Convention Center with 40+ regional/out-of-state artists across painting, fiber, photography, jewelry, wood, and glass, plus cash jury awards. The just-completed 43rd edition's booth fee was never published beyond a $25 non-refundable ZAPPlication application fee — the $450 shown is a rough estimate based on comparably-sized indoor Texas art fairs, not an organizer-confirmed price. 2027 show dates aren't announced yet (next cycle typically opens in December); the May 14-16 window shown is an estimated placeholder following the fair's usual mid-May slot. Saturday/Sunday admission is confirmed free (a separate ticketed Friday preview party is $80-85, not general admission). Attendance is unconfirmed — no official total is published; 5,000 is a conservative estimate for a regional indoor fair of this size.\n\n2026-10-28: acmidland.org: 'Save the next date! May 14-17, 2027'; free festival admission; deadline and booth fee not posted.\n\n2026-11-20: acmidland.org/celebration-of-the-arts still says 'SAVE THE NEXT DATE! may 14-17, 2027'. The 2026 ZAPP call (via EntryThingy listing 'Celebration of the Arts 2026') closed Feb 8, 2026, so the estimated deadline moved from 2026-12-15 (no source) to 2027-02-08 (last year's date); still deadlineEstimated. 2026 call: $25 app fee, up to 2 applications, 4 images, accepted artists donate a $100+ piece to the silent auction; prizes $2,000/$1,500/$1,000/$500. Booth fee still unpublished (fee null). Status set to verified: dates confirmed by organizer; deadline remains an estimate."
   },
   {
     "id": 31,
@@ -664,10 +665,10 @@
     "outdoor": true,
     "tags": ["fine art", "handmade", "free admission", "georgetown square", "juried"],
     "desc": "Georgetown's flagship festival: three days on the historic square with 100–150+ handmade-only artisans and about 75,000 visitors. $400 for a 10x10; 2027 is set for Apr 23–25, and the deadline shown follows last year's.",
-    "sourceUrl": "https://visit.georgetown.org/business_detail_T27_R857.php",
-    "lastVerified": "2026-08-13",
-    "status": "needs-review",
-    "notes": "Georgetown's flagship annual festival (27th edition in 2026), three days on the historic downtown square with live music and 100-150+ artisan vendors selling handmade-only work. CONFIRMED: 2027 dates are officially set (Apr 23-25). Booth fees confirmed for the most recent cycle: $400 for a 10'x10', $800 for a 10'x20', plus a separate $25 non-refundable application fee. Selection is via photo/portfolio review with a handmade-only certification requirement (not a blind panel jury, but not open walk-on either). The Jan 8, 2027 deadline shown is an estimate extrapolated from the prior cycle's Jan 9, 2026 deadline - the 2027 application window wasn't open yet as of this listing's verification. Admission is confirmed free. Attendance (~75,000 over the weekend) is confirmed via the city's special events coordinator."
+    "sourceUrl": "https://visit.georgetown.org/events/red_poppy_festival/index.php",
+    "lastVerified": "2026-11-20",
+    "status": "verified",
+    "notes": "Georgetown's flagship annual festival (27th edition in 2026), three days on the historic downtown square with live music and 100-150+ artisan vendors selling handmade-only work. CONFIRMED: 2027 dates are officially set (Apr 23-25). Booth fees confirmed for the most recent cycle: $400 for a 10'x10', $800 for a 10'x20', plus a separate $25 non-refundable application fee. Selection is via photo/portfolio review with a handmade-only certification requirement (not a blind panel jury, but not open walk-on either). The Jan 8, 2027 deadline shown is an estimate extrapolated from the prior cycle's Jan 9, 2026 deadline - the 2027 application window wasn't open yet as of this listing's verification. Admission is confirmed free. Attendance (~75,000 over the weekend) is confirmed via the city's special events coordinator.\n\n2026-11-20: poppy.georgetown.org now redirects to visit.georgetown.org/events/red_poppy_festival ('MARK YOUR CALENDAR FOR APRIL 23-25, 2027!'); sourceUrl updated (old: visit.georgetown.org/business_detail_T27_R857.php). No 2027 artisan application or deadline posted yet, so the Jan 8, 2027 deadline stays an estimate from the 2026 cycle (Jan 9, 2026); the $400 fee is the last cycle's. Status set to verified: dates confirmed by the city."
   },
   {
     "id": 42,
@@ -881,7 +882,7 @@
     "sourceUrl": "https://www.sugarlandartsfest.com/artists/",
     "lastVerified": "2026-10-28",
     "status": "verified",
-    "notes": "Juried fine-art festival relocating for 2026 to Sugar Land Town Square, a walkable open-air setting - a new flagship venue for the event. CONFIRMED (via CW39 news coverage): 100+ juried artists across 16 fine-art mediums, 6,000+ expected attendees, and admission free for the first time in the festival's history ('art should be accessible to everyone'). The 2026 application deadline (May 31, 2026) has already passed as of this listing's verification - treat as a reference for the 2027 cycle. UNVERIFIED: exact booth fee isn't published beyond the organizer's claim of 'one of the most competitive booth fees in Texas' - the $350 shown is an estimate based on comparable Texas fine-art fairs (Cottonwood, Denton), not a confirmed price. Fills a total gap - no prior listing in Sugar Land/Fort Bend County.\n\nVerified 2026-10-28 against sugarlandartsfest.com/artists (Nov 6-8, 2026; deadline May 31; booths $300-$450, emerging $300; $25 app fee; free admission)."
+    "notes": "Juried fine-art festival relocating for 2026 to Sugar Land Town Square, a walkable open-air setting - a new flagship venue for the event. CONFIRMED (via CW39 news coverage): 100+ juried artists across 16 fine-art mediums, 6,000+ expected attendees, and admission free for the first time in the festival's history ('art should be accessible to everyone'). The 2026 application deadline (May 31, 2026) has already passed as of this listing's verification - treat as a reference for the 2027 cycle. UNVERIFIED: exact booth fee isn't published beyond the organizer's claim of 'one of the most competitive booth fees in Texas' - the $350 shown is an estimate based on comparable Texas fine-art fairs (Cottonwood, Denton), not a confirmed price. Fills a total gap - no prior listing in Sugar Land/Fort Bend County.\n\nVerified 2026-10-28 against sugarlandartsfest.com/artists (Nov 6-8, 2026; deadline May 31; booths $300-$450, emerging $300; $25 app fee; free admission).\n\n2026-11-20: checked sugarlandartsfest.com/artists: still the 2026 timeline (Nov 6-8, 2026; deadline May 31, 2026). No 2027 dates yet, so not rolled forward."
   },
   {
     "id": 55,
@@ -1061,7 +1062,7 @@
     "sourceUrl": "https://www.avalonfaire.com/",
     "lastVerified": "2026-08-13",
     "status": "needs-review",
-    "notes": "Multi-weekend medieval/Renaissance-Pirate festival in Kilgore, with jousting, four stages of entertainment, and 'Shoppes and Provisions' vendors selling handcrafted leather goods, jewelry, and art. CONFIRMED 2026 dates were weekends April 4-26, 2026 - already past as of this listing's verification, so the Apr 3-25, 2027 dates shown here are estimated by extrapolating the event's consistent early-to-late-April multi-weekend pattern, not yet officially announced. Vendor applications go through a Google Form review process (not open walk-on), so treated as juried/curated. Independent coverage (Yahoo Lifestyle, tourism sites) consistently praises vendor quality and describes it as 'award-winning' - no negative sentiment found. CONFIRMED: attendance is organizer-reported as 10,000 for the most recent run, per FestivalNet (corrected from an earlier 5,000 comparable-event estimate). UNVERIFIED: exact vendor booth fee isn't published (application-only, no dollar figure) - the $150 shown is an estimate based on comparable regional Renaissance-style fairs, not confirmed. General admission was tiered $8-$300 for the 2026 run per an aggregator (likely a kids/single-day rate up to an all-access VIP package) - $20 shown as a representative single-day estimate, not a confirmed base price. The application deadline remains a rough planning-buffer estimate, not an official figure. Fills the entirely-uncovered Kilgore/East Texas gap with a distinctive niche event type - only the second Renaissance-style festival in this directory alongside Texas Renaissance Festival."
+    "notes": "Multi-weekend medieval/Renaissance-Pirate festival in Kilgore, with jousting, four stages of entertainment, and 'Shoppes and Provisions' vendors selling handcrafted leather goods, jewelry, and art. CONFIRMED 2026 dates were weekends April 4-26, 2026 - already past as of this listing's verification, so the Apr 3-25, 2027 dates shown here are estimated by extrapolating the event's consistent early-to-late-April multi-weekend pattern, not yet officially announced. Vendor applications go through a Google Form review process (not open walk-on), so treated as juried/curated. Independent coverage (Yahoo Lifestyle, tourism sites) consistently praises vendor quality and describes it as 'award-winning' - no negative sentiment found. CONFIRMED: attendance is organizer-reported as 10,000 for the most recent run, per FestivalNet (corrected from an earlier 5,000 comparable-event estimate). UNVERIFIED: exact vendor booth fee isn't published (application-only, no dollar figure) - the $150 shown is an estimate based on comparable regional Renaissance-style fairs, not confirmed. General admission was tiered $8-$300 for the 2026 run per an aggregator (likely a kids/single-day rate up to an all-access VIP package) - $20 shown as a representative single-day estimate, not a confirmed base price. The application deadline remains a rough planning-buffer estimate, not an official figure. Fills the entirely-uncovered Kilgore/East Texas gap with a distinctive niche event type - only the second Renaissance-style festival in this directory alongside Texas Renaissance Festival.\n\n2026-11-20: checked avalonfaire.com: home page still shows April 4-26, 2026; no 2027 dates or vendor terms yet. Left as is."
   },
   {
     "state": "TX",
@@ -1268,7 +1269,7 @@
     "tags": ["fine craft", "jury", "el paso", "indoor", "since 1970"],
     "desc": "El Paso's fine art and craft show, running since 1970, at the Epic Railyard Event Center, Nov 14–15. Booths $345–$485 with electricity ($100 emerging); the 2026 call closed May 31.",
     "sourceUrl": "https://app.entrythingy.com/calls/external/las-artistas-art-fine-crafts-show-2026",
-    "notes": "Added 2026-10-28. 2026 call: deadline May 31, 2026, $35 fee. Nov 14-15, 2026 at EPIC Railyard and booth tiers ($345 10x10, $485 10x15, $100 emerging 8x10) from VendorsMap/TheCraftMap; $6 admission per TheCraftMap. Confirm dates with organizer. Attendance is an estimate.\n\n2026-10-28: Visit El Paso: Nov 14-15, 2026, 11-5, Epic Railyard, admission $10. Booth fee and deadline not on organizer site.\n\nVerified 2026-10-28 against Las Artistas SimpleTix ticket page (Nov 14 11-5, Nov 15 10-4, 2026; Epic Railyard) + Visit El Paso ($10 admission) + 2026 ZAPP call (closed May 31).\n\n2026-11-09: ZAPP 14467: booths 10x10 $345, 10x15 $485, emerging 8x10 $100, corner +$75; electricity included."
+    "notes": "Added 2026-10-28. 2026 call: deadline May 31, 2026, $35 fee. Nov 14-15, 2026 at EPIC Railyard and booth tiers ($345 10x10, $485 10x15, $100 emerging 8x10) from VendorsMap/TheCraftMap; $6 admission per TheCraftMap. Confirm dates with organizer. Attendance is an estimate.\n\n2026-10-28: Visit El Paso: Nov 14-15, 2026, 11-5, Epic Railyard, admission $10. Booth fee and deadline not on organizer site.\n\nVerified 2026-10-28 against Las Artistas SimpleTix ticket page (Nov 14 11-5, Nov 15 10-4, 2026; Epic Railyard) + Visit El Paso ($10 admission) + 2026 ZAPP call (closed May 31).\n\n2026-11-09: ZAPP 14467: booths 10x10 $345, 10x15 $485, emerging 8x10 $100, corner +$75; electricity included.\n\n2026-11-20: checked lasartistas.org and web search: no 2027 dates or call posted yet (2025 and 2026 calls both closed May 31). Not rolled forward."
   },
   {
     "state": "TX",
