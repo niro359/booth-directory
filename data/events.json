@@ -99,7 +99,7 @@
     "lastVerified": null,
     "status": "needs-review",
     "rollingDeadline": true,
-    "notes": "Multi-genre pop culture convention with a dedicated Artist Alley. Tables sell out in tiers; early registration opens to prior-year vendors. UNVERIFIED: 2027 exhibitor applications aren't open yet (interest form only as of Aug 2026) — no official 2027 dates, pricing, or deadline published. Current start/end/deadline/fee below are unconfirmed placeholders. Public admission ($68 single-day, ~$119 weekend pass) is reference pricing carried over from the completed May 2026 event via secondary media coverage — the official site no longer publishes 2026 prices and hasn't posted 2027 numbers yet.\n\n2026-10-28: replaced Jan 2027 placeholder with May 28-30, 2027 (VendorsMap 'expected'); treated as rolling (tables sell in tiers until gone). Fee/admission set to null until 2027 pricing is published.\n\n2026-10-28: Checked comicpalooza.com/sign-up/exhibitors: 'Applications for 2027 Coming Soon', interest form only, no 2027 dates/prices."
+    "notes": "Multi-genre pop culture convention with a dedicated Artist Alley. Tables sell out in tiers; early registration opens to prior-year vendors. UNVERIFIED: 2027 exhibitor applications aren't open yet (interest form only as of Aug 2026) — no official 2027 dates, pricing, or deadline published. Current start/end/deadline/fee below are unconfirmed placeholders. Public admission ($68 single-day, ~$119 weekend pass) is reference pricing carried over from the completed May 2026 event via secondary media coverage — the official site no longer publishes 2026 prices and hasn't posted 2027 numbers yet.\n\n2026-10-28: replaced Jan 2027 placeholder with May 28-30, 2027 (VendorsMap 'expected'); treated as rolling (tables sell in tiers until gone). Fee/admission set to null until 2027 pricing is published.\n\n2026-10-28: Checked comicpalooza.com/sign-up/exhibitors: 'Applications for 2027 Coming Soon', interest form only, no 2027 dates/prices.\n2026-11-24: comicpalooza.com/sign-up/exhibitors still says 'Applications for 2027 Coming Soon' (interest form only); no 2027 dates, prices or deadline. Placeholders unchanged."
   },
   {
     "id": 5,
@@ -112,16 +112,16 @@
     "end": "2026-12-21",
     "deadline": "2026-08-28",
     "fee": 1500,
-    "admissionFee": 12,
+    "admissionFee": 15,
     "attendance": 40000,
     "juried": true,
     "outdoor": false,
     "tags": ["holiday", "jury", "long run", "music"],
     "desc": "Austin's ten-day juried holiday art market with live music at Palmer Events Center; best for vendors with deep inventory and help staffing. Booths run about $1,500–$5,000+; applications are rolling, with Jan–Mar submissions reviewed first.",
     "sourceUrl": "https://armadillobazaar.com/apply/",
-    "lastVerified": "2026-08-05",
+    "lastVerified": "2026-11-24",
     "status": "verified",
-    "notes": "Ten-day juried holiday art market with live music. Long-run format favors vendors with deep inventory and staffing help. Booth fees run ~$1,500-$5,000+ by size (avg ~$2,000) plus a $25 application fee. Applications are accepted year-round on a rolling basis; Jan-Mar submissions get priority, with primary review Mar-Aug. Returning artists get priority over new applicants in popular categories. Public admission is $12 (+fees, ~$14 total) per day, or $60 for a season pass; kids 12 and under free."
+    "notes": "Ten-day juried holiday art market with live music. Long-run format favors vendors with deep inventory and staffing help. Booth fees run ~$1,500-$5,000+ by size (avg ~$2,000) plus a $25 application fee. Applications are accepted year-round on a rolling basis; Jan-Mar submissions get priority, with primary review Mar-Aug. Returning artists get priority over new applicants in popular categories. Public admission is $12 (+fees, ~$14 total) per day, or $60 for a season pass; kids 12 and under free.\n2026-11-24: verified on armadillobazaar.com (/, /apply/, /tickets/): Dec 12-21, 2026 at Palmer Events Center confirmed; booths 'about $1,500 to over $5,000', average a little over $2,000; $25 application fee; 'There is no deadline. Applications are accepted year-round and reviewed beginning each March until the show is full'; Aug-Dec applications are held for the following year. Fixed public admission 12 -> 15 (one-day ticket $15 + tax; season $75; VIP First Look $25). No 2027 dates posted yet."
   },
   {
     "id": 7,
@@ -217,7 +217,7 @@
     "sourceUrl": "https://animematsuri.com/artist-alley/",
     "lastVerified": "2026-08-05",
     "status": "verified",
-    "notes": "Anime and Japanese culture convention with a large artist alley and separate dealer hall. Table assignment by registration order. Corrected from a stale March placeholder — Anime Matsuri actually runs in July; the 2026 edition (Jul 23-26) is confirmed and uncancelled, and 2027 is set for Jul 22-25 (per Eventbrite, though organizers note dates may shift). Applications open Sept 8 with price tiers increasing Dec 1/Mar 1/Apr 1/Jun 1 - exact table price not published outside the application form, so the $380 figure and Dec 1 \"deadline\" (first price-increase date) are best-effort estimates. Public admission tiers are $65 Fri/$70 Sat/$45 Sun from the official badge page, but tied to the just-completed 2026 dates and carried as reference pricing since 2027 isn't priced yet.\n\n2026-11-20: checked animematsuri.com/artist-alley: page still shows the 2026 schedule (apps live Sept 8; price increases Dec 1/Mar 1/Apr 1/Jun 1; AM2026 Jul 23-26). Nothing posted for 2027 yet; lastVerified not bumped. Dec 1 is a price tier, not a close (see NEEDS-LINH)."
+    "notes": "Anime and Japanese culture convention with a large artist alley and separate dealer hall. Table assignment by registration order. Corrected from a stale March placeholder — Anime Matsuri actually runs in July; the 2026 edition (Jul 23-26) is confirmed and uncancelled, and 2027 is set for Jul 22-25 (per Eventbrite, though organizers note dates may shift). Applications open Sept 8 with price tiers increasing Dec 1/Mar 1/Apr 1/Jun 1 - exact table price not published outside the application form, so the $380 figure and Dec 1 \"deadline\" (first price-increase date) are best-effort estimates. Public admission tiers are $65 Fri/$70 Sat/$45 Sun from the official badge page, but tied to the just-completed 2026 dates and carried as reference pricing since 2027 isn't priced yet.\n\n2026-11-20: checked animematsuri.com/artist-alley: page still shows the 2026 schedule (apps live Sept 8; price increases Dec 1/Mar 1/Apr 1/Jun 1; AM2026 Jul 23-26). Nothing posted for 2027 yet; lastVerified not bumped. Dec 1 is a price tier, not a close (see NEEDS-LINH).\n2026-11-24: animematsuri.com/artist-alley still shows the AM2026 schedule (Jul 23-26, 2026; apps live Sept 8; price increases Dec 1/Mar 1/Apr 1/Jun 1); no 2027 page or close date. lastVerified not bumped; still a price tier, not a deadline."
   },
   {
     "id": 11,
@@ -248,20 +248,21 @@
     "city": "Round Top",
     "state": "TX",
     "type": "Standing market",
-    "start": "2026-10-10",
-    "end": "2026-10-31",
-    "deadline": "2026-08-20",
+    "start": "2027-03-13",
+    "end": "2027-03-27",
+    "deadline": "2027-03-13",
+    "rollingDeadline": true,
     "fee": null,
     "admissionFee": null,
     "attendance": 130000,
     "juried": false,
     "outdoor": true,
     "tags": ["antiques", "long run", "destination"],
-    "desc": "Two-and-a-half-week antiques destination spread across 48+ independently run show fields along Highway 237. Space is leased directly from each field (Marburger Farm, Zapp Hall, Big Red Barn and others), so rates and applications vary.",
+    "desc": "Two-week spring antiques destination spread across independently run show fields along Highway 237 (Mar 13-27, 2027). Space is leased directly from each field (Zapp Hall, Blue Hills, Big Red Barn, Marburger Farm and others), so rates and applications vary.",
     "sourceUrl": "https://roundtopfinder.com/round-top-show-dates",
-    "lastVerified": "2026-08-05",
+    "lastVerified": "2026-11-24",
     "status": "needs-review",
-    "notes": "Roughly two-and-a-half-week destination market spread across 48+ independent show fields (not nine days as previously listed). Early fields like Bar W Field, Henkel Square, and The Marketplace Warrenton open Oct 15; most of the 48+ venues run the official Oct 17-31 window. Space is leased directly from individual field operators (e.g. Zapp Hall, Excess Fields, Marburger Farm, Big Red Barn) - pricing and application process vary by field and remain unconfirmed here; the $900 fee is an unverified placeholder. Public admission is similarly fragmented across the 48+ fields — most are free to browse, but the flagship \"Original Round Top Antiques Fair\" field charges its own $10 general/$25 VIP admission, so no single admission price applies to the market as a whole.\n\n2026-10-28: roundtopfinder.com: Fall 2026 runs Oct 17-31 for most venues; Bar W opens Oct 10. Spring 2027 dates not announced."
+    "notes": "Roughly two-and-a-half-week destination market spread across 48+ independent show fields (not nine days as previously listed). Early fields like Bar W Field, Henkel Square, and The Marketplace Warrenton open Oct 15; most of the 48+ venues run the official Oct 17-31 window. Space is leased directly from individual field operators (e.g. Zapp Hall, Excess Fields, Marburger Farm, Big Red Barn) - pricing and application process vary by field and remain unconfirmed here; the $900 fee is an unverified placeholder. Public admission is similarly fragmented across the 48+ fields — most are free to browse, but the flagship \"Original Round Top Antiques Fair\" field charges its own $10 general/$25 VIP admission, so no single admission price applies to the market as a whole.\n\n2026-10-28: roundtopfinder.com: Fall 2026 runs Oct 17-31 for most venues; Bar W opens Oct 10. Spring 2027 dates not announced.\n2026-11-24: rolled forward to Spring 2027 per roundtopfinder.com/round-top-show-dates: 'Spring Show 2027 / March 13-27, 2027'. Blue Hills and Zapp Hall Mar 13-27; La Bahia Mar 19-27; Big Red Barn Mar 21-27; Marburger Farm Mar 23-27. Winter Show Jan 21-24, 2027 also listed. Fall 2027 not announced. No single deadline exists (each field leases its own space), so set rollingDeadline with deadline = start as placeholder. Kept needs-review: roundtopfinder is a guide site, not a field operator, and no field's vendor terms were checked."
   },
   {
     "id": 14,
@@ -281,9 +282,9 @@
     "tags": ["seasonal", "themed", "period appropriate"],
     "desc": "Texas's largest Renaissance festival, running eight themed weekends Oct 10–Nov 29 plus Thanksgiving Friday. Shops must be period-appropriate; new-vendor applications ($50 fee) are accepted on a rolling basis.",
     "sourceUrl": "https://www.texrenfest.com/",
-    "lastVerified": "2026-08-13",
+    "lastVerified": "2026-11-24",
     "status": "needs-review",
-    "notes": "Eight-weekend seasonal festival requiring period-appropriate merchandise and shop presentation. Multi-season vendors get renewal priority. Corrected start date: the official site confirms the 2026 season runs Oct 10-Nov 29 plus Thanksgiving Friday (the previously listed Oct 3 start was wrong — Oct 3 isn't part of the season). Confirmed: the vendor application itself carries a $50 non-refundable fee. The $1,400 figure here is presumed to be the actual shop/booth lease, but I could not confirm that number from the source PDF (binary-encoded, didn't extract cleanly) — needs a second look. No official application deadline is published — the site currently states it's still accepting new-vendor applications on a rolling basis, so the date shown is an estimated planning buffer, not a hard cutoff. Public admission is NOT free and has no single flat price — the official site confirms dynamic per-weekend pricing from roughly $16-27 (early/off-peak weekends like Oktoberfest) up to $28-46+ (peak weekends like Pirate Adventure, Halloween, Highland Fling), advance vs. gate. The $28 stored here is a typical non-peak gate-day figure, not an official constant."
+    "notes": "Eight-weekend seasonal festival requiring period-appropriate merchandise and shop presentation. Multi-season vendors get renewal priority. Corrected start date: the official site confirms the 2026 season runs Oct 10-Nov 29 plus Thanksgiving Friday (the previously listed Oct 3 start was wrong — Oct 3 isn't part of the season). Confirmed: the vendor application itself carries a $50 non-refundable fee. The $1,400 figure here is presumed to be the actual shop/booth lease, but I could not confirm that number from the source PDF (binary-encoded, didn't extract cleanly) — needs a second look. No official application deadline is published — the site currently states it's still accepting new-vendor applications on a rolling basis, so the date shown is an estimated planning buffer, not a hard cutoff. Public admission is NOT free and has no single flat price — the official site confirms dynamic per-weekend pricing from roughly $16-27 (early/off-peak weekends like Oktoberfest) up to $28-46+ (peak weekends like Pirate Adventure, Halloween, Highland Fling), advance vs. gate. The $28 stored here is a typical non-peak gate-day figure, not an official constant.\n2026-11-24: checked texrenfest.com: 2026 season 'Weekends, October 10th through November 29th and Thanksgiving Friday' confirmed. Vendor page (texrenfest.com/p/join-us/for-our-vendors) still says applications are being accepted for the 2026 season; contracts cover all 8 weekends; fees due ~30 days after acceptance; no deadline or fee on the HTML pages (application PDF not read). No 2027 dates yet. Stays needs-review until the 2027 season and fee are published; roll forward after Nov 29."
   },
   {
     "id": 16,
@@ -543,7 +544,7 @@
     "sourceUrl": "https://www.apeoplepartyproductions.com/nov-9-holiday-market",
     "lastVerified": "2026-08-13",
     "status": "verified",
-    "notes": "Juried, single-day indoor holiday gift market at the Mesquite Event Center in downtown Abilene, with 50+ vendors selling handmade and unique goods — fills the Big Country/West-Central Texas region gap. Tiered booth pricing: 5x10 $75, 10x10 $150, 10x15 $200, 10x20 $300, edible vendors (5x8) $50, plus a $10 non-refundable application fee (photos required); organizers explicitly select for handmade/unique quality and event fit. Public admission is $5 general, $3 with student/teacher/military ID, free for kids 11 and under. All core figures — fee tiers, admission, ~1,800 average attendance — are confirmed directly from the organizer's page."
+    "notes": "Juried, single-day indoor holiday gift market at the Mesquite Event Center in downtown Abilene, with 50+ vendors selling handmade and unique goods — fills the Big Country/West-Central Texas region gap. Tiered booth pricing: 5x10 $75, 10x10 $150, 10x15 $200, 10x20 $300, edible vendors (5x8) $50, plus a $10 non-refundable application fee (photos required); organizers explicitly select for handmade/unique quality and event fit. Public admission is $5 general, $3 with student/teacher/military ID, free for kids 11 and under. All core figures — fee tiers, admission, ~1,800 average attendance — are confirmed directly from the organizer's page.\n2026-11-24: apeoplepartyproductions.com/nov-9-holiday-market is undated ('SATURDAY, NOV 9'); Nov 9 is a Saturday in 2024, not 2026, so the page likely describes the 2024 market and our 2026-11-09 date was probably never confirmed. Upcoming-events page lists nothing after 2024. No next edition found; left as is (ended, hidden)."
   },
   {
     "id": 36,
@@ -1133,7 +1134,7 @@
   {
     "state": "TX",
     "admissionFee": 58,
-    "lastVerified": "2026-10-28",
+    "lastVerified": "2026-11-24",
     "status": "verified",
     "id": 73,
     "name": "Anime Dallas",
@@ -1142,15 +1143,15 @@
     "type": "Convention",
     "start": "2027-01-08",
     "end": "2027-01-10",
-    "deadline": "2026-12-15",
-    "fee": 75,
+    "deadline": "2027-01-06",
+    "fee": 275,
     "attendance": 15000,
     "juried": true,
     "outdoor": false,
     "tags": ["anime", "artist alley", "night market", "gaylord texan"],
-    "desc": "Anime convention at the Gaylord Texan in Frisco. Artist Alley ($275) is sold out with a waitlist, but Night Market tables are $75 a night through Dec 15; a Texas sales tax ID is required.",
+    "desc": "Anime convention at the Gaylord Texan in Frisco, Jan 8-10. Night Market tables are full and Artist Alley ($275) is sold out, but the Artist Alley waitlist and exhibitor booths ($400 inline) take applications through Jan 6; a Texas sales tax ID is required.",
     "sourceUrl": "https://www.eventeny.com/events/anime-dallas-2027-31428/",
-    "notes": "Added 2026-10-28 from organizer's Eventeny page: Jan 8-10, 2027, 7601 Gaylord Pkwy. Night Market $75/night (Fri+Sat), deadline Dec 15, 2026. Artist Alley waitlist $275, deadline Jan 6, 2027, juried for originality/AI. Exhibitor booth $400 inline / $500 corner, deadline Jan 6. 3-day pass $57.85 incl. fees. Attendance is an estimate.\n\nVerified 2026-10-28 against eventeny.com/events/anime-dallas-2027-31428 (organizer page; Jan 8-10, 2027; Night Market $75, deadline Dec 15; 3-day pass $57.85)."
+    "notes": "Added 2026-10-28 from organizer's Eventeny page: Jan 8-10, 2027, 7601 Gaylord Pkwy. Night Market $75/night (Fri+Sat), deadline Dec 15, 2026. Artist Alley waitlist $275, deadline Jan 6, 2027, juried for originality/AI. Exhibitor booth $400 inline / $500 corner, deadline Jan 6. 3-day pass $57.85 incl. fees. Attendance is an estimate.\n\nVerified 2026-10-28 against eventeny.com/events/anime-dallas-2027-31428 (organizer page; Jan 8-10, 2027; Night Market $75, deadline Dec 15; 3-day pass $57.85).\n2026-11-24: checked eventeny.com/events/anime-dallas-2027-31428: Night Market ($75/night, deadline Dec 15) now shows 'Applications full'. Artist Alley 'is sold out' with a waitlist application ($275, deadline Jan 06, 2027, juried for originality/AI). Exhibitor booth $400 inline / $500 corner, deadline Jan 06, 2027, open. Changed fee 75 -> 275 and deadline 2026-12-15 -> 2027-01-06 so the card reflects what is still open; desc updated."
   },
   {
     "state": "TX",
@@ -1274,8 +1275,8 @@
   {
     "state": "TX",
     "admissionFee": 0,
-    "lastVerified": null,
-    "status": "needs-review",
+    "lastVerified": "2026-11-24",
+    "status": "verified",
     "id": 79,
     "name": "Dogwood Festival Art Pavilion",
     "org": "Palestine Area Chamber of Commerce",
@@ -1292,7 +1293,7 @@
     "tags": ["fine art", "east texas", "dogwood trails", "jury", "spring"],
     "desc": "Juried regional fine art pavilion at Palestine's 89th Dogwood Festival in downtown, with a Friday VIP preview and a free Saturday show. Booths from $130 (10x10); 2027 dates and deadline follow last year's pattern.",
     "sourceUrl": "https://palestinechamber.org/dogwoodfestival",
-    "notes": "Added 2026-10-28. 2026 call (EntryThingy/Zapp): third weekend of March, VIP Fri / public Sat, deadline Mar 2, $35 jury fee, booths $130/$180/$235, artists must attend both days. 2027 dates (Mar 19-20) and Mar 1 deadline are extrapolated from that pattern; 2027 call not yet posted. Attendance is an estimate."
+    "notes": "Added 2026-10-28. 2026 call (EntryThingy/Zapp): third weekend of March, VIP Fri / public Sat, deadline Mar 2, $35 jury fee, booths $130/$180/$235, artists must attend both days. 2027 dates (Mar 19-20) and Mar 1 deadline are extrapolated from that pattern; 2027 call not yet posted. Attendance is an estimate.\n2026-11-24: palestinechamber.org/dogwood-festival confirms the 2027 festival on 'Saturday, March 20, 2027 9a-4p' (third weekend in March). The page mentions an 'Artist Show' but no Art Pavilion call, deadline, jury fee or booth fees yet, so the Fri Mar 19 VIP preview, the ~Mar 1 deadline and the $130 fee are still carried from the 2026 call (deadlineEstimated stays). needs-review -> verified for the dates."
   },
   {
     "state": "TX",
